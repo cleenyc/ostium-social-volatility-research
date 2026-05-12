@@ -46,8 +46,11 @@ The most important research artifacts are:
 - **v1.4 volatility-day control**: `reports/ostium-oil-hormuz-volatility-control-v1_4.md`  
   Control comparison of high-volatility WTI/Brent days with oil posts versus high-volatility days without oil posts.
 
-- **Methodology appendix**: `reports/ostium-social-volatility-methodology-appendix.md`  
-  Source assumptions, reproducibility details, and methodological notes.
+- **Reproducibility guide**: `docs/reproducibility.md`  
+  Cached rerun commands, expected outputs, and source assumptions.
+
+- **Study config**: `configs/study.oil-hormuz.example.yaml`  
+  Canonical configurable inputs for the reference oil/Hormuz rerun.
 
 ## Methodology evolution
 
@@ -81,7 +84,7 @@ The current evidence supports these claims, in order of strength:
 
 ## What is included
 
-- **Research report package**: synthesis report, public narrative draft, methodology appendix, figure/table spec, event-study report, and control-comparison report in `reports/`.
+- **Research report package**: canonical synthesis report, figure/table spec, event-study report, control-comparison report, and historical iteration artifacts in `reports/`.
 - **Reproducible cached pipeline**: config-first Python CLI and tests for regenerating the oil/Hormuz outputs from committed fixture data.
 - **Static dashboard prototype**: local `dashboard/` with embedded report sections, WTI/Brent summaries, market-day explorer, post drilldown, and download links.
 - **Runbooks and prompt templates**: `SKILL.md`, `docs/agent-runbook.md`, `docs/adapt-study.md`, and prompt templates in `prompts/` for reproducing or adapting the study with Hermes or another capable coding assistant.

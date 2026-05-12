@@ -88,7 +88,7 @@ def _plain_inline_markdown(text: str) -> str:
 
 
 def _report_sections(report_path: Path, max_sections: int = 8) -> list[dict[str, Any]]:
-    """Parse the public report draft into dashboard-friendly sections.
+    """Parse the canonical research report into dashboard-friendly sections.
 
     This intentionally keeps the dashboard static and dependency-free; richer markdown
     rendering can be added in public packaging later without changing the data contract.
@@ -120,13 +120,13 @@ def _report_sections(report_path: Path, max_sections: int = 8) -> list[dict[str,
 
     priority = [
         "Executive Summary",
-        "Study Design at a Glance",
-        "Main Result: WTI Shows a Positive Directional Relationship",
-        "Brent Result: Interesting but Underpowered",
-        "Social Performance: Reach and Activity Are Different Signals",
-        "What This Supports",
-        "What This Does Not Prove",
-        "Final Conclusion",
+        "Research Question",
+        "Methodology Evolution",
+        "Final Results",
+        "Answer to the Original Question",
+        "What Is Supported vs Not Supported",
+        "Caveats",
+        "Research Report Package Conclusion",
     ]
     by_heading = {s["heading"]: s for s in sections}
     selected = [by_heading[h] for h in priority if h in by_heading]
@@ -210,8 +210,9 @@ def build_dashboard_bundle(study_path: Path, out_dir: Path) -> dict[str, Any]:
 
     event_csv = resolve_path(repo_root, get_nested(config, ["paths", "reports", "event_study_csv"]))
     control_csv = resolve_path(repo_root, get_nested(config, ["paths", "reports", "volatility_control_csv"]))
-    report_md = repo_root / "reports" / "ostium-social-volatility-public-report-draft.md"
-    methodology_md = repo_root / "reports" / "ostium-social-volatility-methodology-appendix.md"
+    report_md = resolve_path(repo_root, get_nested(config, ["paths", "reports", "public_report"]))
+    event_md = resolve_path(repo_root, get_nested(config, ["paths", "reports", "event_study_md"]))
+    control_md = resolve_path(repo_root, get_nested(config, ["paths", "reports", "volatility_control_md"]))
     event_rows = _read_csv(event_csv)
     control_rows = _read_csv(control_csv)
 
@@ -236,7 +237,7 @@ def build_dashboard_bundle(study_path: Path, out_dir: Path) -> dict[str, Any]:
         key=lambda r: _float(r.get("WTI_notional_event0_2_per_day")) or 0,
         reverse=True,
     )[:10]
-    download_sources = [event_csv, control_csv, report_md, methodology_md]
+    download_sources = [report_md, event_md, event_csv, control_md, control_csv]
     staged_downloads = _stage_dashboard_downloads(download_sources, out_dir)
     href_by_name = {Path(item["source"]).name: item["href"] for item in staged_downloads}
 
@@ -258,7 +259,7 @@ def build_dashboard_bundle(study_path: Path, out_dir: Path) -> dict[str, Any]:
         },
         "report": {
             "title": "Ostium Social Volatility Study: Oil/Hormuz Posting, Market Volatility, and Trading Activity",
-            "status": "Public-facing report draft embedded for dashboard readability.",
+            "status": "Canonical research report embedded for dashboard readability.",
             "sections": _report_sections(report_md),
         },
         "event_study": {
@@ -299,14 +300,16 @@ def build_dashboard_bundle(study_path: Path, out_dir: Path) -> dict[str, Any]:
         "generated_files": {
             "event_study_csv": str(event_csv.relative_to(repo_root)),
             "volatility_control_csv": str(control_csv.relative_to(repo_root)),
-            "report_markdown": str(report_md.relative_to(repo_root)),
-            "methodology_markdown": str(methodology_md.relative_to(repo_root)),
+            "research_report_markdown": str(report_md.relative_to(repo_root)),
+            "event_study_markdown": str(event_md.relative_to(repo_root)),
+            "volatility_control_markdown": str(control_md.relative_to(repo_root)),
         },
         "dashboard_downloads": [
-            {"label": "Event-study CSV", "href": href_by_name[event_csv.name]},
-            {"label": "Volatility-control CSV", "href": href_by_name[control_csv.name]},
-            {"label": "Public report draft", "href": href_by_name[report_md.name]},
-            {"label": "Methodology appendix", "href": href_by_name[methodology_md.name]},
+            {"label": "Research report v1", "href": href_by_name[report_md.name]},
+            {"label": "v1.3 event-study report", "href": href_by_name[event_md.name]},
+            {"label": "v1.3 event-study CSV", "href": href_by_name[event_csv.name]},
+            {"label": "v1.4 volatility-control report", "href": href_by_name[control_md.name]},
+            {"label": "v1.4 volatility-control CSV", "href": href_by_name[control_csv.name]},
         ],
     }
     (out_dir / "summary.json").write_text(json.dumps(payload, indent=2), encoding="utf-8")

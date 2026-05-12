@@ -48,11 +48,14 @@ def test_dashboard_bundle_embeds_report_sections_and_downloads(tmp_path: Path):
 
     headings = [section["heading"] for section in payload["report"]["sections"]]
     assert "Executive Summary" in headings
-    assert "Main Result: WTI Shows a Positive Directional Relationship" in headings
-    assert "Final Conclusion" in headings
+    assert "Methodology Evolution" in headings
+    assert "Research Report Package Conclusion" in headings
     downloads = {item["label"]: item["href"] for item in payload["dashboard_downloads"]}
-    assert downloads["Event-study CSV"].endswith("data/downloads/ostium-oil-hormuz-event-study-v1_3.csv")
-    assert downloads["Public report draft"].endswith("data/downloads/ostium-social-volatility-public-report-draft.md")
+    assert downloads["Research report v1"].endswith("data/downloads/ostium-social-volatility-research-report-v1.md")
+    assert downloads["v1.3 event-study CSV"].endswith("data/downloads/ostium-oil-hormuz-event-study-v1_3.csv")
+    assert downloads["v1.4 volatility-control report"].endswith("data/downloads/ostium-oil-hormuz-volatility-control-v1_4.md")
+    assert "Public report draft" not in downloads
+    assert "Methodology appendix" not in downloads
     assert (tmp_path / "downloads" / "ostium-oil-hormuz-event-study-v1_3.csv").exists()
 
 

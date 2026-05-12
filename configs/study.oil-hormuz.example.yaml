@@ -150,7 +150,7 @@ paths:
     event_study_csv: "reports/ostium-oil-hormuz-event-study-v1_3.csv"
     volatility_control_md: "reports/ostium-oil-hormuz-volatility-control-v1_4.md"
     volatility_control_csv: "reports/ostium-oil-hormuz-volatility-control-v1_4.csv"
-    public_report: "reports/ostium-social-volatility-public-report-draft.md"
+    public_report: "reports/ostium-social-volatility-research-report-v1.md"
 
 validation:
   # Exact counts are oil/Hormuz fixture expectations for this reproducibility snapshot.
