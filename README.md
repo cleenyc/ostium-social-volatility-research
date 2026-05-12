@@ -1,6 +1,6 @@
 # Ostium Social Volatility Research
 
-This repository documents a reproducible event study testing whether Ostium oil/Hormuz-related social content drove higher Ostium platform activity during elevated market volatility.
+This repository documents a reproducible event study testing whether Ostium oil/Hormuz-related social content drove higher Ostium platform activity during periods of elevated market volatility.
 
 The reference study follows `@Ostium` oil/Hormuz posts across WTI and Brent markets, then compares post days with comparable volatility days that had no oil-related Ostium post. The main result is directional and correlational: for WTI, high-volatility days with oil-related Ostium posts had materially higher median activity and notional than high-volatility days without oil-related posts.
 
