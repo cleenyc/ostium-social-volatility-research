@@ -49,9 +49,6 @@ The most important research artifacts are:
 - **Methodology appendix**: `reports/ostium-social-volatility-methodology-appendix.md`  
   Source assumptions, reproducibility details, and methodological notes.
 
-- **Public report draft**: `reports/ostium-social-volatility-public-report-draft.md`  
-  Narrative case-study version of the research.
-
 ## Methodology evolution
 
 The study was intentionally iterative. Each version addressed a limitation discovered in the prior pass.
