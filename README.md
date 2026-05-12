@@ -33,9 +33,9 @@ As the study matured, the question became more precise:
 
 The final answer relies most heavily on the fifth question because it adds the missing control group.
 
-## Read this first
+## Read this first - MAIN COMPONENTS
 
-This case study is oraganized around five public artifact layers:
+This case study is organized around five public artifact layers:
 
 1. **Social Volatility Event Study**: The canonical event study conducted through v1.3, synthesizing data across Ostium social posts, market volatility, and trading volume.
 
