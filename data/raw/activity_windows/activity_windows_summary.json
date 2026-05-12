@@ -1,0 +1,300 @@
+{
+  "generatedAt": "2026-05-11T20:12:45.415Z",
+  "ok": true,
+  "pairs": [
+    {
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD"
+    },
+    {
+      "label": "BRENT",
+      "pairId": 55,
+      "symbol": "BRENT-USD"
+    }
+  ],
+  "windows": [
+    {
+      "event": "apr13_canonical",
+      "segment": "pre7",
+      "start": "2026-04-06T00:00:00Z",
+      "end": "2026-04-13T00:00:00Z",
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "rawPath": "data/raw/activity_windows/WTI_7_apr13_canonical_pre7.json",
+      "fillCount": 1556,
+      "notionalUsd": 203260306.67256925,
+      "openingFeesUsd": 148939.09193400008,
+      "totalFeesUsd": 249804.48225415294,
+      "actions": {
+        "Open": 698,
+        "StopLoss": 81,
+        "Close": 637,
+        "Liquidation": 55,
+        "TakeProfit": 30,
+        "RemoveCollateral": 55
+      },
+      "sides": {
+        "B": 1086,
+        "S": 470
+      }
+    },
+    {
+      "event": "apr13_canonical",
+      "segment": "event",
+      "start": "2026-04-13T00:00:00Z",
+      "end": "2026-04-14T00:00:00Z",
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "rawPath": "data/raw/activity_windows/WTI_7_apr13_canonical_event.json",
+      "fillCount": 365,
+      "notionalUsd": 6555474.1321150875,
+      "openingFeesUsd": 5176.480798000002,
+      "totalFeesUsd": -719.6300896093621,
+      "actions": {
+        "Open": 189,
+        "StopLoss": 19,
+        "Close": 117,
+        "RemoveCollateral": 27,
+        "Liquidation": 8,
+        "TakeProfit": 5
+      },
+      "sides": {
+        "B": 280,
+        "S": 85
+      }
+    },
+    {
+      "event": "apr13_canonical",
+      "segment": "post7",
+      "start": "2026-04-14T00:00:00Z",
+      "end": "2026-04-21T00:00:00Z",
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "rawPath": "data/raw/activity_windows/WTI_7_apr13_canonical_post7.json",
+      "fillCount": 907,
+      "notionalUsd": 16176794.42631424,
+      "openingFeesUsd": 11114.712947000002,
+      "totalFeesUsd": -3219.4707612512407,
+      "actions": {
+        "Open": 364,
+        "Close": 335,
+        "StopLoss": 80,
+        "RemoveCollateral": 30,
+        "Liquidation": 81,
+        "TakeProfit": 17
+      },
+      "sides": {
+        "B": 728,
+        "S": 179
+      }
+    },
+    {
+      "event": "mar9_10_cluster",
+      "segment": "pre7",
+      "start": "2026-03-02T00:00:00Z",
+      "end": "2026-03-09T00:00:00Z",
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "rawPath": "data/raw/activity_windows/WTI_7_mar9_10_cluster_pre7.json",
+      "fillCount": 4500,
+      "notionalUsd": 369131580.9425637,
+      "openingFeesUsd": 310015.7433469997,
+      "totalFeesUsd": 484968.46291561634,
+      "actions": {
+        "Close": 1629,
+        "Open": 2190,
+        "StopLoss": 212,
+        "RemoveCollateral": 149,
+        "TakeProfit": 180,
+        "Liquidation": 140
+      },
+      "sides": {
+        "B": 3615,
+        "S": 885
+      }
+    },
+    {
+      "event": "mar9_10_cluster",
+      "segment": "event",
+      "start": "2026-03-09T00:00:00Z",
+      "end": "2026-03-11T00:00:00Z",
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "rawPath": "data/raw/activity_windows/WTI_7_mar9_10_cluster_event.json",
+      "fillCount": 3798,
+      "notionalUsd": 388733337.0392723,
+      "openingFeesUsd": 287460.4490830002,
+      "totalFeesUsd": 1200962.2722910375,
+      "actions": {
+        "Liquidation": 340,
+        "StopLoss": 293,
+        "Open": 1749,
+        "Close": 1278,
+        "TakeProfit": 70,
+        "RemoveCollateral": 68
+      },
+      "sides": {
+        "B": 3249,
+        "S": 549
+      }
+    },
+    {
+      "event": "mar9_10_cluster",
+      "segment": "post7",
+      "start": "2026-03-11T00:00:00Z",
+      "end": "2026-03-18T00:00:00Z",
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "rawPath": "data/raw/activity_windows/WTI_7_mar9_10_cluster_post7.json",
+      "fillCount": 2412,
+      "notionalUsd": 253804501.15258184,
+      "openingFeesUsd": 214979.83601499975,
+      "totalFeesUsd": 424737.4418079712,
+      "actions": {
+        "Open": 1038,
+        "Close": 1124,
+        "StopLoss": 149,
+        "RemoveCollateral": 20,
+        "Liquidation": 43,
+        "TakeProfit": 38
+      },
+      "sides": {
+        "B": 1974,
+        "S": 438
+      }
+    },
+    {
+      "event": "apr13_canonical",
+      "segment": "pre7",
+      "start": "2026-04-06T00:00:00Z",
+      "end": "2026-04-13T00:00:00Z",
+      "label": "BRENT",
+      "pairId": 55,
+      "symbol": "BRENT-USD",
+      "rawPath": "data/raw/activity_windows/BRENT_55_apr13_canonical_pre7.json",
+      "fillCount": 727,
+      "notionalUsd": 164849132.99822408,
+      "openingFeesUsd": 102066.16286200003,
+      "totalFeesUsd": 194774.20046539605,
+      "actions": {
+        "Close": 229,
+        "Open": 287,
+        "StopLoss": 28,
+        "RemoveCollateral": 81,
+        "TakeProfit": 56,
+        "Liquidation": 46
+      },
+      "sides": {
+        "B": 362,
+        "S": 365
+      }
+    },
+    {
+      "event": "apr13_canonical",
+      "segment": "event",
+      "start": "2026-04-13T00:00:00Z",
+      "end": "2026-04-14T00:00:00Z",
+      "label": "BRENT",
+      "pairId": 55,
+      "symbol": "BRENT-USD",
+      "rawPath": "data/raw/activity_windows/BRENT_55_apr13_canonical_event.json",
+      "fillCount": 51,
+      "notionalUsd": 131567.50461912408,
+      "openingFeesUsd": 80.47676599999997,
+      "totalFeesUsd": 13.793419338530086,
+      "actions": {
+        "Open": 20,
+        "Close": 22,
+        "StopLoss": 3,
+        "TakeProfit": 2,
+        "Liquidation": 4
+      },
+      "sides": {
+        "B": 34,
+        "S": 17
+      }
+    },
+    {
+      "event": "apr13_canonical",
+      "segment": "post7",
+      "start": "2026-04-14T00:00:00Z",
+      "end": "2026-04-21T00:00:00Z",
+      "label": "BRENT",
+      "pairId": 55,
+      "symbol": "BRENT-USD",
+      "rawPath": "data/raw/activity_windows/BRENT_55_apr13_canonical_post7.json",
+      "fillCount": 163,
+      "notionalUsd": 855287.9719117617,
+      "openingFeesUsd": 593.9067890000001,
+      "totalFeesUsd": 431.2847302013011,
+      "actions": {
+        "Close": 63,
+        "Open": 70,
+        "StopLoss": 21,
+        "Liquidation": 5,
+        "RemoveCollateral": 3,
+        "TakeProfit": 1
+      },
+      "sides": {
+        "B": 129,
+        "S": 34
+      }
+    },
+    {
+      "event": "mar9_10_cluster",
+      "segment": "pre7",
+      "start": "2026-03-02T00:00:00Z",
+      "end": "2026-03-09T00:00:00Z",
+      "label": "BRENT",
+      "pairId": 55,
+      "symbol": "BRENT-USD",
+      "rawPath": "data/raw/activity_windows/BRENT_55_mar9_10_cluster_pre7.json",
+      "fillCount": 0,
+      "notionalUsd": 0,
+      "openingFeesUsd": 0,
+      "totalFeesUsd": 0,
+      "actions": {},
+      "sides": {}
+    },
+    {
+      "event": "mar9_10_cluster",
+      "segment": "event",
+      "start": "2026-03-09T00:00:00Z",
+      "end": "2026-03-11T00:00:00Z",
+      "label": "BRENT",
+      "pairId": 55,
+      "symbol": "BRENT-USD",
+      "rawPath": "data/raw/activity_windows/BRENT_55_mar9_10_cluster_event.json",
+      "fillCount": 0,
+      "notionalUsd": 0,
+      "openingFeesUsd": 0,
+      "totalFeesUsd": 0,
+      "actions": {},
+      "sides": {}
+    },
+    {
+      "event": "mar9_10_cluster",
+      "segment": "post7",
+      "start": "2026-03-11T00:00:00Z",
+      "end": "2026-03-18T00:00:00Z",
+      "label": "BRENT",
+      "pairId": 55,
+      "symbol": "BRENT-USD",
+      "rawPath": "data/raw/activity_windows/BRENT_55_mar9_10_cluster_post7.json",
+      "fillCount": 0,
+      "notionalUsd": 0,
+      "openingFeesUsd": 0,
+      "totalFeesUsd": 0,
+      "actions": {},
+      "sides": {}
+    }
+  ],
+  "errors": []
+}

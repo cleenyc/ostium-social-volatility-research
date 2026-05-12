@@ -1,0 +1,24 @@
+{
+  "name": "ostium-social-volatility-backtest",
+  "version": "0.1.0",
+  "author": "Chris Lee",
+  "description": "Reproducible research kit for testing whether Ostium market-specific social posts align with market volatility and protocol activity, starting with oil/Hormuz.",
+  "type": "module",
+  "scripts": {
+    "validate": "PYTHON=${PYTHON:-python3}; PYTHONPATH=src $PYTHON -m ostium_social_volatility validate --study configs/study.oil-hormuz.example.yaml",
+    "report": "PYTHON=${PYTHON:-python3}; PYTHONPATH=src $PYTHON -m ostium_social_volatility report --study configs/study.oil-hormuz.example.yaml",
+    "run:cached": "PYTHON=${PYTHON:-python3}; PYTHONPATH=src $PYTHON -m ostium_social_volatility run --study configs/study.oil-hormuz.example.yaml --mode cached",
+    "dashboard:data": "PYTHON=${PYTHON:-python3}; PYTHONPATH=src $PYTHON scripts/build_dashboard_data.py --study configs/study.oil-hormuz.example.yaml --out-dir dashboard/data",
+    "test": "PYTHON=${PYTHON:-python3}; PYTHONPATH=src $PYTHON -m pytest -q",
+    "collect:activity": "node scripts/collect_activity_windows.mjs",
+    "collect:all-post-activity": "node scripts/collect_all_post_activity_windows.mjs",
+    "collect:event-study-activity": "node scripts/collect_event_study_activity_windows.mjs",
+    "collect:volatility-control-activity": "node scripts/collect_volatility_control_activity_windows.mjs",
+    "smoke:activity": "node scripts/smoke_ostium_activity.mjs"
+  },
+  "private": true,
+  "dependencies": {
+    "@ostium/builder-sdk": "^0.2.0",
+    "viem": "^2.48.11"
+  }
+}

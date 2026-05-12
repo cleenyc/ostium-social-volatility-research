@@ -1,0 +1,737 @@
+{
+  "generatedAt": "2026-05-11T20:13:05.259Z",
+  "sdk": "@ostium/builder-sdk",
+  "ok": true,
+  "pairCandidates": {
+    "CL_USD": [
+      {
+        "pairId": "7",
+        "pairTo": "USD",
+        "pairFrom": "WTI",
+        "minSz": "0.05204339544851362",
+        "maxBSz": "294627.67099116486",
+        "maxSSz": "310907.6417611003",
+        "minNtl": "5.0",
+        "maxLeverage": 20,
+        "overnightMaxLeverage": 0,
+        "rolloverFeePerBlock": "-3.569534833e-9",
+        "openInterest": "1824000.189292076",
+        "buyOpenInterest": "1694038.364326254",
+        "sellOpenInterest": "129961.82496582215",
+        "maxOpenInterest": "30000000",
+        "category": "commodities",
+        "rolloverRate": {
+          "long": "0.036559121276160005",
+          "short": "-0.045682961276160006"
+        },
+        "midPx": "96.07367",
+        "askPx": "96.11690315150001",
+        "bidPx": "96.03067000000001",
+        "isMarketOpen": true,
+        "isDayTradingClosed": false,
+        "secondsToToggleIsDayTradingClosed": -1
+      }
+    ],
+    "BRENT_USD": [
+      {
+        "pairId": "55",
+        "pairTo": "USD",
+        "pairFrom": "BRENT",
+        "minSz": "0.048574026865517074",
+        "maxBSz": "87100.51737907196",
+        "maxSSz": "96291.15699700004",
+        "minNtl": "5.0",
+        "maxLeverage": 20,
+        "overnightMaxLeverage": 0,
+        "rolloverFeePerBlock": "-3.291037428e-9",
+        "openInterest": "1122455.1256771965",
+        "buyOpenInterest": "1034249.8862385848",
+        "sellOpenInterest": "88205.23943861175",
+        "maxOpenInterest": "10000000",
+        "category": "commodities",
+        "rolloverRate": {
+          "long": "0.03335083117056",
+          "short": "-0.042474671170559995"
+        },
+        "midPx": "102.93567",
+        "askPx": "102.98199105149999",
+        "bidPx": "102.8893489485",
+        "isMarketOpen": true,
+        "isDayTradingClosed": false,
+        "secondsToToggleIsDayTradingClosed": -1
+      }
+    ]
+  },
+  "windows": {
+    "CL_USD_7_mar9_10_cluster": {
+      "label": "CL_USD",
+      "pairId": "7",
+      "startIso": "2026-03-09T00:00:00Z",
+      "endIso": "2026-03-11T00:00:00Z",
+      "fillCount": 3798,
+      "sample": [
+        {
+          "pairId": "7",
+          "pairFrom": "WTI",
+          "pairTo": "USD",
+          "side": "B",
+          "action": "Liquidation",
+          "type": "Limit",
+          "px": "83.94",
+          "szi": "2.188782489740082",
+          "collateralUsed": "9.6",
+          "fees": {
+            "opening": "0",
+            "rollover": "0",
+            "liquidation": "1.326403",
+            "builder": "0",
+            "priceImpact": "0.9262696731612092"
+          },
+          "time": 1773186551000,
+          "hash": "0xef165c97b3b0683e34e7a222716f60ace1ddaa278308d4b0dd88d996228ff012"
+        },
+        {
+          "pairId": "7",
+          "pairFrom": "WTI",
+          "pairTo": "USD",
+          "side": "B",
+          "action": "StopLoss",
+          "type": "Limit",
+          "px": "83.94",
+          "szi": "97.38505914573743",
+          "collateralUsed": "557.075",
+          "fees": {
+            "opening": "0",
+            "rollover": "0",
+            "liquidation": "0",
+            "builder": "0",
+            "priceImpact": "41.21233029254499"
+          },
+          "time": 1773186551000,
+          "hash": "0xfdcf67c1ee4eb0910a6ab3193aa297f93f923572038f72fe80b4a29227b098b5"
+        },
+        {
+          "pairId": "7",
+          "pairFrom": "WTI",
+          "pairTo": "USD",
+          "side": "S",
+          "action": "Open",
+          "type": "Market",
+          "px": "84.41",
+          "szi": "25008.758463582515",
+          "collateralUsed": "234554.366879",
+          "fees": {
+            "opening": "3209.817843",
+            "rollover": "0",
+            "liquidation": "0",
+            "builder": "0",
+            "priceImpact": "10503.678554704698"
+          },
+          "time": 1773186349000,
+          "hash": "0xb006c682a5ca73b5b24f4589d3f18e12bd514f6d5c291c1326355a11698d781d"
+        },
+        {
+          "pairId": "7",
+          "pairFrom": "WTI",
+          "pairTo": "USD",
+          "side": "S",
+          "action": "Open",
+          "type": "Market",
+          "px": "84.52",
+          "szi": "29966.131380773782",
+          "collateralUsed": "281415.269367",
+          "fees": {
+            "opening": "3851.097299",
+            "rollover": "0",
+            "liquidation": "0",
+            "builder": "0",
+            "priceImpact": "12660.690508376905"
+          },
+          "time": 1773186292000,
+          "hash": "0x82e4471488ecc244b6c3cab95b91202214e6a4a6b5f12c4e5d8969081fe132f4"
+        },
+        {
+          "pairId": "7",
+          "pairFrom": "WTI",
+          "pairTo": "USD",
+          "side": "B",
+          "action": "Open",
+          "type": "Market",
+          "px": "85.21",
+          "szi": "5.857880530454172",
+          "collateralUsed": "499.15",
+          "fees": {
+            "opening": "0.75",
+            "rollover": "0",
+            "liquidation": "0",
+            "builder": "0",
+            "priceImpact": "2.372441614833946"
+          },
+          "time": 1773186269000,
+          "hash": "0xc25fe7164696ddab653400b6d422081536e9ea4f919bdaf09bbd41fe0d3020f9"
+        }
+      ],
+      "pxTimesSizeNotional": 388733337.0392723,
+      "openingFees": 287460.4490830002,
+      "actions": {
+        "Liquidation": 340,
+        "StopLoss": 293,
+        "Open": 1749,
+        "Close": 1278,
+        "TakeProfit": 70,
+        "RemoveCollateral": 68
+      },
+      "sides": {
+        "B": 3249,
+        "S": 549
+      }
+    },
+    "CL_USD_7_apr13_canonical": {
+      "label": "CL_USD",
+      "pairId": "7",
+      "startIso": "2026-04-13T00:00:00Z",
+      "endIso": "2026-04-14T00:00:00Z",
+      "fillCount": 365,
+      "sample": [
+        {
+          "pairId": "7",
+          "pairFrom": "WTI",
+          "pairTo": "USD",
+          "side": "B",
+          "action": "Open",
+          "type": "Market",
+          "px": "91.49633000000001",
+          "szi": "0.43548939285324334",
+          "collateralUsed": "15.325262",
+          "fees": {
+            "opening": "0.060394",
+            "rollover": "0",
+            "liquidation": "0",
+            "builder": "0",
+            "priceImpact": "0.01785506510698159"
+          },
+          "time": 1776124611000,
+          "hash": "0x70aad6c1e9febbb159276c9dd12e302dfc95c12b4463126839081a053d566520"
+        },
+        {
+          "pairId": "7",
+          "pairFrom": "WTI",
+          "pairTo": "USD",
+          "side": "B",
+          "action": "Open",
+          "type": "Market",
+          "px": "91.49633000000001",
+          "szi": "0.9971103278131482",
+          "collateralUsed": "35.089206",
+          "fees": {
+            "opening": "0.137775",
+            "rollover": "0",
+            "liquidation": "0",
+            "builder": "0",
+            "priceImpact": "0.0408815234403359"
+          },
+          "time": 1776124610000,
+          "hash": "0xaa437dc6c7ab5ee7d27c5efddbb05d79464c55c72bc01db4891f25a1849cc5f3"
+        },
+        {
+          "pairId": "7",
+          "pairFrom": "WTI",
+          "pairTo": "USD",
+          "side": "B",
+          "action": "StopLoss",
+          "type": "Limit",
+          "px": "91.45633",
+          "szi": "64.68278679628251",
+          "collateralUsed": "307.1",
+          "fees": {
+            "opening": "0",
+            "rollover": "-3.892868",
+            "liquidation": "0",
+            "builder": "0",
+            "priceImpact": "0.646686448239178"
+          },
+          "time": 1776124600000,
+          "hash": "0x35e55b9579bba7351c82c004750e844b4dceca6fa69d9420c89f77c7111c77f6"
+        },
+        {
+          "pairId": "7",
+          "pairFrom": "WTI",
+          "pairTo": "USD",
+          "side": "B",
+          "action": "Close",
+          "type": "Market",
+          "px": "92.0618835015",
+          "szi": "49.94944187634464",
+          "collateralUsed": "407.688681",
+          "fees": {
+            "opening": "0",
+            "rollover": "-50.24555",
+            "liquidation": "0",
+            "builder": "0",
+            "priceImpact": "2.068367099347799"
+          },
+          "time": 1776123398000,
+          "hash": "0x3b9cb849632e467c77ab0353c2d297992f26594400da9455f63a8685e9c90615"
+        },
+        {
+          "pairId": "7",
+          "pairFrom": "WTI",
+          "pairTo": "USD",
+          "side": "B",
+          "action": "Close",
+          "type": "Market",
+          "px": "92.245",
+          "szi": "128.23990212155235",
+          "collateralUsed": "1046.697513",
+          "fees": {
+            "opening": "0",
+            "rollover": "-128.862234",
+            "liquidation": "0",
+            "builder": "0",
+            "priceImpact": "3.3964059777772753"
+          },
+          "time": 1776122826000,
+          "hash": "0x67728ce973420550f795f9fdb932f6f26448baef421667b907f7d8f2843ccbbb"
+        }
+      ],
+      "pxTimesSizeNotional": 6555474.1321150875,
+      "openingFees": 5176.480798000002,
+      "actions": {
+        "Open": 189,
+        "StopLoss": 19,
+        "Close": 117,
+        "RemoveCollateral": 27,
+        "Liquidation": 8,
+        "TakeProfit": 5
+      },
+      "sides": {
+        "B": 280,
+        "S": 85
+      }
+    },
+    "CL_USD_7_recent": {
+      "fillCount": 10,
+      "sample": [
+        {
+          "pairId": "7",
+          "pairFrom": "WTI",
+          "pairTo": "USD",
+          "side": "B",
+          "action": "Open",
+          "type": "Market",
+          "px": "95.55167",
+          "szi": "20.70084175399551",
+          "collateralUsed": "98.9",
+          "fees": {
+            "opening": "1",
+            "rollover": "0",
+            "liquidation": "0",
+            "builder": "0",
+            "priceImpact": "0.5175210438502995"
+          },
+          "time": 1778528992000,
+          "hash": "0x1b43f336e8e046b64cf3101c3c54f834a0020038092b9c5a5dc1b515401e2770"
+        },
+        {
+          "pairId": "7",
+          "pairFrom": "WTI",
+          "pairTo": "USD",
+          "side": "B",
+          "action": "Close",
+          "type": "Market",
+          "px": "95.30076534850001",
+          "szi": "1.3419365322289745",
+          "collateralUsed": "7.9",
+          "fees": {
+            "opening": "0",
+            "rollover": "-0.570725",
+            "liquidation": "0",
+            "builder": "0",
+            "priceImpact": "0.05752352477057883"
+          },
+          "time": 1778526750000,
+          "hash": "0x076d798a8917fdcd3738c3ea350e89ddab599360588c8e119e0a0cbe252fa6a2"
+        },
+        {
+          "pairId": "7",
+          "pairFrom": "WTI",
+          "pairTo": "USD",
+          "side": "B",
+          "action": "Open",
+          "type": "Market",
+          "px": "95.51596285",
+          "szi": "0.25584728741495383",
+          "collateralUsed": "4.8875",
+          "fees": {
+            "opening": "0.0125",
+            "rollover": "0",
+            "liquidation": "0",
+            "builder": "0",
+            "priceImpact": "0.010991928632110634"
+          },
+          "time": 1778525849000,
+          "hash": "0x93940f9eb6f621e1c77b86108c8478add0ef1f61390a78d1776c94e713600799"
+        },
+        {
+          "pairId": "7",
+          "pairFrom": "WTI",
+          "pairTo": "USD",
+          "side": "B",
+          "action": "Close",
+          "type": "Market",
+          "px": "95.98661657649998",
+          "szi": "999.8515297873568",
+          "collateralUsed": "24609.793652",
+          "fees": {
+            "opening": "0",
+            "rollover": "-1345.580519",
+            "liquidation": "0",
+            "builder": "0",
+            "priceImpact": "43.168138777988844"
+          },
+          "time": 1778523726000,
+          "hash": "0xb8026745a54e8471b2dc83818c471eb35d0a03edff049cea3ffce60b166f6d1e"
+        },
+        {
+          "pairId": "7",
+          "pairFrom": "WTI",
+          "pairTo": "USD",
+          "side": "B",
+          "action": "Open",
+          "type": "Market",
+          "px": "95.6797065015",
+          "szi": "31.187386637240774",
+          "collateralUsed": "298.4",
+          "fees": {
+            "opening": "1.5",
+            "rollover": "0",
+            "liquidation": "0",
+            "builder": "0",
+            "priceImpact": "1.342196011795068"
+          },
+          "time": 1778521416000,
+          "hash": "0x5d76ab4561cf79c01752a204a1b8fa4fcc3d0cd9ec8c2929ab66048033f74697"
+        }
+      ]
+    },
+    "BRENT_USD_55_mar9_10_cluster": {
+      "label": "BRENT_USD",
+      "pairId": "55",
+      "startIso": "2026-03-09T00:00:00Z",
+      "endIso": "2026-03-11T00:00:00Z",
+      "fillCount": 0,
+      "sample": [],
+      "pxTimesSizeNotional": 0,
+      "openingFees": 0,
+      "actions": {},
+      "sides": {}
+    },
+    "BRENT_USD_55_apr13_canonical": {
+      "label": "BRENT_USD",
+      "pairId": "55",
+      "startIso": "2026-04-13T00:00:00Z",
+      "endIso": "2026-04-14T00:00:00Z",
+      "fillCount": 51,
+      "sample": [
+        {
+          "pairId": "55",
+          "pairFrom": "BRENT",
+          "pairTo": "USD",
+          "side": "B",
+          "action": "Open",
+          "type": "Market",
+          "px": "95.3625638515",
+          "szi": "30.735331367183004",
+          "collateralUsed": "195.4",
+          "fees": {
+            "opening": "4.5",
+            "rollover": "0",
+            "liquidation": "0",
+            "builder": "0",
+            "priceImpact": "1.3183567394667115"
+          },
+          "time": 1776113141000,
+          "hash": "0x9f9647d1cb217482b5d0e851fafe476ef5e344a2fa251f79238e71354b5c625b"
+        },
+        {
+          "pairId": "55",
+          "pairFrom": "BRENT",
+          "pairTo": "USD",
+          "side": "S",
+          "action": "Close",
+          "type": "Market",
+          "px": "95.7173834485",
+          "szi": "0.19517177687067258",
+          "collateralUsed": "2.42",
+          "fees": {
+            "opening": "0",
+            "rollover": "0.01498",
+            "liquidation": "0",
+            "builder": "0",
+            "priceImpact": "0.00841038398507044"
+          },
+          "time": 1776109421000,
+          "hash": "0x9d2ae56a3019d60e78fe19d26810ee617a1eb5f0ce7019c16e320d3764142a99"
+        },
+        {
+          "pairId": "55",
+          "pairFrom": "BRENT",
+          "pairTo": "USD",
+          "side": "B",
+          "action": "Open",
+          "type": "Limit",
+          "px": "95.39724945299999",
+          "szi": "5.1521401593674945",
+          "collateralUsed": "49.15",
+          "fees": {
+            "opening": "0.75",
+            "rollover": "0",
+            "liquidation": "0",
+            "builder": "0",
+            "priceImpact": "0.2210755160176824"
+          },
+          "time": 1776108660000,
+          "hash": "0x5da5f55c8cca1be67e85bbe774d385082c1d31b776af4a133834c253a2d4a07b"
+        },
+        {
+          "pairId": "55",
+          "pairFrom": "BRENT",
+          "pairTo": "USD",
+          "side": "S",
+          "action": "Close",
+          "type": "Market",
+          "px": "95.4692718485",
+          "szi": "40.437047698398054",
+          "collateralUsed": "193.9",
+          "fees": {
+            "opening": "0",
+            "rollover": "0.090355",
+            "liquidation": "0",
+            "builder": "0",
+            "priceImpact": "1.7380050770461672"
+          },
+          "time": 1776107409000,
+          "hash": "0x733155dde692cbb154ed4db9586c8f323ebe05be313274255f55da8b1e208cb7"
+        },
+        {
+          "pairId": "55",
+          "pairFrom": "BRENT",
+          "pairTo": "USD",
+          "side": "B",
+          "action": "Close",
+          "type": "Market",
+          "px": "95.06620095",
+          "szi": "12.417882950547325",
+          "collateralUsed": "118.1",
+          "fees": {
+            "opening": "0",
+            "rollover": "-0.000292",
+            "liquidation": "0",
+            "builder": "0",
+            "priceImpact": "0.5309954822106977"
+          },
+          "time": 1776106725000,
+          "hash": "0x957062b69e8efd011e330e48789fff91a9acdbb79318e6816f9f56e526f1254a"
+        }
+      ],
+      "pxTimesSizeNotional": 131567.50461912408,
+      "openingFees": 80.47676599999997,
+      "actions": {
+        "Open": 20,
+        "Close": 22,
+        "StopLoss": 3,
+        "TakeProfit": 2,
+        "Liquidation": 4
+      },
+      "sides": {
+        "B": 34,
+        "S": 17
+      }
+    },
+    "BRENT_USD_55_recent": {
+      "fillCount": 10,
+      "sample": [
+        {
+          "pairId": "55",
+          "pairFrom": "BRENT",
+          "pairTo": "USD",
+          "side": "B",
+          "action": "Close",
+          "type": "Market",
+          "px": "102.4142228515",
+          "szi": "3.858332158788231",
+          "collateralUsed": "24.955",
+          "fees": {
+            "opening": "0",
+            "rollover": "-1.664204",
+            "liquidation": "0",
+            "builder": "0",
+            "priceImpact": "0.1777366587988148"
+          },
+          "time": 1778526779000,
+          "hash": "0xb94b6f2a1ef5cecab9444a7dbe47e0f3f50c97c98c70a8b4c46dc2e197b22b85"
+        },
+        {
+          "pairId": "55",
+          "pairFrom": "BRENT",
+          "pairTo": "USD",
+          "side": "S",
+          "action": "Open",
+          "type": "Market",
+          "px": "102.4741958515",
+          "szi": "97.57334436163462",
+          "collateralUsed": "999.875",
+          "fees": {
+            "opening": "5.025",
+            "rollover": "0",
+            "liquidation": "0",
+            "builder": "0",
+            "priceImpact": "4.501463158422868"
+          },
+          "time": 1778526682000,
+          "hash": "0xb8b65611d18550210635014308f913324a19f326433c5c504fdb51a759481b62"
+        },
+        {
+          "pairId": "55",
+          "pairFrom": "BRENT",
+          "pairTo": "USD",
+          "side": "S",
+          "action": "Open",
+          "type": "Market",
+          "px": "102.6521157515",
+          "szi": "0.19998272660736682",
+          "collateralUsed": "4.10573",
+          "fees": {
+            "opening": "0.01054",
+            "rollover": "0",
+            "liquidation": "0",
+            "builder": "0",
+            "priceImpact": "0.009242051423136171"
+          },
+          "time": 1778522273000,
+          "hash": "0x750ee589acf33429db2e0421e6d878f5f0cd48801a5a5ba445fd07917891fb1f"
+        },
+        {
+          "pairId": "55",
+          "pairFrom": "BRENT",
+          "pairTo": "USD",
+          "side": "B",
+          "action": "Open",
+          "type": "Market",
+          "px": "102.2573250985",
+          "szi": "27.647163636216323",
+          "collateralUsed": "188.475",
+          "fees": {
+            "opening": "1.425",
+            "rollover": "0",
+            "liquidation": "0",
+            "builder": "0",
+            "priceImpact": "1.2716340146930118"
+          },
+          "time": 1778511886000,
+          "hash": "0xcb34575cf19dba88c60a07fdc52bb7338547a335d68f42a71d6baba86724ea97"
+        },
+        {
+          "pairId": "55",
+          "pairFrom": "BRENT",
+          "pairTo": "USD",
+          "side": "B",
+          "action": "Close",
+          "type": "Market",
+          "px": "102.24733",
+          "szi": "17.09011540006997",
+          "collateralUsed": "133.576609",
+          "fees": {
+            "opening": "0",
+            "rollover": "-6.871217",
+            "liquidation": "0",
+            "builder": "0",
+            "priceImpact": "0.751318449240655"
+          },
+          "time": 1778509977000,
+          "hash": "0x6cb6f06b477109b2e68097141b32d9a82b65c9ac8b6d99371a5be0c4072a1cae"
+        }
+      ]
+    }
+  },
+  "errors": [],
+  "rawFiles": {
+    "pairs": "data/raw/source_smoke/sdk_get_pairs_raw.json",
+    "fills_CL_USD_7_mar9_10_cluster": "data/raw/source_smoke/sdk_get_fills_by_time_CL_USD_7_mar9_10_cluster.json",
+    "fills_CL_USD_7_apr13_canonical": "data/raw/source_smoke/sdk_get_fills_by_time_CL_USD_7_apr13_canonical.json",
+    "fills_CL_USD_7_recent": "data/raw/source_smoke/sdk_get_fills_recent_CL_USD_7_recent.json",
+    "fills_BRENT_USD_55_mar9_10_cluster": "data/raw/source_smoke/sdk_get_fills_by_time_BRENT_USD_55_mar9_10_cluster.json",
+    "fills_BRENT_USD_55_apr13_canonical": "data/raw/source_smoke/sdk_get_fills_by_time_BRENT_USD_55_apr13_canonical.json",
+    "fills_BRENT_USD_55_recent": "data/raw/source_smoke/sdk_get_fills_recent_BRENT_USD_55_recent.json"
+  },
+  "isReadOnly": true,
+  "pairCount": 71,
+  "selectedPairs": [
+    {
+      "label": "CL_USD",
+      "pairId": "7",
+      "pairFrom": "WTI",
+      "pairTo": "USD",
+      "raw": {
+        "pairId": "7",
+        "pairTo": "USD",
+        "pairFrom": "WTI",
+        "minSz": "0.05204339544851362",
+        "maxBSz": "294627.67099116486",
+        "maxSSz": "310907.6417611003",
+        "minNtl": "5.0",
+        "maxLeverage": 20,
+        "overnightMaxLeverage": 0,
+        "rolloverFeePerBlock": "-3.569534833e-9",
+        "openInterest": "1824000.189292076",
+        "buyOpenInterest": "1694038.364326254",
+        "sellOpenInterest": "129961.82496582215",
+        "maxOpenInterest": "30000000",
+        "category": "commodities",
+        "rolloverRate": {
+          "long": "0.036559121276160005",
+          "short": "-0.045682961276160006"
+        },
+        "midPx": "96.07367",
+        "askPx": "96.11690315150001",
+        "bidPx": "96.03067000000001",
+        "isMarketOpen": true,
+        "isDayTradingClosed": false,
+        "secondsToToggleIsDayTradingClosed": -1
+      }
+    },
+    {
+      "label": "BRENT_USD",
+      "pairId": "55",
+      "pairFrom": "BRENT",
+      "pairTo": "USD",
+      "raw": {
+        "pairId": "55",
+        "pairTo": "USD",
+        "pairFrom": "BRENT",
+        "minSz": "0.048574026865517074",
+        "maxBSz": "87100.51737907196",
+        "maxSSz": "96291.15699700004",
+        "minNtl": "5.0",
+        "maxLeverage": 20,
+        "overnightMaxLeverage": 0,
+        "rolloverFeePerBlock": "-3.291037428e-9",
+        "openInterest": "1122455.1256771965",
+        "buyOpenInterest": "1034249.8862385848",
+        "sellOpenInterest": "88205.23943861175",
+        "maxOpenInterest": "10000000",
+        "category": "commodities",
+        "rolloverRate": {
+          "long": "0.03335083117056",
+          "short": "-0.042474671170559995"
+        },
+        "midPx": "102.93567",
+        "askPx": "102.98199105149999",
+        "bidPx": "102.8893489485",
+        "isMarketOpen": true,
+        "isDayTradingClosed": false,
+        "secondsToToggleIsDayTradingClosed": -1
+      }
+    }
+  ]
+}

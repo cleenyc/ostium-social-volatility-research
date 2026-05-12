@@ -1,0 +1,187 @@
+# Ostium Social Volatility Research Kit — Example Study Config
+# Study: oil/Hormuz v1.4-compatible rerun
+# Status: Public reference config for the cached oil/Hormuz reproducibility path.
+
+schema_version: 0.1
+
+study:
+  id: oil_hormuz
+  title: "Ostium Oil/Hormuz Social Volatility Study"
+  account: "Ostium"
+  description: "Analyze whether Ostium oil/Hormuz posts align with WTI/Brent volatility and Ostium market-specific activity."
+  timezone: "UTC"
+  start_time: "2026-02-10T00:00:00Z"
+  end_time: "2026-05-11T23:59:59Z"
+
+social:
+  provider_priority:
+    - xurl_full_archive
+    - x_api_full_archive
+  x:
+    query: "from:Ostium oil"
+    required_fields:
+      - id
+      - text
+      - created_at
+      - public_metrics
+      - conversation_id
+    optional_fields:
+      - impressions
+      - bookmarks
+    notes:
+      - "Historical runs require X full-archive search, not recent search only."
+      - "If using xurl, prefer raw /2/tweets/search/all with app auth for historical windows."
+  post_types:
+    include:
+      - original
+      - reply
+      - retweet
+    headline_default:
+      - original
+  public_output:
+    prefer_tweet_urls: true
+    include_full_text: review_before_publication
+
+classification:
+  include_terms:
+    - oil
+    - crude
+    - brent
+    - wti
+    - hormuz
+    - CL
+  categories:
+    oil:
+      - oil
+    crude:
+      - crude
+    brent:
+      - brent
+    wti_cl:
+      - wti
+      - CL
+      - "$CL"
+    hormuz:
+      - hormuz
+      - "strait of hormuz"
+
+markets:
+  - label: WTI
+    ostium_builder_symbol: "CL-USD"
+    ostium_pair_id: 7
+    display_name: "WTI / Crude Oil"
+    include_in_headline: true
+  - label: BRENT
+    ostium_builder_symbol: "BRENT-USD"
+    ostium_pair_id: 55
+    display_name: "Brent Oil"
+    include_in_headline: true
+
+windows:
+  calendar:
+    baseline_days: 30
+    primary_event:
+      label: event0_2
+      start_day_offset: 0
+      end_day_offset_exclusive: 3
+      display: "0-2d"
+    robustness_event:
+      label: event1_2
+      start_day_offset: 1
+      end_day_offset_exclusive: 3
+      display: "1-2d"
+    context:
+      label: context0_7
+      start_day_offset: 0
+      end_day_offset_exclusive: 8
+      display: "0-7d"
+  post_time:
+    baseline_days: 30
+    robustness:
+      - label: post_event48h
+        hours_after_post: 48
+      - label: post_event72h
+        hours_after_post: 72
+
+volatility:
+  baseline_days: 30
+  min_baseline_observations: 10
+  metrics:
+    - range_pct
+    - abs_return_pct
+  high_volatility_definition:
+    range_lift_pct_gt: 0
+    range_percentile_gte: 75
+
+activity:
+  source: ostium_sdk
+  sdk:
+    client_mode: read_only
+    user: ALL
+    method: getFillsByTime
+    limit: 50000
+  metrics:
+    primary_notional_formula: "abs(px * szi)"
+    include:
+      - fill_count
+      - fills_per_day
+      - notional_usd
+      - notional_usd_per_day
+      - opening_fees_usd
+      - opening_fees_usd_per_day
+      - total_fees_usd
+      - actions
+      - sides
+
+paths:
+  # Public repo paths are relative to the repository root.
+  raw:
+    x_posts: "data/raw/social/x_ostium_oil_90d.json"
+    market_ohlc_dir: "data/raw/market_ohlc"
+    event_study_activity_windows: "data/raw/event_study_activity_windows/event_study_activity_windows_summary.json"
+    volatility_control_activity_windows: "data/raw/volatility_control_activity_windows/volatility_control_activity_windows_summary.json"
+  processed:
+    posts: "data/processed/oil_posts.csv"
+    market_volatility_event_windows: "data/processed/market_volatility_event_windows.csv"
+    event_study_activity_windows: "data/processed/event_study_activity_windows.csv"
+    volatility_control_days: "data/processed/volatility_control_days.csv"
+  reports:
+    event_study_md: "reports/ostium-oil-hormuz-event-study-v1_3.md"
+    event_study_csv: "reports/ostium-oil-hormuz-event-study-v1_3.csv"
+    volatility_control_md: "reports/ostium-oil-hormuz-volatility-control-v1_4.md"
+    volatility_control_csv: "reports/ostium-oil-hormuz-volatility-control-v1_4.csv"
+    public_report: "reports/ostium-social-volatility-public-report-draft.md"
+
+validation:
+  # Exact counts are oil/Hormuz fixture expectations for this reproducibility snapshot.
+  # New studies should omit fixture_expectations unless they intentionally
+  # want to lock validation to known fixture counts after a baseline run.
+  fixture_expectations:
+    event_study:
+      posts: 29
+      unique_post_dates: 21
+    markets:
+      - label: WTI
+        eligible_days: 75
+        high_vol_days: 25
+        high_vol_post_days: 10
+        high_vol_no_post_days: 15
+      - label: BRENT
+        eligible_days: 26
+        high_vol_days: 5
+        high_vol_post_days: 1
+        high_vol_no_post_days: 4
+  required_outputs:
+    - "reports/ostium-oil-hormuz-event-study-v1_3.csv"
+    - "reports/ostium-oil-hormuz-volatility-control-v1_4.csv"
+    - "data/processed/volatility_control_days.csv"
+  public_safety:
+    forbid_files:
+      - ".env"
+      - "google_token.json"
+      - "google_client_secret.json"
+      - ".xurl"
+    forbid_path_patterns:
+      - "auth"
+      - "token"
+      - "secret"

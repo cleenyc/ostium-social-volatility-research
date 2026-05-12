@@ -1,0 +1,6599 @@
+{
+  "generatedAt": "2026-05-12T03:55:01.206Z",
+  "methodology": {
+    "purpose": "Volatility-day control windows for comparing high-volatility days with oil posts vs high-volatility days without oil posts.",
+    "baseline": "30 calendar days before market date, end-exclusive",
+    "eventWindow": "market date through two calendar days after, start-inclusive/end-exclusive"
+  },
+  "pairs": [
+    {
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD"
+    },
+    {
+      "label": "BRENT",
+      "pairId": 55,
+      "symbol": "BRENT-USD"
+    }
+  ],
+  "datesByMarket": {
+    "WTI": [
+      "2026-02-01",
+      "2026-02-02",
+      "2026-02-03",
+      "2026-02-04",
+      "2026-02-05",
+      "2026-02-06",
+      "2026-02-08",
+      "2026-02-09",
+      "2026-02-10",
+      "2026-02-11",
+      "2026-02-12",
+      "2026-02-13",
+      "2026-02-15",
+      "2026-02-16",
+      "2026-02-17",
+      "2026-02-18",
+      "2026-02-19",
+      "2026-02-20",
+      "2026-02-22",
+      "2026-02-23",
+      "2026-02-24",
+      "2026-02-25",
+      "2026-02-26",
+      "2026-02-27",
+      "2026-03-01",
+      "2026-03-02",
+      "2026-03-03",
+      "2026-03-04",
+      "2026-03-05",
+      "2026-03-06",
+      "2026-03-08",
+      "2026-03-09",
+      "2026-03-10",
+      "2026-03-11",
+      "2026-03-12",
+      "2026-03-13",
+      "2026-03-15",
+      "2026-03-16",
+      "2026-03-17",
+      "2026-03-18",
+      "2026-03-19",
+      "2026-03-20",
+      "2026-03-22",
+      "2026-03-23",
+      "2026-03-24",
+      "2026-03-25",
+      "2026-03-26",
+      "2026-03-27",
+      "2026-03-29",
+      "2026-03-30",
+      "2026-03-31",
+      "2026-04-01",
+      "2026-04-02",
+      "2026-04-05",
+      "2026-04-06",
+      "2026-04-07",
+      "2026-04-08",
+      "2026-04-09",
+      "2026-04-10",
+      "2026-04-12",
+      "2026-04-13",
+      "2026-04-14",
+      "2026-04-15",
+      "2026-04-16",
+      "2026-04-17",
+      "2026-04-19",
+      "2026-04-20",
+      "2026-04-21",
+      "2026-04-22",
+      "2026-04-23",
+      "2026-04-24",
+      "2026-04-26",
+      "2026-04-27",
+      "2026-04-28",
+      "2026-04-29",
+      "2026-04-30",
+      "2026-05-01",
+      "2026-05-03",
+      "2026-05-04",
+      "2026-05-05",
+      "2026-05-06",
+      "2026-05-07",
+      "2026-05-08",
+      "2026-05-10",
+      "2026-05-11"
+    ],
+    "BRENT": [
+      "2026-03-20",
+      "2026-03-23",
+      "2026-03-24",
+      "2026-03-25",
+      "2026-03-26",
+      "2026-03-27",
+      "2026-03-30",
+      "2026-03-31",
+      "2026-04-01",
+      "2026-04-02",
+      "2026-04-06",
+      "2026-04-07",
+      "2026-04-08",
+      "2026-04-09",
+      "2026-04-10",
+      "2026-04-13",
+      "2026-04-14",
+      "2026-04-15",
+      "2026-04-16",
+      "2026-04-17",
+      "2026-04-20",
+      "2026-04-21",
+      "2026-04-22",
+      "2026-04-23",
+      "2026-04-24",
+      "2026-04-27",
+      "2026-04-28",
+      "2026-04-29",
+      "2026-04-30",
+      "2026-05-01",
+      "2026-05-04",
+      "2026-05-05",
+      "2026-05-06",
+      "2026-05-07",
+      "2026-05-08",
+      "2026-05-11"
+    ]
+  },
+  "windows": [
+    {
+      "date": "2026-03-20",
+      "segment": "baseline30",
+      "start": "2026-02-18T00:00:00.000Z",
+      "end": "2026-03-20T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "BRENT",
+      "pairId": 55,
+      "symbol": "BRENT-USD",
+      "fillCount": 0,
+      "notionalUsd": 0,
+      "openingFeesUsd": 0,
+      "totalFeesUsd": 0,
+      "actions": {},
+      "sides": {}
+    },
+    {
+      "date": "2026-03-20",
+      "segment": "event0_2",
+      "start": "2026-03-20T00:00:00.000Z",
+      "end": "2026-03-23T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "BRENT",
+      "pairId": 55,
+      "symbol": "BRENT-USD",
+      "fillCount": 0,
+      "notionalUsd": 0,
+      "openingFeesUsd": 0,
+      "totalFeesUsd": 0,
+      "actions": {},
+      "sides": {}
+    },
+    {
+      "date": "2026-03-23",
+      "segment": "baseline30",
+      "start": "2026-02-21T00:00:00.000Z",
+      "end": "2026-03-23T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "BRENT",
+      "pairId": 55,
+      "symbol": "BRENT-USD",
+      "fillCount": 0,
+      "notionalUsd": 0,
+      "openingFeesUsd": 0,
+      "totalFeesUsd": 0,
+      "actions": {},
+      "sides": {}
+    },
+    {
+      "date": "2026-03-23",
+      "segment": "event0_2",
+      "start": "2026-03-23T00:00:00.000Z",
+      "end": "2026-03-26T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "BRENT",
+      "pairId": 55,
+      "symbol": "BRENT-USD",
+      "fillCount": 145,
+      "notionalUsd": 75333941.88401164,
+      "openingFeesUsd": 60255.80885299998,
+      "totalFeesUsd": 99185.93236752933,
+      "actions": {
+        "Open": 87,
+        "Liquidation": 2,
+        "Close": 36,
+        "TakeProfit": 9,
+        "StopLoss": 8,
+        "RemoveCollateral": 3
+      },
+      "sides": {
+        "S": 50,
+        "B": 95
+      }
+    },
+    {
+      "date": "2026-03-24",
+      "segment": "baseline30",
+      "start": "2026-02-22T00:00:00.000Z",
+      "end": "2026-03-24T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "BRENT",
+      "pairId": 55,
+      "symbol": "BRENT-USD",
+      "fillCount": 31,
+      "notionalUsd": 119877.76799890454,
+      "openingFeesUsd": 153.89092899999997,
+      "totalFeesUsd": 194.6807086482304,
+      "actions": {
+        "Open": 21,
+        "Close": 7,
+        "TakeProfit": 1,
+        "StopLoss": 2
+      },
+      "sides": {
+        "B": 24,
+        "S": 7
+      }
+    },
+    {
+      "date": "2026-03-24",
+      "segment": "event0_2",
+      "start": "2026-03-24T00:00:00.000Z",
+      "end": "2026-03-27T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "BRENT",
+      "pairId": 55,
+      "symbol": "BRENT-USD",
+      "fillCount": 171,
+      "notionalUsd": 78127571.76705801,
+      "openingFeesUsd": 64492.171249,
+      "totalFeesUsd": 105189.28547680934,
+      "actions": {
+        "Open": 103,
+        "Liquidation": 3,
+        "TakeProfit": 10,
+        "StopLoss": 10,
+        "Close": 42,
+        "RemoveCollateral": 3
+      },
+      "sides": {
+        "B": 104,
+        "S": 67
+      }
+    },
+    {
+      "date": "2026-03-25",
+      "segment": "baseline30",
+      "start": "2026-02-23T00:00:00.000Z",
+      "end": "2026-03-25T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "BRENT",
+      "pairId": 55,
+      "symbol": "BRENT-USD",
+      "fillCount": 115,
+      "notionalUsd": 69340140.28745958,
+      "openingFeesUsd": 54198.485491999985,
+      "totalFeesUsd": 89315.26829483849,
+      "actions": {
+        "Close": 32,
+        "Open": 65,
+        "StopLoss": 7,
+        "TakeProfit": 8,
+        "RemoveCollateral": 3
+      },
+      "sides": {
+        "S": 35,
+        "B": 80
+      }
+    },
+    {
+      "date": "2026-03-25",
+      "segment": "event0_2",
+      "start": "2026-03-25T00:00:00.000Z",
+      "end": "2026-03-28T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "BRENT",
+      "pairId": 55,
+      "symbol": "BRENT-USD",
+      "fillCount": 187,
+      "notionalUsd": 41416060.030047975,
+      "openingFeesUsd": 52957.781058,
+      "totalFeesUsd": 76130.21359342212,
+      "actions": {
+        "Open": 124,
+        "RemoveCollateral": 6,
+        "Close": 38,
+        "StopLoss": 9,
+        "TakeProfit": 7,
+        "Liquidation": 3
+      },
+      "sides": {
+        "S": 86,
+        "B": 101
+      }
+    },
+    {
+      "date": "2026-03-26",
+      "segment": "baseline30",
+      "start": "2026-02-24T00:00:00.000Z",
+      "end": "2026-03-26T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "BRENT",
+      "pairId": 55,
+      "symbol": "BRENT-USD",
+      "fillCount": 145,
+      "notionalUsd": 75333941.88401164,
+      "openingFeesUsd": 60255.80885299998,
+      "totalFeesUsd": 99185.93236752933,
+      "actions": {
+        "Open": 87,
+        "Liquidation": 2,
+        "Close": 36,
+        "TakeProfit": 9,
+        "StopLoss": 8,
+        "RemoveCollateral": 3
+      },
+      "sides": {
+        "S": 50,
+        "B": 95
+      }
+    },
+    {
+      "date": "2026-03-26",
+      "segment": "event0_2",
+      "start": "2026-03-26T00:00:00.000Z",
+      "end": "2026-03-29T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "BRENT",
+      "pairId": 55,
+      "symbol": "BRENT-USD",
+      "fillCount": 157,
+      "notionalUsd": 35422258.43349592,
+      "openingFeesUsd": 46900.457697000005,
+      "totalFeesUsd": 66259.54952073138,
+      "actions": {
+        "Open": 102,
+        "RemoveCollateral": 6,
+        "Close": 34,
+        "StopLoss": 8,
+        "TakeProfit": 6,
+        "Liquidation": 1
+      },
+      "sides": {
+        "S": 71,
+        "B": 86
+      }
+    },
+    {
+      "date": "2026-03-27",
+      "segment": "baseline30",
+      "start": "2026-02-25T00:00:00.000Z",
+      "end": "2026-03-27T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "BRENT",
+      "pairId": 55,
+      "symbol": "BRENT-USD",
+      "fillCount": 202,
+      "notionalUsd": 78247449.53505692,
+      "openingFeesUsd": 64646.06217799999,
+      "totalFeesUsd": 105383.96618545757,
+      "actions": {
+        "Open": 124,
+        "Liquidation": 3,
+        "TakeProfit": 11,
+        "StopLoss": 12,
+        "Close": 49,
+        "RemoveCollateral": 3
+      },
+      "sides": {
+        "B": 128,
+        "S": 74
+      }
+    },
+    {
+      "date": "2026-03-27",
+      "segment": "event0_2",
+      "start": "2026-03-27T00:00:00.000Z",
+      "end": "2026-03-30T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "BRENT",
+      "pairId": 55,
+      "symbol": "BRENT-USD",
+      "fillCount": 100,
+      "notionalUsd": 32508750.78245066,
+      "openingFeesUsd": 42510.20437199999,
+      "totalFeesUsd": 60061.51570280316,
+      "actions": {
+        "Open": 65,
+        "RemoveCollateral": 6,
+        "Close": 21,
+        "StopLoss": 4,
+        "TakeProfit": 4
+      },
+      "sides": {
+        "S": 47,
+        "B": 53
+      }
+    },
+    {
+      "date": "2026-03-30",
+      "segment": "baseline30",
+      "start": "2026-02-28T00:00:00.000Z",
+      "end": "2026-03-30T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "BRENT",
+      "pairId": 55,
+      "symbol": "BRENT-USD",
+      "fillCount": 302,
+      "notionalUsd": 110756200.31750758,
+      "openingFeesUsd": 107156.26655000001,
+      "totalFeesUsd": 165445.48188826072,
+      "actions": {
+        "Open": 189,
+        "RemoveCollateral": 9,
+        "Close": 70,
+        "StopLoss": 16,
+        "TakeProfit": 15,
+        "Liquidation": 3
+      },
+      "sides": {
+        "S": 121,
+        "B": 181
+      }
+    },
+    {
+      "date": "2026-03-30",
+      "segment": "event0_2",
+      "start": "2026-03-30T00:00:00.000Z",
+      "end": "2026-04-02T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "BRENT",
+      "pairId": 55,
+      "symbol": "BRENT-USD",
+      "fillCount": 433,
+      "notionalUsd": 164495217.88327867,
+      "openingFeesUsd": 113552.31808099989,
+      "totalFeesUsd": 184493.73257492576,
+      "actions": {
+        "Close": 125,
+        "Open": 191,
+        "StopLoss": 25,
+        "RemoveCollateral": 39,
+        "Liquidation": 5,
+        "TakeProfit": 48
+      },
+      "sides": {
+        "B": 131,
+        "S": 302
+      }
+    },
+    {
+      "date": "2026-03-31",
+      "segment": "baseline30",
+      "start": "2026-03-01T00:00:00.000Z",
+      "end": "2026-03-31T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "BRENT",
+      "pairId": 55,
+      "symbol": "BRENT-USD",
+      "fillCount": 441,
+      "notionalUsd": 178373019.81746417,
+      "openingFeesUsd": 154662.808724,
+      "totalFeesUsd": 243034.91232838907,
+      "actions": {
+        "Open": 275,
+        "TakeProfit": 26,
+        "Close": 107,
+        "RemoveCollateral": 13,
+        "StopLoss": 17,
+        "Liquidation": 3
+      },
+      "sides": {
+        "B": 221,
+        "S": 220
+      }
+    },
+    {
+      "date": "2026-03-31",
+      "segment": "event0_2",
+      "start": "2026-03-31T00:00:00.000Z",
+      "end": "2026-04-03T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "BRENT",
+      "pairId": 55,
+      "symbol": "BRENT-USD",
+      "fillCount": 545,
+      "notionalUsd": 190488566.29778832,
+      "openingFeesUsd": 152286.98188999973,
+      "totalFeesUsd": 237328.91039863773,
+      "actions": {
+        "RemoveCollateral": 53,
+        "Open": 239,
+        "Close": 135,
+        "TakeProfit": 80,
+        "StopLoss": 31,
+        "Liquidation": 7
+      },
+      "sides": {
+        "S": 369,
+        "B": 176
+      }
+    },
+    {
+      "date": "2026-04-01",
+      "segment": "baseline30",
+      "start": "2026-03-02T00:00:00.000Z",
+      "end": "2026-04-01T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "BRENT",
+      "pairId": 55,
+      "symbol": "BRENT-USD",
+      "fillCount": 653,
+      "notionalUsd": 267970186.6776685,
+      "openingFeesUsd": 217490.43672099995,
+      "totalFeesUsd": 341999.6199668019,
+      "actions": {
+        "Liquidation": 6,
+        "RemoveCollateral": 30,
+        "TakeProfit": 62,
+        "Close": 174,
+        "Open": 349,
+        "StopLoss": 32
+      },
+      "sides": {
+        "B": 273,
+        "S": 380
+      }
+    },
+    {
+      "date": "2026-04-01",
+      "segment": "event0_2",
+      "start": "2026-04-01T00:00:00.000Z",
+      "end": "2026-04-04T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "BRENT",
+      "pairId": 55,
+      "symbol": "BRENT-USD",
+      "fillCount": 333,
+      "notionalUsd": 100891399.4375838,
+      "openingFeesUsd": 89459.35389299986,
+      "totalFeesUsd": 138364.20276022475,
+      "actions": {
+        "RemoveCollateral": 36,
+        "Open": 165,
+        "Close": 68,
+        "TakeProfit": 44,
+        "StopLoss": 16,
+        "Liquidation": 4
+      },
+      "sides": {
+        "S": 209,
+        "B": 124
+      }
+    },
+    {
+      "date": "2026-04-02",
+      "segment": "baseline30",
+      "start": "2026-03-03T00:00:00.000Z",
+      "end": "2026-04-02T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "BRENT",
+      "pairId": 55,
+      "symbol": "BRENT-USD",
+      "fillCount": 735,
+      "notionalUsd": 275251418.2007863,
+      "openingFeesUsd": 220708.5846309999,
+      "totalFeesUsd": 349939.21446318686,
+      "actions": {
+        "Close": 195,
+        "Open": 380,
+        "StopLoss": 41,
+        "RemoveCollateral": 48,
+        "Liquidation": 8,
+        "TakeProfit": 63
+      },
+      "sides": {
+        "B": 312,
+        "S": 423
+      }
+    },
+    {
+      "date": "2026-04-02",
+      "segment": "event0_2",
+      "start": "2026-04-02T00:00:00.000Z",
+      "end": "2026-04-05T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "BRENT",
+      "pairId": 55,
+      "symbol": "BRENT-USD",
+      "fillCount": 251,
+      "notionalUsd": 93610167.91446596,
+      "openingFeesUsd": 86241.20598299989,
+      "totalFeesUsd": 130424.60826383975,
+      "actions": {
+        "RemoveCollateral": 18,
+        "Open": 134,
+        "Close": 47,
+        "TakeProfit": 43,
+        "StopLoss": 7,
+        "Liquidation": 2
+      },
+      "sides": {
+        "S": 166,
+        "B": 85
+      }
+    },
+    {
+      "date": "2026-04-06",
+      "segment": "baseline30",
+      "start": "2026-03-07T00:00:00.000Z",
+      "end": "2026-04-06T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "BRENT",
+      "pairId": 55,
+      "symbol": "BRENT-USD",
+      "fillCount": 986,
+      "notionalUsd": 368861586.11525244,
+      "openingFeesUsd": 306949.7906139996,
+      "totalFeesUsd": 480363.8227270268,
+      "actions": {
+        "RemoveCollateral": 66,
+        "Open": 514,
+        "Close": 242,
+        "TakeProfit": 106,
+        "StopLoss": 48,
+        "Liquidation": 10
+      },
+      "sides": {
+        "S": 589,
+        "B": 397
+      }
+    },
+    {
+      "date": "2026-04-06",
+      "segment": "event0_2",
+      "start": "2026-04-06T00:00:00.000Z",
+      "end": "2026-04-09T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "BRENT",
+      "pairId": 55,
+      "symbol": "BRENT-USD",
+      "fillCount": 601,
+      "notionalUsd": 163351265.35039976,
+      "openingFeesUsd": 101419.09281000002,
+      "totalFeesUsd": 191044.09798404126,
+      "actions": {
+        "Close": 177,
+        "Open": 225,
+        "StopLoss": 19,
+        "TakeProfit": 54,
+        "Liquidation": 46,
+        "RemoveCollateral": 80
+      },
+      "sides": {
+        "B": 286,
+        "S": 315
+      }
+    },
+    {
+      "date": "2026-04-07",
+      "segment": "baseline30",
+      "start": "2026-03-08T00:00:00.000Z",
+      "end": "2026-04-07T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "BRENT",
+      "pairId": 55,
+      "symbol": "BRENT-USD",
+      "fillCount": 1138,
+      "notionalUsd": 475953999.5894985,
+      "openingFeesUsd": 383116.2908779998,
+      "totalFeesUsd": 614798.8019434585,
+      "actions": {
+        "Open": 584,
+        "Close": 286,
+        "TakeProfit": 139,
+        "StopLoss": 50,
+        "RemoveCollateral": 69,
+        "Liquidation": 10
+      },
+      "sides": {
+        "B": 463,
+        "S": 675
+      }
+    },
+    {
+      "date": "2026-04-07",
+      "segment": "event0_2",
+      "start": "2026-04-07T00:00:00.000Z",
+      "end": "2026-04-10T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "BRENT",
+      "pairId": 55,
+      "symbol": "BRENT-USD",
+      "fillCount": 527,
+      "notionalUsd": 57177841.76574808,
+      "openingFeesUsd": 25516.78098700001,
+      "totalFeesUsd": 59726.5364925563,
+      "actions": {
+        "Open": 193,
+        "StopLoss": 21,
+        "Close": 167,
+        "TakeProfit": 23,
+        "Liquidation": 46,
+        "RemoveCollateral": 77
+      },
+      "sides": {
+        "S": 264,
+        "B": 263
+      }
+    },
+    {
+      "date": "2026-04-08",
+      "segment": "baseline30",
+      "start": "2026-03-09T00:00:00.000Z",
+      "end": "2026-04-08T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "BRENT",
+      "pairId": 55,
+      "symbol": "BRENT-USD",
+      "fillCount": 1336,
+      "notionalUsd": 520937940.5589723,
+      "openingFeesUsd": 407456.4184499999,
+      "totalFeesUsd": 662832.9653853534,
+      "actions": {
+        "Open": 677,
+        "RemoveCollateral": 95,
+        "Close": 330,
+        "StopLoss": 56,
+        "Liquidation": 20,
+        "TakeProfit": 158
+      },
+      "sides": {
+        "B": 568,
+        "S": 768
+      }
+    },
+    {
+      "date": "2026-04-08",
+      "segment": "event0_2",
+      "start": "2026-04-08T00:00:00.000Z",
+      "end": "2026-04-11T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "BRENT",
+      "pairId": 55,
+      "symbol": "BRENT-USD",
+      "fillCount": 377,
+      "notionalUsd": 12772778.5545043,
+      "openingFeesUsd": 1559.5350260000002,
+      "totalFeesUsd": 12305.05780707121,
+      "actions": {
+        "Close": 141,
+        "Open": 124,
+        "StopLoss": 20,
+        "RemoveCollateral": 52,
+        "TakeProfit": 4,
+        "Liquidation": 36
+      },
+      "sides": {
+        "B": 191,
+        "S": 186
+      }
+    },
+    {
+      "date": "2026-04-09",
+      "segment": "baseline30",
+      "start": "2026-03-10T00:00:00.000Z",
+      "end": "2026-04-09T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "BRENT",
+      "pairId": 55,
+      "symbol": "BRENT-USD",
+      "fillCount": 1587,
+      "notionalUsd": 532212851.46565235,
+      "openingFeesUsd": 408368.8834239999,
+      "totalFeesUsd": 671407.9207110698,
+      "actions": {
+        "Close": 419,
+        "Open": 739,
+        "StopLoss": 67,
+        "TakeProfit": 160,
+        "Liquidation": 56,
+        "RemoveCollateral": 146
+      },
+      "sides": {
+        "B": 683,
+        "S": 904
+      }
+    },
+    {
+      "date": "2026-04-09",
+      "segment": "event0_2",
+      "start": "2026-04-09T00:00:00.000Z",
+      "end": "2026-04-12T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "BRENT",
+      "pairId": 55,
+      "symbol": "BRENT-USD",
+      "fillCount": 126,
+      "notionalUsd": 1497867.647824318,
+      "openingFeesUsd": 647.0700520000001,
+      "totalFeesUsd": 3730.1024813547274,
+      "actions": {
+        "Close": 52,
+        "Open": 62,
+        "StopLoss": 9,
+        "RemoveCollateral": 1,
+        "TakeProfit": 2
+      },
+      "sides": {
+        "B": 76,
+        "S": 50
+      }
+    },
+    {
+      "date": "2026-04-10",
+      "segment": "baseline30",
+      "start": "2026-03-11T00:00:00.000Z",
+      "end": "2026-04-10T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "BRENT",
+      "pairId": 55,
+      "symbol": "BRENT-USD",
+      "fillCount": 1665,
+      "notionalUsd": 533131841.35524696,
+      "openingFeesUsd": 408633.0718649999,
+      "totalFeesUsd": 674525.3384360153,
+      "actions": {
+        "Open": 777,
+        "StopLoss": 71,
+        "Close": 453,
+        "TakeProfit": 162,
+        "Liquidation": 56,
+        "RemoveCollateral": 146
+      },
+      "sides": {
+        "S": 939,
+        "B": 726
+      }
+    },
+    {
+      "date": "2026-04-10",
+      "segment": "event0_2",
+      "start": "2026-04-10T00:00:00.000Z",
+      "end": "2026-04-13T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "BRENT",
+      "pairId": 55,
+      "symbol": "BRENT-USD",
+      "fillCount": 48,
+      "notionalUsd": 578877.7582297081,
+      "openingFeesUsd": 382.8816110000002,
+      "totalFeesUsd": 612.6847564092956,
+      "actions": {
+        "Close": 18,
+        "Open": 24,
+        "StopLoss": 5,
+        "RemoveCollateral": 1
+      },
+      "sides": {
+        "B": 33,
+        "S": 15
+      }
+    },
+    {
+      "date": "2026-04-13",
+      "segment": "baseline30",
+      "start": "2026-03-14T00:00:00.000Z",
+      "end": "2026-04-13T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "BRENT",
+      "pairId": 55,
+      "symbol": "BRENT-USD",
+      "fillCount": 1713,
+      "notionalUsd": 533710719.11347663,
+      "openingFeesUsd": 409015.9534759999,
+      "totalFeesUsd": 675138.0231924246,
+      "actions": {
+        "Close": 471,
+        "Open": 801,
+        "StopLoss": 76,
+        "RemoveCollateral": 147,
+        "TakeProfit": 162,
+        "Liquidation": 56
+      },
+      "sides": {
+        "B": 759,
+        "S": 954
+      }
+    },
+    {
+      "date": "2026-04-13",
+      "segment": "event0_2",
+      "start": "2026-04-13T00:00:00.000Z",
+      "end": "2026-04-16T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "BRENT",
+      "pairId": 55,
+      "symbol": "BRENT-USD",
+      "fillCount": 92,
+      "notionalUsd": 299347.67047978455,
+      "openingFeesUsd": 262.685739,
+      "totalFeesUsd": 78.25793854318928,
+      "actions": {
+        "Open": 39,
+        "Close": 34,
+        "StopLoss": 11,
+        "RemoveCollateral": 2,
+        "TakeProfit": 2,
+        "Liquidation": 4
+      },
+      "sides": {
+        "B": 67,
+        "S": 25
+      }
+    },
+    {
+      "date": "2026-04-14",
+      "segment": "baseline30",
+      "start": "2026-03-15T00:00:00.000Z",
+      "end": "2026-04-14T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "BRENT",
+      "pairId": 55,
+      "symbol": "BRENT-USD",
+      "fillCount": 1764,
+      "notionalUsd": 533842286.6180958,
+      "openingFeesUsd": 409096.4302419999,
+      "totalFeesUsd": 675151.8166117631,
+      "actions": {
+        "Open": 821,
+        "Close": 493,
+        "StopLoss": 79,
+        "TakeProfit": 164,
+        "Liquidation": 60,
+        "RemoveCollateral": 147
+      },
+      "sides": {
+        "B": 793,
+        "S": 971
+      }
+    },
+    {
+      "date": "2026-04-14",
+      "segment": "event0_2",
+      "start": "2026-04-14T00:00:00.000Z",
+      "end": "2026-04-17T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "BRENT",
+      "pairId": 55,
+      "symbol": "BRENT-USD",
+      "fillCount": 82,
+      "notionalUsd": 323841.46085430135,
+      "openingFeesUsd": 303.026112,
+      "totalFeesUsd": 537.9403736409878,
+      "actions": {
+        "StopLoss": 10,
+        "Open": 40,
+        "Close": 29,
+        "TakeProfit": 1,
+        "RemoveCollateral": 2
+      },
+      "sides": {
+        "B": 60,
+        "S": 22
+      }
+    },
+    {
+      "date": "2026-04-15",
+      "segment": "baseline30",
+      "start": "2026-03-16T00:00:00.000Z",
+      "end": "2026-04-15T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "BRENT",
+      "pairId": 55,
+      "symbol": "BRENT-USD",
+      "fillCount": 1781,
+      "notionalUsd": 533909135.52997875,
+      "openingFeesUsd": 409184.3197409999,
+      "totalFeesUsd": 675192.1934746236,
+      "actions": {
+        "Open": 831,
+        "Close": 498,
+        "StopLoss": 81,
+        "TakeProfit": 164,
+        "Liquidation": 60,
+        "RemoveCollateral": 147
+      },
+      "sides": {
+        "B": 808,
+        "S": 973
+      }
+    },
+    {
+      "date": "2026-04-15",
+      "segment": "event0_2",
+      "start": "2026-04-15T00:00:00.000Z",
+      "end": "2026-04-18T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "BRENT",
+      "pairId": 55,
+      "symbol": "BRENT-USD",
+      "fillCount": 120,
+      "notionalUsd": 630168.523117931,
+      "openingFeesUsd": 404.72509899999994,
+      "totalFeesUsd": 331.2528988033585,
+      "actions": {
+        "Open": 49,
+        "Close": 47,
+        "StopLoss": 15,
+        "Liquidation": 5,
+        "RemoveCollateral": 3,
+        "TakeProfit": 1
+      },
+      "sides": {
+        "B": 90,
+        "S": 30
+      }
+    },
+    {
+      "date": "2026-04-16",
+      "segment": "baseline30",
+      "start": "2026-03-17T00:00:00.000Z",
+      "end": "2026-04-16T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "BRENT",
+      "pairId": 55,
+      "symbol": "BRENT-USD",
+      "fillCount": 1805,
+      "notionalUsd": 534010066.7839564,
+      "openingFeesUsd": 409278.6392149999,
+      "totalFeesUsd": 675216.2811309678,
+      "actions": {
+        "Open": 840,
+        "Close": 505,
+        "StopLoss": 87,
+        "RemoveCollateral": 149,
+        "TakeProfit": 164,
+        "Liquidation": 60
+      },
+      "sides": {
+        "B": 826,
+        "S": 979
+      }
+    },
+    {
+      "date": "2026-04-16",
+      "segment": "event0_2",
+      "start": "2026-04-16T00:00:00.000Z",
+      "end": "2026-04-19T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "BRENT",
+      "pairId": 55,
+      "symbol": "BRENT-USD",
+      "fillCount": 96,
+      "notionalUsd": 529237.2691402271,
+      "openingFeesUsd": 310.4056249999999,
+      "totalFeesUsd": 307.16524245925245,
+      "actions": {
+        "Open": 40,
+        "Close": 40,
+        "StopLoss": 9,
+        "Liquidation": 5,
+        "RemoveCollateral": 1,
+        "TakeProfit": 1
+      },
+      "sides": {
+        "B": 72,
+        "S": 24
+      }
+    },
+    {
+      "date": "2026-04-17",
+      "segment": "baseline30",
+      "start": "2026-03-18T00:00:00.000Z",
+      "end": "2026-04-17T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "BRENT",
+      "pairId": 55,
+      "symbol": "BRENT-USD",
+      "fillCount": 1846,
+      "notionalUsd": 534166128.0789501,
+      "openingFeesUsd": 409399.4563539999,
+      "totalFeesUsd": 675689.7569854042,
+      "actions": {
+        "StopLoss": 89,
+        "Open": 861,
+        "Close": 522,
+        "TakeProfit": 165,
+        "RemoveCollateral": 149,
+        "Liquidation": 60
+      },
+      "sides": {
+        "B": 853,
+        "S": 993
+      }
+    },
+    {
+      "date": "2026-04-17",
+      "segment": "event0_2",
+      "start": "2026-04-17T00:00:00.000Z",
+      "end": "2026-04-20T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "BRENT",
+      "pairId": 55,
+      "symbol": "BRENT-USD",
+      "fillCount": 55,
+      "notionalUsd": 373175.974146586,
+      "openingFeesUsd": 189.58848599999996,
+      "totalFeesUsd": -166.31061197707587,
+      "actions": {
+        "Open": 19,
+        "Close": 23,
+        "StopLoss": 7,
+        "Liquidation": 5,
+        "RemoveCollateral": 1
+      },
+      "sides": {
+        "B": 45,
+        "S": 10
+      }
+    },
+    {
+      "date": "2026-04-20",
+      "segment": "baseline30",
+      "start": "2026-03-21T00:00:00.000Z",
+      "end": "2026-04-20T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "BRENT",
+      "pairId": 55,
+      "symbol": "BRENT-USD",
+      "fillCount": 1901,
+      "notionalUsd": 534539304.0530966,
+      "openingFeesUsd": 409589.0448399999,
+      "totalFeesUsd": 675523.446373427,
+      "actions": {
+        "Open": 880,
+        "Close": 545,
+        "StopLoss": 96,
+        "Liquidation": 65,
+        "RemoveCollateral": 150,
+        "TakeProfit": 165
+      },
+      "sides": {
+        "B": 898,
+        "S": 1003
+      }
+    },
+    {
+      "date": "2026-04-20",
+      "segment": "event0_2",
+      "start": "2026-04-20T00:00:00.000Z",
+      "end": "2026-04-23T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "BRENT",
+      "pairId": 55,
+      "symbol": "BRENT-USD",
+      "fillCount": 54,
+      "notionalUsd": 458782.9119255308,
+      "openingFeesUsd": 168.091555,
+      "totalFeesUsd": 148.6481909646787,
+      "actions": {
+        "Open": 26,
+        "Close": 20,
+        "TakeProfit": 1,
+        "StopLoss": 5,
+        "RemoveCollateral": 2
+      },
+      "sides": {
+        "B": 47,
+        "S": 7
+      }
+    },
+    {
+      "date": "2026-04-21",
+      "segment": "baseline30",
+      "start": "2026-03-22T00:00:00.000Z",
+      "end": "2026-04-21T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "BRENT",
+      "pairId": 55,
+      "symbol": "BRENT-USD",
+      "fillCount": 1927,
+      "notionalUsd": 534697574.5900075,
+      "openingFeesUsd": 409690.3370309999,
+      "totalFeesUsd": 675583.1013419644,
+      "actions": {
+        "Close": 556,
+        "Open": 891,
+        "StopLoss": 100,
+        "Liquidation": 65,
+        "RemoveCollateral": 150,
+        "TakeProfit": 165
+      },
+      "sides": {
+        "B": 922,
+        "S": 1005
+      }
+    },
+    {
+      "date": "2026-04-21",
+      "segment": "event0_2",
+      "start": "2026-04-21T00:00:00.000Z",
+      "end": "2026-04-24T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "BRENT",
+      "pairId": 55,
+      "symbol": "BRENT-USD",
+      "fillCount": 41,
+      "notionalUsd": 711761.7808920477,
+      "openingFeesUsd": 168.15772,
+      "totalFeesUsd": 262.8063666999993,
+      "actions": {
+        "Close": 17,
+        "Open": 19,
+        "StopLoss": 2,
+        "TakeProfit": 1,
+        "RemoveCollateral": 2
+      },
+      "sides": {
+        "B": 36,
+        "S": 5
+      }
+    },
+    {
+      "date": "2026-04-22",
+      "segment": "baseline30",
+      "start": "2026-03-23T00:00:00.000Z",
+      "end": "2026-04-22T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "BRENT",
+      "pairId": 55,
+      "symbol": "BRENT-USD",
+      "fillCount": 1951,
+      "notionalUsd": 534997036.1579151,
+      "openingFeesUsd": 409756.6863949999,
+      "totalFeesUsd": 675671.3456041901,
+      "actions": {
+        "Close": 564,
+        "Open": 903,
+        "TakeProfit": 166,
+        "StopLoss": 101,
+        "RemoveCollateral": 152,
+        "Liquidation": 65
+      },
+      "sides": {
+        "B": 941,
+        "S": 1010
+      }
+    },
+    {
+      "date": "2026-04-22",
+      "segment": "event0_2",
+      "start": "2026-04-22T00:00:00.000Z",
+      "end": "2026-04-25T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "BRENT",
+      "pairId": 55,
+      "symbol": "BRENT-USD",
+      "fillCount": 41,
+      "notionalUsd": 919546.5317793891,
+      "openingFeesUsd": 308.50529,
+      "totalFeesUsd": 527.5778511345048,
+      "actions": {
+        "Open": 24,
+        "Close": 14,
+        "TakeProfit": 2,
+        "StopLoss": 1
+      },
+      "sides": {
+        "B": 37,
+        "S": 4
+      }
+    },
+    {
+      "date": "2026-04-23",
+      "segment": "baseline30",
+      "start": "2026-03-24T00:00:00.000Z",
+      "end": "2026-04-23T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "BRENT",
+      "pairId": 55,
+      "symbol": "BRENT-USD",
+      "fillCount": 1924,
+      "notionalUsd": 534878209.1970232,
+      "openingFeesUsd": 409603.24546599993,
+      "totalFeesUsd": 675477.4138557437,
+      "actions": {
+        "Open": 885,
+        "Close": 558,
+        "TakeProfit": 165,
+        "StopLoss": 99,
+        "RemoveCollateral": 152,
+        "Liquidation": 65
+      },
+      "sides": {
+        "B": 921,
+        "S": 1003
+      }
+    },
+    {
+      "date": "2026-04-23",
+      "segment": "event0_2",
+      "start": "2026-04-23T00:00:00.000Z",
+      "end": "2026-04-26T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "BRENT",
+      "pairId": 55,
+      "symbol": "BRENT-USD",
+      "fillCount": 37,
+      "notionalUsd": 918495.7246723792,
+      "openingFeesUsd": 308.05529,
+      "totalFeesUsd": 526.8288909328978,
+      "actions": {
+        "Open": 21,
+        "Close": 13,
+        "TakeProfit": 2,
+        "StopLoss": 1
+      },
+      "sides": {
+        "B": 33,
+        "S": 4
+      }
+    },
+    {
+      "date": "2026-04-24",
+      "segment": "baseline30",
+      "start": "2026-03-25T00:00:00.000Z",
+      "end": "2026-04-24T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "BRENT",
+      "pairId": 55,
+      "symbol": "BRENT-USD",
+      "fillCount": 1853,
+      "notionalUsd": 466069196.08344,
+      "openingFeesUsd": 355660.0092589999,
+      "totalFeesUsd": 586530.6394138262,
+      "actions": {
+        "Close": 541,
+        "Open": 845,
+        "StopLoss": 95,
+        "TakeProfit": 158,
+        "RemoveCollateral": 149,
+        "Liquidation": 65
+      },
+      "sides": {
+        "B": 878,
+        "S": 975
+      }
+    },
+    {
+      "date": "2026-04-24",
+      "segment": "event0_2",
+      "start": "2026-04-24T00:00:00.000Z",
+      "end": "2026-04-27T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "BRENT",
+      "pairId": 55,
+      "symbol": "BRENT-USD",
+      "fillCount": 24,
+      "notionalUsd": 507246.31879498763,
+      "openingFeesUsd": 206.69693399999997,
+      "totalFeesUsd": 353.0157466601878,
+      "actions": {
+        "Open": 17,
+        "Close": 5,
+        "TakeProfit": 2
+      },
+      "sides": {
+        "B": 20,
+        "S": 4
+      }
+    },
+    {
+      "date": "2026-04-27",
+      "segment": "baseline30",
+      "start": "2026-03-28T00:00:00.000Z",
+      "end": "2026-04-27T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "BRENT",
+      "pairId": 55,
+      "symbol": "BRENT-USD",
+      "fillCount": 1690,
+      "notionalUsd": 425160382.37218726,
+      "openingFeesUsd": 302908.92513499985,
+      "totalFeesUsd": 510753.4415670634,
+      "actions": {
+        "Open": 738,
+        "Close": 508,
+        "TakeProfit": 153,
+        "StopLoss": 86,
+        "RemoveCollateral": 143,
+        "Liquidation": 62
+      },
+      "sides": {
+        "B": 797,
+        "S": 893
+      }
+    },
+    {
+      "date": "2026-04-27",
+      "segment": "event0_2",
+      "start": "2026-04-27T00:00:00.000Z",
+      "end": "2026-04-30T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "BRENT",
+      "pairId": 55,
+      "symbol": "BRENT-USD",
+      "fillCount": 60,
+      "notionalUsd": 891107.2995331498,
+      "openingFeesUsd": 206.350057,
+      "totalFeesUsd": -551.234609344254,
+      "actions": {
+        "Close": 28,
+        "Open": 25,
+        "Liquidation": 1,
+        "TakeProfit": 3,
+        "RemoveCollateral": 1,
+        "StopLoss": 2
+      },
+      "sides": {
+        "B": 48,
+        "S": 12
+      }
+    },
+    {
+      "date": "2026-04-28",
+      "segment": "baseline30",
+      "start": "2026-03-29T00:00:00.000Z",
+      "end": "2026-04-28T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "BRENT",
+      "pairId": 55,
+      "symbol": "BRENT-USD",
+      "fillCount": 1714,
+      "notionalUsd": 425456898.8021201,
+      "openingFeesUsd": 302939.50062399986,
+      "totalFeesUsd": 511092.7763302858,
+      "actions": {
+        "StopLoss": 88,
+        "Open": 747,
+        "Close": 521,
+        "TakeProfit": 153,
+        "RemoveCollateral": 143,
+        "Liquidation": 62
+      },
+      "sides": {
+        "B": 816,
+        "S": 898
+      }
+    },
+    {
+      "date": "2026-04-28",
+      "segment": "event0_2",
+      "start": "2026-04-28T00:00:00.000Z",
+      "end": "2026-05-01T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "BRENT",
+      "pairId": 55,
+      "symbol": "BRENT-USD",
+      "fillCount": 66,
+      "notionalUsd": 861238.3318289063,
+      "openingFeesUsd": 279.93428700000004,
+      "totalFeesUsd": -692.3727217667928,
+      "actions": {
+        "Open": 38,
+        "Close": 20,
+        "StopLoss": 3,
+        "Liquidation": 1,
+        "TakeProfit": 3,
+        "RemoveCollateral": 1
+      },
+      "sides": {
+        "B": 50,
+        "S": 16
+      }
+    },
+    {
+      "date": "2026-04-29",
+      "segment": "baseline30",
+      "start": "2026-03-30T00:00:00.000Z",
+      "end": "2026-04-29T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "BRENT",
+      "pairId": 55,
+      "symbol": "BRENT-USD",
+      "fillCount": 1734,
+      "notionalUsd": 425939503.97277,
+      "openingFeesUsd": 303102.4189629998,
+      "totalFeesUsd": 511493.6648891817,
+      "actions": {
+        "Open": 758,
+        "Close": 528,
+        "TakeProfit": 154,
+        "RemoveCollateral": 144,
+        "StopLoss": 88,
+        "Liquidation": 62
+      },
+      "sides": {
+        "S": 902,
+        "B": 832
+      }
+    },
+    {
+      "date": "2026-04-29",
+      "segment": "event0_2",
+      "start": "2026-04-29T00:00:00.000Z",
+      "end": "2026-05-02T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "BRENT",
+      "pairId": 55,
+      "symbol": "BRENT-USD",
+      "fillCount": 76,
+      "notionalUsd": 618384.0752590758,
+      "openingFeesUsd": 220.074856,
+      "totalFeesUsd": -845.2911062958697,
+      "actions": {
+        "Open": 46,
+        "Close": 22,
+        "StopLoss": 5,
+        "Liquidation": 1,
+        "TakeProfit": 2
+      },
+      "sides": {
+        "B": 60,
+        "S": 16
+      }
+    },
+    {
+      "date": "2026-04-30",
+      "segment": "baseline30",
+      "start": "2026-03-31T00:00:00.000Z",
+      "end": "2026-04-30T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "BRENT",
+      "pairId": 55,
+      "symbol": "BRENT-USD",
+      "fillCount": 1611,
+      "notionalUsd": 358434670.1717639,
+      "openingFeesUsd": 255608.73301800003,
+      "totalFeesUsd": 432612.7765175903,
+      "actions": {
+        "Close": 499,
+        "Open": 677,
+        "Liquidation": 63,
+        "TakeProfit": 145,
+        "RemoveCollateral": 140,
+        "StopLoss": 87
+      },
+      "sides": {
+        "B": 805,
+        "S": 806
+      }
+    },
+    {
+      "date": "2026-04-30",
+      "segment": "event0_2",
+      "start": "2026-04-30T00:00:00.000Z",
+      "end": "2026-05-03T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "BRENT",
+      "pairId": 55,
+      "symbol": "BRENT-USD",
+      "fillCount": 60,
+      "notionalUsd": 506398.3763086605,
+      "openingFeesUsd": 207.21862700000003,
+      "totalFeesUsd": 446.16682516666384,
+      "actions": {
+        "Open": 41,
+        "Close": 14,
+        "StopLoss": 5
+      },
+      "sides": {
+        "B": 47,
+        "S": 13
+      }
+    },
+    {
+      "date": "2026-05-01",
+      "segment": "baseline30",
+      "start": "2026-04-01T00:00:00.000Z",
+      "end": "2026-05-01T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "BRENT",
+      "pairId": 55,
+      "symbol": "BRENT-USD",
+      "fillCount": 1429,
+      "notionalUsd": 269104150.7737878,
+      "openingFeesUsd": 192885.26474000013,
+      "totalFeesUsd": 333846.26552997634,
+      "actions": {
+        "Open": 625,
+        "Close": 437,
+        "StopLoss": 75,
+        "Liquidation": 60,
+        "TakeProfit": 109,
+        "RemoveCollateral": 123
+      },
+      "sides": {
+        "B": 774,
+        "S": 655
+      }
+    },
+    {
+      "date": "2026-05-01",
+      "segment": "event0_2",
+      "start": "2026-05-01T00:00:00.000Z",
+      "end": "2026-05-04T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "BRENT",
+      "pairId": 55,
+      "symbol": "BRENT-USD",
+      "fillCount": 30,
+      "notionalUsd": 239750.91408004088,
+      "openingFeesUsd": 103.058908,
+      "totalFeesUsd": 247.970174366769,
+      "actions": {
+        "Open": 19,
+        "Close": 9,
+        "StopLoss": 2
+      },
+      "sides": {
+        "B": 26,
+        "S": 4
+      }
+    },
+    {
+      "date": "2026-05-04",
+      "segment": "baseline30",
+      "start": "2026-04-04T00:00:00.000Z",
+      "end": "2026-05-04T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "BRENT",
+      "pairId": 55,
+      "symbol": "BRENT-USD",
+      "fillCount": 1126,
+      "notionalUsd": 168452502.2502838,
+      "openingFeesUsd": 103528.96975500001,
+      "totalFeesUsd": 195730.0329441185,
+      "actions": {
+        "Open": 479,
+        "Close": 378,
+        "StopLoss": 61,
+        "Liquidation": 56,
+        "TakeProfit": 65,
+        "RemoveCollateral": 87
+      },
+      "sides": {
+        "B": 676,
+        "S": 450
+      }
+    },
+    {
+      "date": "2026-05-04",
+      "segment": "event0_2",
+      "start": "2026-05-04T00:00:00.000Z",
+      "end": "2026-05-07T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "BRENT",
+      "pairId": 55,
+      "symbol": "BRENT-USD",
+      "fillCount": 185,
+      "notionalUsd": 3225087.476829014,
+      "openingFeesUsd": 734.7865579999998,
+      "totalFeesUsd": -5530.653390763355,
+      "actions": {
+        "Close": 72,
+        "Open": 86,
+        "Liquidation": 5,
+        "StopLoss": 21,
+        "TakeProfit": 1
+      },
+      "sides": {
+        "B": 168,
+        "S": 17
+      }
+    },
+    {
+      "date": "2026-05-05",
+      "segment": "baseline30",
+      "start": "2026-04-05T00:00:00.000Z",
+      "end": "2026-05-05T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "BRENT",
+      "pairId": 55,
+      "symbol": "BRENT-USD",
+      "fillCount": 1175,
+      "notionalUsd": 169277463.3202714,
+      "openingFeesUsd": 103717.83208800002,
+      "totalFeesUsd": 194732.9628090487,
+      "actions": {
+        "Open": 502,
+        "Close": 403,
+        "StopLoss": 62,
+        "Liquidation": 56,
+        "TakeProfit": 65,
+        "RemoveCollateral": 87
+      },
+      "sides": {
+        "B": 721,
+        "S": 454
+      }
+    },
+    {
+      "date": "2026-05-05",
+      "segment": "event0_2",
+      "start": "2026-05-05T00:00:00.000Z",
+      "end": "2026-05-08T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "BRENT",
+      "pairId": 55,
+      "symbol": "BRENT-USD",
+      "fillCount": 252,
+      "notionalUsd": 3559356.269083812,
+      "openingFeesUsd": 960.0074610000003,
+      "totalFeesUsd": -3625.579124679176,
+      "actions": {
+        "Open": 128,
+        "StopLoss": 24,
+        "Close": 92,
+        "RemoveCollateral": 1,
+        "Liquidation": 6,
+        "TakeProfit": 1
+      },
+      "sides": {
+        "B": 197,
+        "S": 55
+      }
+    },
+    {
+      "date": "2026-05-06",
+      "segment": "baseline30",
+      "start": "2026-04-06T00:00:00.000Z",
+      "end": "2026-05-06T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "BRENT",
+      "pairId": 55,
+      "symbol": "BRENT-USD",
+      "fillCount": 1217,
+      "notionalUsd": 169564241.4595901,
+      "openingFeesUsd": 103785.33733000002,
+      "totalFeesUsd": 194779.34241541126,
+      "actions": {
+        "Open": 525,
+        "Close": 420,
+        "StopLoss": 64,
+        "Liquidation": 56,
+        "TakeProfit": 65,
+        "RemoveCollateral": 87
+      },
+      "sides": {
+        "B": 753,
+        "S": 464
+      }
+    },
+    {
+      "date": "2026-05-06",
+      "segment": "event0_2",
+      "start": "2026-05-06T00:00:00.000Z",
+      "end": "2026-05-09T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "BRENT",
+      "pairId": 55,
+      "symbol": "BRENT-USD",
+      "fillCount": 250,
+      "notionalUsd": 4229192.796330823,
+      "openingFeesUsd": 1044.6819810000006,
+      "totalFeesUsd": -3332.3504422336937,
+      "actions": {
+        "Close": 100,
+        "Open": 119,
+        "StopLoss": 23,
+        "RemoveCollateral": 1,
+        "Liquidation": 6,
+        "TakeProfit": 1
+      },
+      "sides": {
+        "B": 197,
+        "S": 53
+      }
+    },
+    {
+      "date": "2026-05-07",
+      "segment": "baseline30",
+      "start": "2026-04-07T00:00:00.000Z",
+      "end": "2026-05-07T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "BRENT",
+      "pairId": 55,
+      "symbol": "BRENT-USD",
+      "fillCount": 1159,
+      "notionalUsd": 64585176.25286655,
+      "openingFeesUsd": 28097.25604900002,
+      "totalFeesUsd": 55764.40033692467,
+      "actions": {
+        "Close": 406,
+        "Open": 495,
+        "Liquidation": 61,
+        "StopLoss": 80,
+        "TakeProfit": 33,
+        "RemoveCollateral": 84
+      },
+      "sides": {
+        "B": 778,
+        "S": 381
+      }
+    },
+    {
+      "date": "2026-05-07",
+      "segment": "event0_2",
+      "start": "2026-05-07T00:00:00.000Z",
+      "end": "2026-05-10T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "BRENT",
+      "pairId": 55,
+      "symbol": "BRENT-USD",
+      "fillCount": 156,
+      "notionalUsd": 2115844.528808145,
+      "openingFeesUsd": 566.2629980000004,
+      "totalFeesUsd": 1247.6124198224604,
+      "actions": {
+        "Close": 70,
+        "Open": 79,
+        "StopLoss": 5,
+        "RemoveCollateral": 1,
+        "Liquidation": 1
+      },
+      "sides": {
+        "B": 106,
+        "S": 50
+      }
+    },
+    {
+      "date": "2026-05-08",
+      "segment": "baseline30",
+      "start": "2026-04-08T00:00:00.000Z",
+      "end": "2026-05-08T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "BRENT",
+      "pairId": 55,
+      "symbol": "BRENT-USD",
+      "fillCount": 1077,
+      "notionalUsd": 20760465.145635415,
+      "openingFeesUsd": 4171.211712999997,
+      "totalFeesUsd": 8638.241026044729,
+      "actions": {
+        "Open": 467,
+        "StopLoss": 78,
+        "Close": 407,
+        "RemoveCollateral": 59,
+        "Liquidation": 52,
+        "TakeProfit": 14
+      },
+      "sides": {
+        "B": 747,
+        "S": 330
+      }
+    },
+    {
+      "date": "2026-05-08",
+      "segment": "event0_2",
+      "start": "2026-05-08T00:00:00.000Z",
+      "end": "2026-05-11T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "BRENT",
+      "pairId": 55,
+      "symbol": "BRENT-USD",
+      "fillCount": 40,
+      "notionalUsd": 956614.6665657723,
+      "openingFeesUsd": 152.17976200000004,
+      "totalFeesUsd": 339.60828880801705,
+      "actions": {
+        "Close": 25,
+        "Open": 14,
+        "StopLoss": 1
+      },
+      "sides": {
+        "B": 32,
+        "S": 8
+      }
+    },
+    {
+      "date": "2026-05-11",
+      "segment": "baseline30",
+      "start": "2026-04-11T00:00:00.000Z",
+      "end": "2026-05-11T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "BRENT",
+      "pairId": 55,
+      "symbol": "BRENT-USD",
+      "fillCount": 740,
+      "notionalUsd": 8944301.257696884,
+      "openingFeesUsd": 2763.856448999998,
+      "totalFeesUsd": -3327.208492218467,
+      "actions": {
+        "Close": 291,
+        "Open": 357,
+        "StopLoss": 59,
+        "RemoveCollateral": 7,
+        "Liquidation": 16,
+        "TakeProfit": 10
+      },
+      "sides": {
+        "B": 588,
+        "S": 152
+      }
+    },
+    {
+      "date": "2026-05-11",
+      "segment": "event0_2",
+      "start": "2026-05-11T00:00:00.000Z",
+      "end": "2026-05-14T00:00:00.000Z",
+      "days": 3,
+      "isPartial": true,
+      "label": "BRENT",
+      "pairId": 55,
+      "symbol": "BRENT-USD",
+      "fillCount": 21,
+      "notionalUsd": 1057478.6161632503,
+      "openingFeesUsd": 429.193648,
+      "totalFeesUsd": 838.7319964254306,
+      "actions": {
+        "Open": 15,
+        "Close": 6
+      },
+      "sides": {
+        "S": 8,
+        "B": 13
+      }
+    },
+    {
+      "date": "2026-02-01",
+      "segment": "baseline30",
+      "start": "2026-01-02T00:00:00.000Z",
+      "end": "2026-02-01T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 7668,
+      "notionalUsd": 129410429.60651802,
+      "openingFeesUsd": 53408.76010799999,
+      "totalFeesUsd": 101259.65835952334,
+      "actions": {
+        "StopLoss": 297,
+        "Close": 3175,
+        "Open": 3850,
+        "RemoveCollateral": 46,
+        "TakeProfit": 235,
+        "Liquidation": 65
+      },
+      "sides": {
+        "B": 4768,
+        "S": 2900
+      }
+    },
+    {
+      "date": "2026-02-01",
+      "segment": "event0_2",
+      "start": "2026-02-01T00:00:00.000Z",
+      "end": "2026-02-04T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 953,
+      "notionalUsd": 11921130.2758336,
+      "openingFeesUsd": 2982.321606999998,
+      "totalFeesUsd": 5459.7807049285475,
+      "actions": {
+        "Open": 434,
+        "Close": 440,
+        "StopLoss": 35,
+        "Liquidation": 16,
+        "TakeProfit": 23,
+        "RemoveCollateral": 5
+      },
+      "sides": {
+        "B": 785,
+        "S": 168
+      }
+    },
+    {
+      "date": "2026-02-02",
+      "segment": "baseline30",
+      "start": "2026-01-03T00:00:00.000Z",
+      "end": "2026-02-02T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 7671,
+      "notionalUsd": 129330574.44958906,
+      "openingFeesUsd": 53301.31729799998,
+      "totalFeesUsd": 101121.56101633681,
+      "actions": {
+        "Close": 3173,
+        "StopLoss": 308,
+        "Liquidation": 71,
+        "Open": 3838,
+        "RemoveCollateral": 46,
+        "TakeProfit": 235
+      },
+      "sides": {
+        "B": 4775,
+        "S": 2896
+      }
+    },
+    {
+      "date": "2026-02-02",
+      "segment": "event0_2",
+      "start": "2026-02-02T00:00:00.000Z",
+      "end": "2026-02-05T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 1203,
+      "notionalUsd": 15672628.931734178,
+      "openingFeesUsd": 3508.060890999998,
+      "totalFeesUsd": 6606.381200283187,
+      "actions": {
+        "Open": 544,
+        "TakeProfit": 32,
+        "Close": 586,
+        "RemoveCollateral": 7,
+        "Liquidation": 9,
+        "StopLoss": 25
+      },
+      "sides": {
+        "B": 965,
+        "S": 238
+      }
+    },
+    {
+      "date": "2026-02-03",
+      "segment": "baseline30",
+      "start": "2026-01-04T00:00:00.000Z",
+      "end": "2026-02-03T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 7918,
+      "notionalUsd": 131617194.4977418,
+      "openingFeesUsd": 53430.78275499998,
+      "totalFeesUsd": 101709.7322463909,
+      "actions": {
+        "Open": 3951,
+        "TakeProfit": 242,
+        "Close": 3282,
+        "StopLoss": 320,
+        "Liquidation": 77,
+        "RemoveCollateral": 46
+      },
+      "sides": {
+        "B": 4945,
+        "S": 2973
+      }
+    },
+    {
+      "date": "2026-02-03",
+      "segment": "event0_2",
+      "start": "2026-02-03T00:00:00.000Z",
+      "end": "2026-02-06T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 1213,
+      "notionalUsd": 15983404.023333535,
+      "openingFeesUsd": 3625.0211219999997,
+      "totalFeesUsd": 9591.780015891938,
+      "actions": {
+        "Close": 595,
+        "StopLoss": 25,
+        "Open": 551,
+        "Liquidation": 5,
+        "TakeProfit": 30,
+        "RemoveCollateral": 7
+      },
+      "sides": {
+        "B": 979,
+        "S": 234
+      }
+    },
+    {
+      "date": "2026-02-04",
+      "segment": "baseline30",
+      "start": "2026-01-05T00:00:00.000Z",
+      "end": "2026-02-04T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 8573,
+      "notionalUsd": 140121134.92155734,
+      "openingFeesUsd": 55286.188573999985,
+      "totalFeesUsd": 104393.67704721045,
+      "actions": {
+        "Open": 4248,
+        "Close": 3608,
+        "StopLoss": 330,
+        "Liquidation": 79,
+        "TakeProfit": 258,
+        "RemoveCollateral": 50
+      },
+      "sides": {
+        "B": 5521,
+        "S": 3052
+      }
+    },
+    {
+      "date": "2026-02-04",
+      "segment": "event0_2",
+      "start": "2026-02-04T00:00:00.000Z",
+      "end": "2026-02-07T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 730,
+      "notionalUsd": 7427025.784782284,
+      "openingFeesUsd": 982.8307830000006,
+      "totalFeesUsd": 5432.784837501289,
+      "actions": {
+        "Open": 328,
+        "Close": 354,
+        "TakeProfit": 17,
+        "Liquidation": 10,
+        "StopLoss": 18,
+        "RemoveCollateral": 3
+      },
+      "sides": {
+        "B": 528,
+        "S": 202
+      }
+    },
+    {
+      "date": "2026-02-05",
+      "segment": "baseline30",
+      "start": "2026-01-06T00:00:00.000Z",
+      "end": "2026-02-05T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 8665,
+      "notionalUsd": 142060593.3583848,
+      "openingFeesUsd": 55299.450485999965,
+      "totalFeesUsd": 103749.0345732977,
+      "actions": {
+        "Open": 4269,
+        "TakeProfit": 262,
+        "Close": 3692,
+        "RemoveCollateral": 52,
+        "Liquidation": 76,
+        "StopLoss": 314
+      },
+      "sides": {
+        "B": 5626,
+        "S": 3039
+      }
+    },
+    {
+      "date": "2026-02-05",
+      "segment": "event0_2",
+      "start": "2026-02-05T00:00:00.000Z",
+      "end": "2026-02-08T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 449,
+      "notionalUsd": 3522288.128904195,
+      "openingFeesUsd": 455.7630810000001,
+      "totalFeesUsd": 4215.068386414831,
+      "actions": {
+        "Open": 213,
+        "Close": 203,
+        "TakeProfit": 8,
+        "Liquidation": 9,
+        "StopLoss": 15,
+        "RemoveCollateral": 1
+      },
+      "sides": {
+        "B": 318,
+        "S": 131
+      }
+    },
+    {
+      "date": "2026-02-06",
+      "segment": "baseline30",
+      "start": "2026-01-07T00:00:00.000Z",
+      "end": "2026-02-06T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 8662,
+      "notionalUsd": 144025504.41308787,
+      "openingFeesUsd": 55377.92361099999,
+      "totalFeesUsd": 106992.180295622,
+      "actions": {
+        "Close": 3703,
+        "StopLoss": 309,
+        "Open": 4260,
+        "Liquidation": 75,
+        "TakeProfit": 265,
+        "RemoveCollateral": 50
+      },
+      "sides": {
+        "B": 5646,
+        "S": 3016
+      }
+    },
+    {
+      "date": "2026-02-06",
+      "segment": "event0_2",
+      "start": "2026-02-06T00:00:00.000Z",
+      "end": "2026-02-09T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 198,
+      "notionalUsd": 961884.1482007038,
+      "openingFeesUsd": 212.48269100000005,
+      "totalFeesUsd": 657.1469127326847,
+      "actions": {
+        "Close": 89,
+        "Open": 94,
+        "StopLoss": 4,
+        "TakeProfit": 3,
+        "Liquidation": 7,
+        "RemoveCollateral": 1
+      },
+      "sides": {
+        "B": 139,
+        "S": 59
+      }
+    },
+    {
+      "date": "2026-02-08",
+      "segment": "baseline30",
+      "start": "2026-01-09T00:00:00.000Z",
+      "end": "2026-02-08T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 8051,
+      "notionalUsd": 142054970.3383481,
+      "openingFeesUsd": 54848.33291100012,
+      "totalFeesUsd": 106118.02751333728,
+      "actions": {
+        "Open": 3948,
+        "Close": 3453,
+        "TakeProfit": 251,
+        "Liquidation": 73,
+        "StopLoss": 276,
+        "RemoveCollateral": 50
+      },
+      "sides": {
+        "B": 5311,
+        "S": 2740
+      }
+    },
+    {
+      "date": "2026-02-08",
+      "segment": "event0_2",
+      "start": "2026-02-08T00:00:00.000Z",
+      "end": "2026-02-11T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 245,
+      "notionalUsd": 1470853.0943138173,
+      "openingFeesUsd": 824.9904029999994,
+      "totalFeesUsd": 1174.5736396094508,
+      "actions": {
+        "Open": 120,
+        "Close": 116,
+        "StopLoss": 7,
+        "TakeProfit": 2
+      },
+      "sides": {
+        "B": 161,
+        "S": 84
+      }
+    },
+    {
+      "date": "2026-02-09",
+      "segment": "baseline30",
+      "start": "2026-01-10T00:00:00.000Z",
+      "end": "2026-02-09T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 7561,
+      "notionalUsd": 139092597.83122385,
+      "openingFeesUsd": 53692.42986600009,
+      "totalFeesUsd": 103900.27637366885,
+      "actions": {
+        "Close": 3266,
+        "Open": 3684,
+        "StopLoss": 253,
+        "TakeProfit": 240,
+        "Liquidation": 68,
+        "RemoveCollateral": 50
+      },
+      "sides": {
+        "B": 4982,
+        "S": 2579
+      }
+    },
+    {
+      "date": "2026-02-09",
+      "segment": "event0_2",
+      "start": "2026-02-09T00:00:00.000Z",
+      "end": "2026-02-12T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 295,
+      "notionalUsd": 2285498.391377414,
+      "openingFeesUsd": 1227.7930639999997,
+      "totalFeesUsd": 1743.5047965986,
+      "actions": {
+        "Open": 153,
+        "StopLoss": 8,
+        "Close": 131,
+        "Liquidation": 1,
+        "TakeProfit": 2
+      },
+      "sides": {
+        "B": 202,
+        "S": 93
+      }
+    },
+    {
+      "date": "2026-02-10",
+      "segment": "baseline30",
+      "start": "2026-01-11T00:00:00.000Z",
+      "end": "2026-02-10T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 7636,
+      "notionalUsd": 139546793.10523906,
+      "openingFeesUsd": 53957.5807620001,
+      "totalFeesUsd": 104242.88848412984,
+      "actions": {
+        "Open": 3721,
+        "Close": 3303,
+        "TakeProfit": 241,
+        "StopLoss": 253,
+        "Liquidation": 68,
+        "RemoveCollateral": 50
+      },
+      "sides": {
+        "B": 5041,
+        "S": 2595
+      }
+    },
+    {
+      "date": "2026-02-10",
+      "segment": "event0_2",
+      "start": "2026-02-10T00:00:00.000Z",
+      "end": "2026-02-13T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 350,
+      "notionalUsd": 59615132.716838405,
+      "openingFeesUsd": 1623.5721569999998,
+      "totalFeesUsd": 62103.58889802826,
+      "actions": {
+        "Close": 154,
+        "Open": 168,
+        "StopLoss": 15,
+        "TakeProfit": 2,
+        "Liquidation": 9,
+        "RemoveCollateral": 2
+      },
+      "sides": {
+        "B": 231,
+        "S": 119
+      }
+    },
+    {
+      "date": "2026-02-11",
+      "segment": "baseline30",
+      "start": "2026-01-12T00:00:00.000Z",
+      "end": "2026-02-11T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 7756,
+      "notionalUsd": 140224270.92226484,
+      "openingFeesUsd": 54505.206588,
+      "totalFeesUsd": 104900.15996517176,
+      "actions": {
+        "Open": 3793,
+        "Close": 3347,
+        "StopLoss": 256,
+        "TakeProfit": 242,
+        "Liquidation": 68,
+        "RemoveCollateral": 50
+      },
+      "sides": {
+        "B": 5097,
+        "S": 2659
+      }
+    },
+    {
+      "date": "2026-02-11",
+      "segment": "event0_2",
+      "start": "2026-02-11T00:00:00.000Z",
+      "end": "2026-02-14T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 220,
+      "notionalUsd": 58919677.32780815,
+      "openingFeesUsd": 1201.5732529999998,
+      "totalFeesUsd": 61486.02005084294,
+      "actions": {
+        "Open": 105,
+        "Close": 94,
+        "StopLoss": 9,
+        "TakeProfit": 1,
+        "Liquidation": 9,
+        "RemoveCollateral": 2
+      },
+      "sides": {
+        "B": 163,
+        "S": 57
+      }
+    },
+    {
+      "date": "2026-02-12",
+      "segment": "baseline30",
+      "start": "2026-01-13T00:00:00.000Z",
+      "end": "2026-02-12T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 7541,
+      "notionalUsd": 137383229.08421215,
+      "openingFeesUsd": 52410.96669299998,
+      "totalFeesUsd": 101865.10934283308,
+      "actions": {
+        "Open": 3684,
+        "StopLoss": 243,
+        "Close": 3261,
+        "Liquidation": 67,
+        "TakeProfit": 237,
+        "RemoveCollateral": 49
+      },
+      "sides": {
+        "B": 4961,
+        "S": 2580
+      }
+    },
+    {
+      "date": "2026-02-12",
+      "segment": "event0_2",
+      "start": "2026-02-12T00:00:00.000Z",
+      "end": "2026-02-15T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 164,
+      "notionalUsd": 58068040.871695966,
+      "openingFeesUsd": 795.6252939999999,
+      "totalFeesUsd": 60901.44032187306,
+      "actions": {
+        "Open": 71,
+        "Close": 75,
+        "StopLoss": 7,
+        "TakeProfit": 1,
+        "Liquidation": 8,
+        "RemoveCollateral": 2
+      },
+      "sides": {
+        "B": 117,
+        "S": 47
+      }
+    },
+    {
+      "date": "2026-02-13",
+      "segment": "baseline30",
+      "start": "2026-01-14T00:00:00.000Z",
+      "end": "2026-02-13T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 7542,
+      "notionalUsd": 194105489.26020482,
+      "openingFeesUsd": 52416.23456299999,
+      "totalFeesUsd": 161060.3709343629,
+      "actions": {
+        "Close": 3269,
+        "Open": 3670,
+        "StopLoss": 245,
+        "TakeProfit": 236,
+        "Liquidation": 73,
+        "RemoveCollateral": 49
+      },
+      "sides": {
+        "B": 4956,
+        "S": 2586
+      }
+    },
+    {
+      "date": "2026-02-13",
+      "segment": "event0_2",
+      "start": "2026-02-13T00:00:00.000Z",
+      "end": "2026-02-16T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 35,
+      "notionalUsd": 284360.522219726,
+      "openingFeesUsd": 134.845305,
+      "totalFeesUsd": 198.91668664999182,
+      "actions": {
+        "Open": 20,
+        "Close": 15
+      },
+      "sides": {
+        "B": 30,
+        "S": 5
+      }
+    },
+    {
+      "date": "2026-02-15",
+      "segment": "baseline30",
+      "start": "2026-01-16T00:00:00.000Z",
+      "end": "2026-02-15T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 7301,
+      "notionalUsd": 191263122.24656156,
+      "openingFeesUsd": 51049.59212599996,
+      "totalFeesUsd": 157873.68410276796,
+      "actions": {
+        "Open": 3559,
+        "Close": 3178,
+        "StopLoss": 224,
+        "TakeProfit": 232,
+        "Liquidation": 63,
+        "RemoveCollateral": 45
+      },
+      "sides": {
+        "B": 4774,
+        "S": 2527
+      }
+    },
+    {
+      "date": "2026-02-15",
+      "segment": "event0_2",
+      "start": "2026-02-15T00:00:00.000Z",
+      "end": "2026-02-18T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 76,
+      "notionalUsd": 2489456.706563593,
+      "openingFeesUsd": 1394.3888470000004,
+      "totalFeesUsd": 1787.3602977327903,
+      "actions": {
+        "Open": 42,
+        "Close": 23,
+        "StopLoss": 8,
+        "Liquidation": 3
+      },
+      "sides": {
+        "S": 6,
+        "B": 70
+      }
+    },
+    {
+      "date": "2026-02-16",
+      "segment": "baseline30",
+      "start": "2026-01-17T00:00:00.000Z",
+      "end": "2026-02-16T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 7143,
+      "notionalUsd": 189396265.4371372,
+      "openingFeesUsd": 49860.32503699994,
+      "totalFeesUsd": 156331.94981822805,
+      "actions": {
+        "Open": 3475,
+        "Close": 3111,
+        "StopLoss": 221,
+        "TakeProfit": 230,
+        "Liquidation": 63,
+        "RemoveCollateral": 43
+      },
+      "sides": {
+        "B": 4672,
+        "S": 2471
+      }
+    },
+    {
+      "date": "2026-02-16",
+      "segment": "event0_2",
+      "start": "2026-02-16T00:00:00.000Z",
+      "end": "2026-02-19T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 145,
+      "notionalUsd": 11884242.894686185,
+      "openingFeesUsd": 10743.554314999998,
+      "totalFeesUsd": 12969.380895282513,
+      "actions": {
+        "Close": 44,
+        "Open": 78,
+        "TakeProfit": 5,
+        "RemoveCollateral": 5,
+        "StopLoss": 10,
+        "Liquidation": 3
+      },
+      "sides": {
+        "B": 118,
+        "S": 27
+      }
+    },
+    {
+      "date": "2026-02-17",
+      "segment": "baseline30",
+      "start": "2026-01-18T00:00:00.000Z",
+      "end": "2026-02-17T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 7167,
+      "notionalUsd": 190019404.54409042,
+      "openingFeesUsd": 50467.13791599994,
+      "totalFeesUsd": 157009.93589013655,
+      "actions": {
+        "Open": 3489,
+        "Close": 3120,
+        "StopLoss": 222,
+        "TakeProfit": 230,
+        "Liquidation": 63,
+        "RemoveCollateral": 43
+      },
+      "sides": {
+        "B": 4692,
+        "S": 2475
+      }
+    },
+    {
+      "date": "2026-02-17",
+      "segment": "event0_2",
+      "start": "2026-02-17T00:00:00.000Z",
+      "end": "2026-02-20T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 227,
+      "notionalUsd": 18266167.053657196,
+      "openingFeesUsd": 16627.950094,
+      "totalFeesUsd": 20051.654068379667,
+      "actions": {
+        "Close": 68,
+        "Open": 126,
+        "StopLoss": 13,
+        "RemoveCollateral": 9,
+        "TakeProfit": 8,
+        "Liquidation": 3
+      },
+      "sides": {
+        "B": 184,
+        "S": 43
+      }
+    },
+    {
+      "date": "2026-02-18",
+      "segment": "baseline30",
+      "start": "2026-01-19T00:00:00.000Z",
+      "end": "2026-02-18T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 7210,
+      "notionalUsd": 191879760.83290985,
+      "openingFeesUsd": 51249.75988399994,
+      "totalFeesUsd": 158107.5449317466,
+      "actions": {
+        "Open": 3512,
+        "Close": 3134,
+        "StopLoss": 229,
+        "Liquidation": 65,
+        "TakeProfit": 230,
+        "RemoveCollateral": 40
+      },
+      "sides": {
+        "S": 2474,
+        "B": 4736
+      }
+    },
+    {
+      "date": "2026-02-18",
+      "segment": "event0_2",
+      "start": "2026-02-18T00:00:00.000Z",
+      "end": "2026-02-21T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 238,
+      "notionalUsd": 17071081.753569067,
+      "openingFeesUsd": 16168.880061,
+      "totalFeesUsd": 19360.372585894016,
+      "actions": {
+        "Open": 122,
+        "Close": 90,
+        "StopLoss": 8,
+        "RemoveCollateral": 10,
+        "TakeProfit": 8
+      },
+      "sides": {
+        "B": 189,
+        "S": 49
+      }
+    },
+    {
+      "date": "2026-02-19",
+      "segment": "baseline30",
+      "start": "2026-01-20T00:00:00.000Z",
+      "end": "2026-02-19T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 7209,
+      "notionalUsd": 199616323.78667194,
+      "openingFeesUsd": 60099.792755999966,
+      "totalFeesUsd": 168451.6227316856,
+      "actions": {
+        "Close": 3127,
+        "Open": 3514,
+        "TakeProfit": 234,
+        "RemoveCollateral": 45,
+        "StopLoss": 226,
+        "Liquidation": 63
+      },
+      "sides": {
+        "B": 4722,
+        "S": 2487
+      }
+    },
+    {
+      "date": "2026-02-19",
+      "segment": "event0_2",
+      "start": "2026-02-19T00:00:00.000Z",
+      "end": "2026-02-22T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 168,
+      "notionalUsd": 7676146.315446475,
+      "openingFeesUsd": 6819.564593,
+      "totalFeesUsd": 8178.179411676774,
+      "actions": {
+        "Open": 85,
+        "Close": 69,
+        "StopLoss": 6,
+        "RemoveCollateral": 5,
+        "TakeProfit": 3
+      },
+      "sides": {
+        "B": 140,
+        "S": 28
+      }
+    },
+    {
+      "date": "2026-02-20",
+      "segment": "baseline30",
+      "start": "2026-01-21T00:00:00.000Z",
+      "end": "2026-02-20T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 7237,
+      "notionalUsd": 205773016.92900443,
+      "openingFeesUsd": 66025.0632109999,
+      "totalFeesUsd": 175319.36352317568,
+      "actions": {
+        "Close": 3126,
+        "Open": 3539,
+        "StopLoss": 226,
+        "RemoveCollateral": 48,
+        "TakeProfit": 237,
+        "Liquidation": 61
+      },
+      "sides": {
+        "B": 4753,
+        "S": 2484
+      }
+    },
+    {
+      "date": "2026-02-20",
+      "segment": "event0_2",
+      "start": "2026-02-20T00:00:00.000Z",
+      "end": "2026-02-23T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 73,
+      "notionalUsd": 4581385.389103034,
+      "openingFeesUsd": 328.35593499999993,
+      "totalFeesUsd": 927.0580783337615,
+      "actions": {
+        "Close": 46,
+        "RemoveCollateral": 2,
+        "Open": 23,
+        "StopLoss": 2
+      },
+      "sides": {
+        "B": 64,
+        "S": 9
+      }
+    },
+    {
+      "date": "2026-02-22",
+      "segment": "baseline30",
+      "start": "2026-01-23T00:00:00.000Z",
+      "end": "2026-02-22T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 7186,
+      "notionalUsd": 205633590.81605193,
+      "openingFeesUsd": 65738.80190199992,
+      "totalFeesUsd": 174967.01946899024,
+      "actions": {
+        "Open": 3508,
+        "Close": 3112,
+        "StopLoss": 222,
+        "RemoveCollateral": 48,
+        "TakeProfit": 237,
+        "Liquidation": 59
+      },
+      "sides": {
+        "B": 4712,
+        "S": 2474
+      }
+    },
+    {
+      "date": "2026-02-22",
+      "segment": "event0_2",
+      "start": "2026-02-22T00:00:00.000Z",
+      "end": "2026-02-25T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 154,
+      "notionalUsd": 15060479.770294778,
+      "openingFeesUsd": 2618.6088030000005,
+      "totalFeesUsd": 9944.099133964482,
+      "actions": {
+        "Open": 76,
+        "StopLoss": 3,
+        "Close": 67,
+        "Liquidation": 3,
+        "RemoveCollateral": 5
+      },
+      "sides": {
+        "B": 133,
+        "S": 21
+      }
+    },
+    {
+      "date": "2026-02-23",
+      "segment": "baseline30",
+      "start": "2026-01-24T00:00:00.000Z",
+      "end": "2026-02-23T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 7093,
+      "notionalUsd": 208442944.6931615,
+      "openingFeesUsd": 65164.23428799993,
+      "totalFeesUsd": 174694.699894526,
+      "actions": {
+        "Close": 3069,
+        "RemoveCollateral": 48,
+        "Open": 3460,
+        "StopLoss": 221,
+        "TakeProfit": 236,
+        "Liquidation": 59
+      },
+      "sides": {
+        "B": 4632,
+        "S": 2461
+      }
+    },
+    {
+      "date": "2026-02-23",
+      "segment": "event0_2",
+      "start": "2026-02-23T00:00:00.000Z",
+      "end": "2026-02-26T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 210,
+      "notionalUsd": 14388606.067798998,
+      "openingFeesUsd": 2748.3448370000006,
+      "totalFeesUsd": 10833.51687893225,
+      "actions": {
+        "Close": 80,
+        "Open": 107,
+        "RemoveCollateral": 8,
+        "StopLoss": 10,
+        "Liquidation": 5
+      },
+      "sides": {
+        "B": 179,
+        "S": 31
+      }
+    },
+    {
+      "date": "2026-02-24",
+      "segment": "baseline30",
+      "start": "2026-01-25T00:00:00.000Z",
+      "end": "2026-02-24T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 7176,
+      "notionalUsd": 216091995.93214917,
+      "openingFeesUsd": 67366.48262,
+      "totalFeesUsd": 183034.4557551125,
+      "actions": {
+        "Open": 3503,
+        "Close": 3106,
+        "RemoveCollateral": 49,
+        "StopLoss": 222,
+        "Liquidation": 60,
+        "TakeProfit": 236
+      },
+      "sides": {
+        "B": 4703,
+        "S": 2473
+      }
+    },
+    {
+      "date": "2026-02-24",
+      "segment": "event0_2",
+      "start": "2026-02-24T00:00:00.000Z",
+      "end": "2026-02-27T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 231,
+      "notionalUsd": 9252011.616957951,
+      "openingFeesUsd": 2644.1486379999997,
+      "totalFeesUsd": 5087.874403764968,
+      "actions": {
+        "Open": 113,
+        "Close": 77,
+        "RemoveCollateral": 9,
+        "StopLoss": 21,
+        "TakeProfit": 1,
+        "Liquidation": 10
+      },
+      "sides": {
+        "B": 199,
+        "S": 32
+      }
+    },
+    {
+      "date": "2026-02-25",
+      "segment": "baseline30",
+      "start": "2026-01-26T00:00:00.000Z",
+      "end": "2026-02-25T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 7229,
+      "notionalUsd": 219579763.40601906,
+      "openingFeesUsd": 67771.657311,
+      "totalFeesUsd": 184114.64456272646,
+      "actions": {
+        "Open": 3530,
+        "StopLoss": 224,
+        "Close": 3125,
+        "Liquidation": 62,
+        "RemoveCollateral": 52,
+        "TakeProfit": 236
+      },
+      "sides": {
+        "B": 4748,
+        "S": 2481
+      }
+    },
+    {
+      "date": "2026-02-25",
+      "segment": "event0_2",
+      "start": "2026-02-25T00:00:00.000Z",
+      "end": "2026-02-28T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 268,
+      "notionalUsd": 22791414.884652697,
+      "openingFeesUsd": 19419.171580000006,
+      "totalFeesUsd": 26513.09911853415,
+      "actions": {
+        "Open": 145,
+        "Close": 76,
+        "Liquidation": 10,
+        "StopLoss": 22,
+        "RemoveCollateral": 14,
+        "TakeProfit": 1
+      },
+      "sides": {
+        "B": 228,
+        "S": 40
+      }
+    },
+    {
+      "date": "2026-02-26",
+      "segment": "baseline30",
+      "start": "2026-01-27T00:00:00.000Z",
+      "end": "2026-02-26T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 7077,
+      "notionalUsd": 215507239.24799162,
+      "openingFeesUsd": 65505.583365999926,
+      "totalFeesUsd": 174274.9916476721,
+      "actions": {
+        "Close": 3067,
+        "Open": 3443,
+        "RemoveCollateral": 56,
+        "StopLoss": 213,
+        "Liquidation": 63,
+        "TakeProfit": 235
+      },
+      "sides": {
+        "B": 4657,
+        "S": 2420
+      }
+    },
+    {
+      "date": "2026-02-26",
+      "segment": "event0_2",
+      "start": "2026-02-26T00:00:00.000Z",
+      "end": "2026-03-01T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 201,
+      "notionalUsd": 19552986.2475676,
+      "openingFeesUsd": 19289.435546000004,
+      "totalFeesUsd": 25114.543461903737,
+      "actions": {
+        "Open": 114,
+        "Close": 53,
+        "Liquidation": 8,
+        "StopLoss": 15,
+        "RemoveCollateral": 10,
+        "TakeProfit": 1
+      },
+      "sides": {
+        "B": 172,
+        "S": 29
+      }
+    },
+    {
+      "date": "2026-02-27",
+      "segment": "baseline30",
+      "start": "2026-01-28T00:00:00.000Z",
+      "end": "2026-02-27T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 6233,
+      "notionalUsd": 213783095.56753644,
+      "openingFeesUsd": 66622.26603800003,
+      "totalFeesUsd": 174730.83799841302,
+      "actions": {
+        "Open": 3024,
+        "Close": 2683,
+        "RemoveCollateral": 58,
+        "StopLoss": 193,
+        "TakeProfit": 213,
+        "Liquidation": 62
+      },
+      "sides": {
+        "B": 4189,
+        "S": 2044
+      }
+    },
+    {
+      "date": "2026-02-27",
+      "segment": "event0_2",
+      "start": "2026-02-27T00:00:00.000Z",
+      "end": "2026-03-02T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 270,
+      "notionalUsd": 20548562.208301812,
+      "openingFeesUsd": 19650.056829,
+      "totalFeesUsd": 28032.34191118197,
+      "actions": {
+        "Close": 44,
+        "Open": 177,
+        "StopLoss": 8,
+        "RemoveCollateral": 26,
+        "Liquidation": 6,
+        "TakeProfit": 9
+      },
+      "sides": {
+        "S": 67,
+        "B": 203
+      }
+    },
+    {
+      "date": "2026-03-01",
+      "segment": "baseline30",
+      "start": "2026-01-30T00:00:00.000Z",
+      "end": "2026-03-01T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 3662,
+      "notionalUsd": 180155785.45496234,
+      "openingFeesUsd": 60547.28524699992,
+      "totalFeesUsd": 164513.6371096495,
+      "actions": {
+        "Open": 1749,
+        "Close": 1535,
+        "Liquidation": 61,
+        "StopLoss": 139,
+        "RemoveCollateral": 45,
+        "TakeProfit": 133
+      },
+      "sides": {
+        "B": 2849,
+        "S": 813
+      }
+    },
+    {
+      "date": "2026-03-01",
+      "segment": "event0_2",
+      "start": "2026-03-01T00:00:00.000Z",
+      "end": "2026-03-04T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 1767,
+      "notionalUsd": 142556157.64326206,
+      "openingFeesUsd": 132649.48860500014,
+      "totalFeesUsd": 194773.525665605,
+      "actions": {
+        "Open": 904,
+        "RemoveCollateral": 58,
+        "Close": 597,
+        "StopLoss": 96,
+        "Liquidation": 70,
+        "TakeProfit": 42
+      },
+      "sides": {
+        "B": 1447,
+        "S": 320
+      }
+    },
+    {
+      "date": "2026-03-02",
+      "segment": "baseline30",
+      "start": "2026-01-31T00:00:00.000Z",
+      "end": "2026-03-02T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 3057,
+      "notionalUsd": 140659152.34669888,
+      "openingFeesUsd": 48051.438752999944,
+      "totalFeesUsd": 136670.00220370488,
+      "actions": {
+        "Close": 1285,
+        "Open": 1484,
+        "StopLoss": 115,
+        "RemoveCollateral": 57,
+        "Liquidation": 55,
+        "TakeProfit": 61
+      },
+      "sides": {
+        "S": 678,
+        "B": 2379
+      }
+    },
+    {
+      "date": "2026-03-02",
+      "segment": "event0_2",
+      "start": "2026-03-02T00:00:00.000Z",
+      "end": "2026-03-05T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 2090,
+      "notionalUsd": 231484981.84939823,
+      "openingFeesUsd": 166111.93383099974,
+      "totalFeesUsd": 259442.84722240173,
+      "actions": {
+        "Close": 779,
+        "Open": 1021,
+        "RemoveCollateral": 57,
+        "Liquidation": 78,
+        "TakeProfit": 42,
+        "StopLoss": 113
+      },
+      "sides": {
+        "B": 1714,
+        "S": 376
+      }
+    },
+    {
+      "date": "2026-03-03",
+      "segment": "baseline30",
+      "start": "2026-02-01T00:00:00.000Z",
+      "end": "2026-03-03T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 3892,
+      "notionalUsd": 167305131.46621394,
+      "openingFeesUsd": 68326.70687300006,
+      "totalFeesUsd": 165805.77322060196,
+      "actions": {
+        "Open": 1912,
+        "Liquidation": 86,
+        "Close": 1588,
+        "StopLoss": 162,
+        "RemoveCollateral": 78,
+        "TakeProfit": 66
+      },
+      "sides": {
+        "S": 790,
+        "B": 3102
+      }
+    },
+    {
+      "date": "2026-03-03",
+      "segment": "event0_2",
+      "start": "2026-03-03T00:00:00.000Z",
+      "end": "2026-03-06T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 1999,
+      "notionalUsd": 258430094.27864322,
+      "openingFeesUsd": 222563.3375160001,
+      "totalFeesUsd": 324123.4099793493,
+      "actions": {
+        "Close": 744,
+        "Open": 951,
+        "StopLoss": 103,
+        "Liquidation": 71,
+        "RemoveCollateral": 54,
+        "TakeProfit": 76
+      },
+      "sides": {
+        "B": 1582,
+        "S": 417
+      }
+    },
+    {
+      "date": "2026-03-04",
+      "segment": "baseline30",
+      "start": "2026-02-02T00:00:00.000Z",
+      "end": "2026-03-04T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 4620,
+      "notionalUsd": 279554038.24110305,
+      "openingFeesUsd": 178240.92552400028,
+      "totalFeesUsd": 325860.5000788811,
+      "actions": {
+        "Open": 2271,
+        "RemoveCollateral": 97,
+        "Close": 1852,
+        "StopLoss": 193,
+        "Liquidation": 113,
+        "TakeProfit": 94
+      },
+      "sides": {
+        "B": 3674,
+        "S": 946
+      }
+    },
+    {
+      "date": "2026-03-04",
+      "segment": "event0_2",
+      "start": "2026-03-04T00:00:00.000Z",
+      "end": "2026-03-07T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 2197,
+      "notionalUsd": 184893132.0273974,
+      "openingFeesUsd": 134774.1687709998,
+      "totalFeesUsd": 204953.07090346725,
+      "actions": {
+        "Open": 1033,
+        "Close": 847,
+        "StopLoss": 116,
+        "RemoveCollateral": 66,
+        "Liquidation": 53,
+        "TakeProfit": 82
+      },
+      "sides": {
+        "S": 511,
+        "B": 1686
+      }
+    },
+    {
+      "date": "2026-03-05",
+      "segment": "baseline30",
+      "start": "2026-02-03T00:00:00.000Z",
+      "end": "2026-03-05T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 4869,
+      "notionalUsd": 369704275.1479675,
+      "openingFeesUsd": 214032.57870899994,
+      "totalFeesUsd": 395453.56224032154,
+      "actions": {
+        "Close": 1950,
+        "Open": 2387,
+        "RemoveCollateral": 114,
+        "Liquidation": 119,
+        "TakeProfit": 96,
+        "StopLoss": 203
+      },
+      "sides": {
+        "B": 3893,
+        "S": 976
+      }
+    },
+    {
+      "date": "2026-03-05",
+      "segment": "event0_2",
+      "start": "2026-03-05T00:00:00.000Z",
+      "end": "2026-03-08T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 1701,
+      "notionalUsd": 92456275.0723795,
+      "openingFeesUsd": 98853.05012899994,
+      "totalFeesUsd": 134771.83751197343,
+      "actions": {
+        "Open": 804,
+        "Close": 640,
+        "StopLoss": 94,
+        "RemoveCollateral": 49,
+        "Liquidation": 41,
+        "TakeProfit": 73
+      },
+      "sides": {
+        "S": 404,
+        "B": 1297
+      }
+    },
+    {
+      "date": "2026-03-06",
+      "segment": "baseline30",
+      "start": "2026-02-04T00:00:00.000Z",
+      "end": "2026-03-06T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 4938,
+      "notionalUsd": 413814095.46902394,
+      "openingFeesUsd": 287907.7227820006,
+      "totalFeesUsd": 484469.4024950222,
+      "actions": {
+        "Close": 1892,
+        "Open": 2429,
+        "StopLoss": 230,
+        "Liquidation": 141,
+        "RemoveCollateral": 127,
+        "TakeProfit": 119
+      },
+      "sides": {
+        "B": 3899,
+        "S": 1039
+      }
+    },
+    {
+      "date": "2026-03-06",
+      "segment": "event0_2",
+      "start": "2026-03-06T00:00:00.000Z",
+      "end": "2026-03-09T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 1666,
+      "notionalUsd": 84055507.54440542,
+      "openingFeesUsd": 67177.13771100002,
+      "totalFeesUsd": 131709.28191937212,
+      "actions": {
+        "Close": 582,
+        "Open": 811,
+        "StopLoss": 62,
+        "RemoveCollateral": 74,
+        "TakeProfit": 99,
+        "Liquidation": 38
+      },
+      "sides": {
+        "B": 1310,
+        "S": 356
+      }
+    },
+    {
+      "date": "2026-03-08",
+      "segment": "baseline30",
+      "start": "2026-02-06T00:00:00.000Z",
+      "end": "2026-03-08T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 5357,
+      "notionalUsd": 446177146.1970139,
+      "openingFeesUsd": 309260.6077160001,
+      "totalFeesUsd": 520633.6197364032,
+      "actions": {
+        "Open": 2640,
+        "Close": 1995,
+        "StopLoss": 272,
+        "RemoveCollateral": 156,
+        "Liquidation": 155,
+        "TakeProfit": 139
+      },
+      "sides": {
+        "S": 1146,
+        "B": 4211
+      }
+    },
+    {
+      "date": "2026-03-08",
+      "segment": "event0_2",
+      "start": "2026-03-08T00:00:00.000Z",
+      "end": "2026-03-11T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 4507,
+      "notionalUsd": 433923661.06005895,
+      "openingFeesUsd": 332511.20847000077,
+      "totalFeesUsd": 1291716.05047228,
+      "actions": {
+        "Liquidation": 361,
+        "StopLoss": 298,
+        "Open": 2114,
+        "Close": 1488,
+        "TakeProfit": 135,
+        "RemoveCollateral": 111
+      },
+      "sides": {
+        "B": 3853,
+        "S": 654
+      }
+    },
+    {
+      "date": "2026-03-09",
+      "segment": "baseline30",
+      "start": "2026-02-07T00:00:00.000Z",
+      "end": "2026-03-09T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 5874,
+      "notionalUsd": 490442577.22864735,
+      "openingFeesUsd": 354102.02970999974,
+      "totalFeesUsd": 610745.8995768898,
+      "actions": {
+        "Close": 2120,
+        "Open": 2912,
+        "StopLoss": 274,
+        "RemoveCollateral": 198,
+        "TakeProfit": 201,
+        "Liquidation": 169
+      },
+      "sides": {
+        "B": 4681,
+        "S": 1193
+      }
+    },
+    {
+      "date": "2026-03-09",
+      "segment": "event0_2",
+      "start": "2026-03-09T00:00:00.000Z",
+      "end": "2026-03-12T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 4355,
+      "notionalUsd": 451760645.625671,
+      "openingFeesUsd": 339122.56741499895,
+      "totalFeesUsd": 1365515.524291886,
+      "actions": {
+        "Close": 1506,
+        "Open": 2007,
+        "Liquidation": 353,
+        "StopLoss": 333,
+        "TakeProfit": 88,
+        "RemoveCollateral": 68
+      },
+      "sides": {
+        "B": 3723,
+        "S": 632
+      }
+    },
+    {
+      "date": "2026-03-10",
+      "segment": "baseline30",
+      "start": "2026-02-08T00:00:00.000Z",
+      "end": "2026-03-10T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 8542,
+      "notionalUsd": 686537668.6482844,
+      "openingFeesUsd": 461779.681659,
+      "totalFeesUsd": 1197769.8801601962,
+      "actions": {
+        "Open": 4095,
+        "Close": 3055,
+        "StopLoss": 459,
+        "TakeProfit": 260,
+        "Liquidation": 415,
+        "RemoveCollateral": 258
+      },
+      "sides": {
+        "B": 6927,
+        "S": 1615
+      }
+    },
+    {
+      "date": "2026-03-10",
+      "segment": "event0_2",
+      "start": "2026-03-10T00:00:00.000Z",
+      "end": "2026-03-13T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 2401,
+      "notionalUsd": 266991361.6142398,
+      "openingFeesUsd": 240190.5554899998,
+      "totalFeesUsd": 791774.2237138675,
+      "actions": {
+        "Close": 914,
+        "Open": 1134,
+        "StopLoss": 184,
+        "TakeProfit": 39,
+        "Liquidation": 118,
+        "RemoveCollateral": 12
+      },
+      "sides": {
+        "B": 2079,
+        "S": 322
+      }
+    },
+    {
+      "date": "2026-03-11",
+      "segment": "baseline30",
+      "start": "2026-02-09T00:00:00.000Z",
+      "end": "2026-03-11T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 9666,
+      "notionalUsd": 879138923.1088735,
+      "openingFeesUsd": 641559.3334950008,
+      "totalFeesUsd": 1811692.5232959485,
+      "actions": {
+        "Liquidation": 509,
+        "StopLoss": 566,
+        "Open": 4660,
+        "Close": 3394,
+        "TakeProfit": 271,
+        "RemoveCollateral": 266
+      },
+      "sides": {
+        "B": 7925,
+        "S": 1741
+      }
+    },
+    {
+      "date": "2026-03-11",
+      "segment": "event0_2",
+      "start": "2026-03-11T00:00:00.000Z",
+      "end": "2026-03-14T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 1717,
+      "notionalUsd": 86123149.5160823,
+      "openingFeesUsd": 75391.384717,
+      "totalFeesUsd": 198181.53333293318,
+      "actions": {
+        "Open": 735,
+        "Close": 803,
+        "RemoveCollateral": 18,
+        "StopLoss": 97,
+        "TakeProfit": 34,
+        "Liquidation": 30
+      },
+      "sides": {
+        "B": 1424,
+        "S": 293
+      }
+    },
+    {
+      "date": "2026-03-12",
+      "segment": "baseline30",
+      "start": "2026-02-10T00:00:00.000Z",
+      "end": "2026-03-12T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 10148,
+      "notionalUsd": 941712036.4212582,
+      "openingFeesUsd": 692956.3009309997,
+      "totalFeesUsd": 1975903.1631863369,
+      "actions": {
+        "Close": 3585,
+        "Open": 4881,
+        "Liquidation": 522,
+        "StopLoss": 606,
+        "TakeProfit": 288,
+        "RemoveCollateral": 266
+      },
+      "sides": {
+        "B": 8340,
+        "S": 1808
+      }
+    },
+    {
+      "date": "2026-03-12",
+      "segment": "event0_2",
+      "start": "2026-03-12T00:00:00.000Z",
+      "end": "2026-03-15T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 1160,
+      "notionalUsd": 23095840.929684006,
+      "openingFeesUsd": 23729.266385000014,
+      "totalFeesUsd": 33628.2813320837,
+      "actions": {
+        "Open": 477,
+        "Close": 575,
+        "RemoveCollateral": 18,
+        "StopLoss": 57,
+        "TakeProfit": 16,
+        "Liquidation": 17
+      },
+      "sides": {
+        "B": 950,
+        "S": 210
+      }
+    },
+    {
+      "date": "2026-03-13",
+      "segment": "baseline30",
+      "start": "2026-02-11T00:00:00.000Z",
+      "end": "2026-03-13T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 10698,
+      "notionalUsd": 952058177.1682177,
+      "openingFeesUsd": 701145.2467459992,
+      "totalFeesUsd": 1988369.5302344637,
+      "actions": {
+        "Close": 3853,
+        "Open": 5109,
+        "StopLoss": 636,
+        "TakeProfit": 297,
+        "Liquidation": 533,
+        "RemoveCollateral": 270
+      },
+      "sides": {
+        "B": 8845,
+        "S": 1853
+      }
+    },
+    {
+      "date": "2026-03-13",
+      "segment": "event0_2",
+      "start": "2026-03-13T00:00:00.000Z",
+      "end": "2026-03-16T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 539,
+      "notionalUsd": 27001690.78505704,
+      "openingFeesUsd": 23828.584538999992,
+      "totalFeesUsd": 37031.67592856777,
+      "actions": {
+        "Close": 285,
+        "Open": 197,
+        "StopLoss": 24,
+        "TakeProfit": 9,
+        "Liquidation": 10,
+        "RemoveCollateral": 14
+      },
+      "sides": {
+        "B": 414,
+        "S": 125
+      }
+    },
+    {
+      "date": "2026-03-15",
+      "segment": "baseline30",
+      "start": "2026-02-13T00:00:00.000Z",
+      "end": "2026-03-15T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 10958,
+      "notionalUsd": 905192744.6341046,
+      "openingFeesUsd": 715061.9951589993,
+      "totalFeesUsd": 1947427.855620393,
+      "actions": {
+        "Open": 5190,
+        "Close": 4006,
+        "RemoveCollateral": 282,
+        "StopLoss": 648,
+        "TakeProfit": 302,
+        "Liquidation": 530
+      },
+      "sides": {
+        "B": 9059,
+        "S": 1899
+      }
+    },
+    {
+      "date": "2026-03-15",
+      "segment": "event0_2",
+      "start": "2026-03-15T00:00:00.000Z",
+      "end": "2026-03-18T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 695,
+      "notionalUsd": 167681351.6365,
+      "openingFeesUsd": 139588.45129799994,
+      "totalFeesUsd": 226555.90847503848,
+      "actions": {
+        "Open": 303,
+        "Close": 321,
+        "StopLoss": 52,
+        "RemoveCollateral": 2,
+        "Liquidation": 13,
+        "TakeProfit": 4
+      },
+      "sides": {
+        "B": 550,
+        "S": 145
+      }
+    },
+    {
+      "date": "2026-03-16",
+      "segment": "baseline30",
+      "start": "2026-02-14T00:00:00.000Z",
+      "end": "2026-03-16T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 11017,
+      "notionalUsd": 920140190.6254668,
+      "openingFeesUsd": 723772.2580319991,
+      "totalFeesUsd": 1963915.18611219,
+      "actions": {
+        "Close": 4044,
+        "Open": 5201,
+        "StopLoss": 651,
+        "TakeProfit": 305,
+        "Liquidation": 534,
+        "RemoveCollateral": 282
+      },
+      "sides": {
+        "B": 9096,
+        "S": 1921
+      }
+    },
+    {
+      "date": "2026-03-16",
+      "segment": "event0_2",
+      "start": "2026-03-16T00:00:00.000Z",
+      "end": "2026-03-19T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 997,
+      "notionalUsd": 317805582.490998,
+      "openingFeesUsd": 256916.61847999977,
+      "totalFeesUsd": 412203.78563114605,
+      "actions": {
+        "Open": 469,
+        "Close": 427,
+        "RemoveCollateral": 12,
+        "StopLoss": 68,
+        "TakeProfit": 5,
+        "Liquidation": 16
+      },
+      "sides": {
+        "B": 770,
+        "S": 227
+      }
+    },
+    {
+      "date": "2026-03-17",
+      "segment": "baseline30",
+      "start": "2026-02-15T00:00:00.000Z",
+      "end": "2026-03-17T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 11365,
+      "notionalUsd": 925940167.9876841,
+      "openingFeesUsd": 727202.9531709992,
+      "totalFeesUsd": 1971457.7383045407,
+      "actions": {
+        "Close": 4194,
+        "Open": 5355,
+        "StopLoss": 686,
+        "RemoveCollateral": 283,
+        "Liquidation": 542,
+        "TakeProfit": 305
+      },
+      "sides": {
+        "S": 1984,
+        "B": 9381
+      }
+    },
+    {
+      "date": "2026-03-17",
+      "segment": "event0_2",
+      "start": "2026-03-17T00:00:00.000Z",
+      "end": "2026-03-20T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 1074,
+      "notionalUsd": 458016667.92933774,
+      "openingFeesUsd": 335215.7675750001,
+      "totalFeesUsd": 555921.6689526986,
+      "actions": {
+        "Close": 443,
+        "Open": 502,
+        "RemoveCollateral": 12,
+        "Liquidation": 24,
+        "StopLoss": 61,
+        "TakeProfit": 32
+      },
+      "sides": {
+        "S": 275,
+        "B": 799
+      }
+    },
+    {
+      "date": "2026-03-18",
+      "segment": "baseline30",
+      "start": "2026-02-16T00:00:00.000Z",
+      "end": "2026-03-18T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 11618,
+      "notionalUsd": 1072589735.7483832,
+      "openingFeesUsd": 854515.6011519966,
+      "totalFeesUsd": 2173784.847408785,
+      "actions": {
+        "Open": 5473,
+        "Close": 4312,
+        "StopLoss": 700,
+        "RemoveCollateral": 284,
+        "Liquidation": 543,
+        "TakeProfit": 306
+      },
+      "sides": {
+        "B": 9579,
+        "S": 2039
+      }
+    },
+    {
+      "date": "2026-03-18",
+      "segment": "event0_2",
+      "start": "2026-03-18T00:00:00.000Z",
+      "end": "2026-03-21T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 1011,
+      "notionalUsd": 325356881.7055616,
+      "openingFeesUsd": 228952.1508090002,
+      "totalFeesUsd": 380959.8441242039,
+      "actions": {
+        "RemoveCollateral": 17,
+        "Open": 468,
+        "Close": 415,
+        "TakeProfit": 37,
+        "StopLoss": 51,
+        "Liquidation": 23
+      },
+      "sides": {
+        "S": 263,
+        "B": 748
+      }
+    },
+    {
+      "date": "2026-03-19",
+      "segment": "baseline30",
+      "start": "2026-02-17T00:00:00.000Z",
+      "end": "2026-03-19T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 11989,
+      "notionalUsd": 1237322484.7594984,
+      "openingFeesUsd": 980081.913632998,
+      "totalFeesUsd": 2375440.8130947584,
+      "actions": {
+        "Open": 5655,
+        "Close": 4462,
+        "RemoveCollateral": 294,
+        "StopLoss": 718,
+        "TakeProfit": 310,
+        "Liquidation": 550
+      },
+      "sides": {
+        "B": 9845,
+        "S": 2144
+      }
+    },
+    {
+      "date": "2026-03-19",
+      "segment": "event0_2",
+      "start": "2026-03-19T00:00:00.000Z",
+      "end": "2026-03-22T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 616,
+      "notionalUsd": 160000993.58748254,
+      "openingFeesUsd": 102779.02544899994,
+      "totalFeesUsd": 178625.892366319,
+      "actions": {
+        "RemoveCollateral": 7,
+        "Open": 272,
+        "Close": 256,
+        "TakeProfit": 33,
+        "StopLoss": 32,
+        "Liquidation": 16
+      },
+      "sides": {
+        "S": 154,
+        "B": 462
+      }
+    },
+    {
+      "date": "2026-03-20",
+      "segment": "baseline30",
+      "start": "2026-02-18T00:00:00.000Z",
+      "end": "2026-03-20T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 12363,
+      "notionalUsd": 1381467379.2104454,
+      "openingFeesUsd": 1061024.3318990008,
+      "totalFeesUsd": 2525592.046959513,
+      "actions": {
+        "Close": 4614,
+        "Open": 5815,
+        "RemoveCollateral": 295,
+        "Liquidation": 563,
+        "StopLoss": 739,
+        "TakeProfit": 337
+      },
+      "sides": {
+        "S": 2253,
+        "B": 10110
+      }
+    },
+    {
+      "date": "2026-03-20",
+      "segment": "event0_2",
+      "start": "2026-03-20T00:00:00.000Z",
+      "end": "2026-03-23T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 273,
+      "notionalUsd": 16287279.91779918,
+      "openingFeesUsd": 24505.382008,
+      "totalFeesUsd": 31854.938149370722,
+      "actions": {
+        "Open": 145,
+        "Close": 108,
+        "StopLoss": 6,
+        "TakeProfit": 7,
+        "RemoveCollateral": 7
+      },
+      "sides": {
+        "B": 218,
+        "S": 55
+      }
+    },
+    {
+      "date": "2026-03-22",
+      "segment": "baseline30",
+      "start": "2026-02-20T00:00:00.000Z",
+      "end": "2026-03-22T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 12378,
+      "notionalUsd": 1379057311.293323,
+      "openingFeesUsd": 1066232.9889879993,
+      "totalFeesUsd": 2534015.05139271,
+      "actions": {
+        "RemoveCollateral": 292,
+        "Open": 5801,
+        "Close": 4650,
+        "TakeProfit": 335,
+        "StopLoss": 737,
+        "Liquidation": 563
+      },
+      "sides": {
+        "S": 2255,
+        "B": 10123
+      }
+    },
+    {
+      "date": "2026-03-22",
+      "segment": "event0_2",
+      "start": "2026-03-22T00:00:00.000Z",
+      "end": "2026-03-25T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 1113,
+      "notionalUsd": 124585365.985532,
+      "openingFeesUsd": 56501.09727299998,
+      "totalFeesUsd": 153886.64509749555,
+      "actions": {
+        "Open": 498,
+        "Close": 377,
+        "StopLoss": 108,
+        "TakeProfit": 38,
+        "RemoveCollateral": 5,
+        "Liquidation": 87
+      },
+      "sides": {
+        "B": 881,
+        "S": 232
+      }
+    },
+    {
+      "date": "2026-03-23",
+      "segment": "baseline30",
+      "start": "2026-02-21T00:00:00.000Z",
+      "end": "2026-03-23T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 12398,
+      "notionalUsd": 1380683577.3746753,
+      "openingFeesUsd": 1069360.8338459996,
+      "totalFeesUsd": 2538086.6125229965,
+      "actions": {
+        "Open": 5838,
+        "Close": 4632,
+        "StopLoss": 737,
+        "TakeProfit": 336,
+        "RemoveCollateral": 292,
+        "Liquidation": 563
+      },
+      "sides": {
+        "B": 10139,
+        "S": 2259
+      }
+    },
+    {
+      "date": "2026-03-23",
+      "segment": "event0_2",
+      "start": "2026-03-23T00:00:00.000Z",
+      "end": "2026-03-26T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 1279,
+      "notionalUsd": 123179243.08789216,
+      "openingFeesUsd": 53754.95681099997,
+      "totalFeesUsd": 150675.27267349345,
+      "actions": {
+        "Open": 559,
+        "Close": 472,
+        "TakeProfit": 43,
+        "StopLoss": 112,
+        "Liquidation": 89,
+        "RemoveCollateral": 4
+      },
+      "sides": {
+        "S": 301,
+        "B": 978
+      }
+    },
+    {
+      "date": "2026-03-24",
+      "segment": "baseline30",
+      "start": "2026-02-22T00:00:00.000Z",
+      "end": "2026-03-24T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 13143,
+      "notionalUsd": 1476902781.9016163,
+      "openingFeesUsd": 1103447.4747170017,
+      "totalFeesUsd": 2657082.0774232578,
+      "actions": {
+        "Open": 6144,
+        "Close": 4864,
+        "StopLoss": 831,
+        "TakeProfit": 360,
+        "Liquidation": 650,
+        "RemoveCollateral": 294
+      },
+      "sides": {
+        "B": 10738,
+        "S": 2405
+      }
+    },
+    {
+      "date": "2026-03-24",
+      "segment": "event0_2",
+      "start": "2026-03-24T00:00:00.000Z",
+      "end": "2026-03-27T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 758,
+      "notionalUsd": 52868575.467210025,
+      "openingFeesUsd": 39170.402128000016,
+      "totalFeesUsd": 62862.64744178697,
+      "actions": {
+        "Open": 355,
+        "RemoveCollateral": 10,
+        "Close": 325,
+        "Liquidation": 7,
+        "TakeProfit": 29,
+        "StopLoss": 32
+      },
+      "sides": {
+        "S": 232,
+        "B": 526
+      }
+    },
+    {
+      "date": "2026-03-25",
+      "segment": "baseline30",
+      "start": "2026-02-23T00:00:00.000Z",
+      "end": "2026-03-25T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 13418,
+      "notionalUsd": 1499061291.8897443,
+      "openingFeesUsd": 1122405.7303260013,
+      "totalFeesUsd": 2686974.638411878,
+      "actions": {
+        "Open": 6276,
+        "Close": 4981,
+        "StopLoss": 843,
+        "TakeProfit": 373,
+        "RemoveCollateral": 295,
+        "Liquidation": 650
+      },
+      "sides": {
+        "B": 10940,
+        "S": 2478
+      }
+    },
+    {
+      "date": "2026-03-25",
+      "segment": "event0_2",
+      "start": "2026-03-25T00:00:00.000Z",
+      "end": "2026-03-28T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 701,
+      "notionalUsd": 46784970.19559591,
+      "openingFeesUsd": 41841.29520199996,
+      "totalFeesUsd": 63095.04779371423,
+      "actions": {
+        "RemoveCollateral": 15,
+        "Open": 330,
+        "Close": 297,
+        "TakeProfit": 24,
+        "Liquidation": 11,
+        "StopLoss": 24
+      },
+      "sides": {
+        "S": 213,
+        "B": 488
+      }
+    },
+    {
+      "date": "2026-03-26",
+      "segment": "baseline30",
+      "start": "2026-02-24T00:00:00.000Z",
+      "end": "2026-03-26T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 13583,
+      "notionalUsd": 1492303466.8839912,
+      "openingFeesUsd": 1120913.5423250012,
+      "totalFeesUsd": 2679912.9914242444,
+      "actions": {
+        "Open": 6354,
+        "Close": 5057,
+        "TakeProfit": 379,
+        "StopLoss": 848,
+        "Liquidation": 651,
+        "RemoveCollateral": 294
+      },
+      "sides": {
+        "S": 2547,
+        "B": 11036
+      }
+    },
+    {
+      "date": "2026-03-26",
+      "segment": "event0_2",
+      "start": "2026-03-26T00:00:00.000Z",
+      "end": "2026-03-29T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 453,
+      "notionalUsd": 45893743.96236068,
+      "openingFeesUsd": 41131.234871,
+      "totalFeesUsd": 61816.93892076104,
+      "actions": {
+        "RemoveCollateral": 15,
+        "Open": 209,
+        "Close": 184,
+        "TakeProfit": 18,
+        "Liquidation": 9,
+        "StopLoss": 18
+      },
+      "sides": {
+        "S": 132,
+        "B": 321
+      }
+    },
+    {
+      "date": "2026-03-27",
+      "segment": "baseline30",
+      "start": "2026-02-25T00:00:00.000Z",
+      "end": "2026-03-27T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 13747,
+      "notionalUsd": 1514710877.5985358,
+      "openingFeesUsd": 1139999.2680420002,
+      "totalFeesUsd": 2710000.6257310826,
+      "actions": {
+        "Open": 6423,
+        "RemoveCollateral": 299,
+        "Close": 5122,
+        "Liquidation": 654,
+        "TakeProfit": 389,
+        "StopLoss": 860
+      },
+      "sides": {
+        "S": 2616,
+        "B": 11131
+      }
+    },
+    {
+      "date": "2026-03-27",
+      "segment": "event0_2",
+      "start": "2026-03-27T00:00:00.000Z",
+      "end": "2026-03-30T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 372,
+      "notionalUsd": 20938653.886488363,
+      "openingFeesUsd": 22638.34315900002,
+      "totalFeesUsd": 32045.564589610352,
+      "actions": {
+        "Open": 184,
+        "Close": 153,
+        "TakeProfit": 14,
+        "StopLoss": 7,
+        "RemoveCollateral": 8,
+        "Liquidation": 6
+      },
+      "sides": {
+        "B": 306,
+        "S": 66
+      }
+    },
+    {
+      "date": "2026-03-29",
+      "segment": "baseline30",
+      "start": "2026-02-27T00:00:00.000Z",
+      "end": "2026-03-29T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 13805,
+      "notionalUsd": 1528945199.2293963,
+      "openingFeesUsd": 1159400.6285580017,
+      "totalFeesUsd": 2736642.055941245,
+      "actions": {
+        "RemoveCollateral": 300,
+        "Open": 6450,
+        "Close": 5164,
+        "TakeProfit": 396,
+        "Liquidation": 650,
+        "StopLoss": 845
+      },
+      "sides": {
+        "S": 2647,
+        "B": 11158
+      }
+    },
+    {
+      "date": "2026-03-29",
+      "segment": "event0_2",
+      "start": "2026-03-29T00:00:00.000Z",
+      "end": "2026-04-01T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 1248,
+      "notionalUsd": 142623453.13209322,
+      "openingFeesUsd": 107725.19256899998,
+      "totalFeesUsd": 172811.88473886537,
+      "actions": {
+        "Open": 655,
+        "Close": 533,
+        "RemoveCollateral": 9,
+        "StopLoss": 22,
+        "Liquidation": 15,
+        "TakeProfit": 14
+      },
+      "sides": {
+        "B": 994,
+        "S": 254
+      }
+    },
+    {
+      "date": "2026-03-30",
+      "segment": "baseline30",
+      "start": "2026-02-28T00:00:00.000Z",
+      "end": "2026-03-30T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 13851,
+      "notionalUsd": 1512858116.60037,
+      "openingFeesUsd": 1143218.439621002,
+      "totalFeesUsd": 2715533.0912021636,
+      "actions": {
+        "Open": 6462,
+        "Close": 5199,
+        "TakeProfit": 402,
+        "StopLoss": 845,
+        "RemoveCollateral": 293,
+        "Liquidation": 650
+      },
+      "sides": {
+        "B": 11209,
+        "S": 2642
+      }
+    },
+    {
+      "date": "2026-03-30",
+      "segment": "event0_2",
+      "start": "2026-03-30T00:00:00.000Z",
+      "end": "2026-04-02T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 4665,
+      "notionalUsd": 210972639.15490392,
+      "openingFeesUsd": 161615.612593,
+      "totalFeesUsd": 258934.48965635072,
+      "actions": {
+        "Open": 2374,
+        "Close": 2153,
+        "RemoveCollateral": 67,
+        "StopLoss": 38,
+        "TakeProfit": 10,
+        "Liquidation": 23
+      },
+      "sides": {
+        "B": 3718,
+        "S": 947
+      }
+    },
+    {
+      "date": "2026-03-31",
+      "segment": "baseline30",
+      "start": "2026-03-01T00:00:00.000Z",
+      "end": "2026-03-31T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 14127,
+      "notionalUsd": 1561871669.6106346,
+      "openingFeesUsd": 1189055.424040002,
+      "totalFeesUsd": 2783501.578929019,
+      "actions": {
+        "Open": 6628,
+        "Liquidation": 653,
+        "StopLoss": 852,
+        "TakeProfit": 407,
+        "Close": 5290,
+        "RemoveCollateral": 297
+      },
+      "sides": {
+        "B": 11412,
+        "S": 2715
+      }
+    },
+    {
+      "date": "2026-03-31",
+      "segment": "event0_2",
+      "start": "2026-03-31T00:00:00.000Z",
+      "end": "2026-04-03T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 5014,
+      "notionalUsd": 171774731.75752595,
+      "openingFeesUsd": 120403.79308400008,
+      "totalFeesUsd": 200175.22035482404,
+      "actions": {
+        "Close": 2300,
+        "Open": 2431,
+        "StopLoss": 50,
+        "TakeProfit": 12,
+        "Liquidation": 27,
+        "RemoveCollateral": 194
+      },
+      "sides": {
+        "B": 3879,
+        "S": 1135
+      }
+    },
+    {
+      "date": "2026-04-01",
+      "segment": "baseline30",
+      "start": "2026-03-02T00:00:00.000Z",
+      "end": "2026-04-01T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 14783,
+      "notionalUsd": 1651020090.1531868,
+      "openingFeesUsd": 1247475.7642980027,
+      "totalFeesUsd": 2881421.5987689323,
+      "actions": {
+        "Open": 6928,
+        "Close": 5653,
+        "RemoveCollateral": 283,
+        "StopLoss": 859,
+        "Liquidation": 659,
+        "TakeProfit": 401
+      },
+      "sides": {
+        "B": 11949,
+        "S": 2834
+      }
+    },
+    {
+      "date": "2026-04-01",
+      "segment": "event0_2",
+      "start": "2026-04-01T00:00:00.000Z",
+      "end": "2026-04-04T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 4185,
+      "notionalUsd": 79118278.46609326,
+      "openingFeesUsd": 59524.77941000012,
+      "totalFeesUsd": 96743.28868021422,
+      "actions": {
+        "Close": 1912,
+        "Open": 2019,
+        "StopLoss": 38,
+        "TakeProfit": 9,
+        "Liquidation": 17,
+        "RemoveCollateral": 190
+      },
+      "sides": {
+        "B": 3220,
+        "S": 965
+      }
+    },
+    {
+      "date": "2026-04-02",
+      "segment": "baseline30",
+      "start": "2026-03-03T00:00:00.000Z",
+      "end": "2026-04-02T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 17508,
+      "notionalUsd": 1693676743.8868868,
+      "openingFeesUsd": 1282100.1106780027,
+      "totalFeesUsd": 2939819.898006916,
+      "actions": {
+        "Open": 8296,
+        "Close": 7024,
+        "RemoveCollateral": 321,
+        "StopLoss": 831,
+        "TakeProfit": 398,
+        "Liquidation": 638
+      },
+      "sides": {
+        "B": 14082,
+        "S": 3426
+      }
+    },
+    {
+      "date": "2026-04-02",
+      "segment": "event0_2",
+      "start": "2026-04-02T00:00:00.000Z",
+      "end": "2026-04-05T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 625,
+      "notionalUsd": 9815645.612887373,
+      "openingFeesUsd": 4625.164910000003,
+      "totalFeesUsd": 9209.218425329314,
+      "actions": {
+        "Close": 238,
+        "Open": 223,
+        "StopLoss": 19,
+        "TakeProfit": 7,
+        "Liquidation": 7,
+        "RemoveCollateral": 131
+      },
+      "sides": {
+        "B": 364,
+        "S": 261
+      }
+    },
+    {
+      "date": "2026-04-05",
+      "segment": "baseline30",
+      "start": "2026-03-06T00:00:00.000Z",
+      "end": "2026-04-05T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 16134,
+      "notionalUsd": 1445062295.2211356,
+      "openingFeesUsd": 1064161.938072004,
+      "totalFeesUsd": 2624905.7064528996,
+      "actions": {
+        "Close": 6518,
+        "Open": 7568,
+        "StopLoss": 747,
+        "TakeProfit": 329,
+        "Liquidation": 574,
+        "RemoveCollateral": 398
+      },
+      "sides": {
+        "B": 12864,
+        "S": 3270
+      }
+    },
+    {
+      "date": "2026-04-05",
+      "segment": "event0_2",
+      "start": "2026-04-05T00:00:00.000Z",
+      "end": "2026-04-08T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 784,
+      "notionalUsd": 148675300.14918166,
+      "openingFeesUsd": 128031.47197700001,
+      "totalFeesUsd": 197350.2231433334,
+      "actions": {
+        "Close": 261,
+        "Open": 364,
+        "StopLoss": 45,
+        "RemoveCollateral": 53,
+        "Liquidation": 42,
+        "TakeProfit": 19
+      },
+      "sides": {
+        "S": 249,
+        "B": 535
+      }
+    },
+    {
+      "date": "2026-04-06",
+      "segment": "baseline30",
+      "start": "2026-03-07T00:00:00.000Z",
+      "end": "2026-04-06T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 15228,
+      "notionalUsd": 1406310788.3757658,
+      "openingFeesUsd": 1042092.4337280033,
+      "totalFeesUsd": 2584061.1406371747,
+      "actions": {
+        "Open": 7150,
+        "RemoveCollateral": 378,
+        "Close": 6154,
+        "StopLoss": 693,
+        "TakeProfit": 296,
+        "Liquidation": 557
+      },
+      "sides": {
+        "S": 3036,
+        "B": 12192
+      }
+    },
+    {
+      "date": "2026-04-06",
+      "segment": "event0_2",
+      "start": "2026-04-06T00:00:00.000Z",
+      "end": "2026-04-09T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 1125,
+      "notionalUsd": 186887255.89843595,
+      "openingFeesUsd": 138404.190797,
+      "totalFeesUsd": 235554.5146469698,
+      "actions": {
+        "Open": 510,
+        "Close": 447,
+        "StopLoss": 57,
+        "RemoveCollateral": 48,
+        "Liquidation": 45,
+        "TakeProfit": 18
+      },
+      "sides": {
+        "B": 764,
+        "S": 361
+      }
+    },
+    {
+      "date": "2026-04-07",
+      "segment": "baseline30",
+      "start": "2026-03-08T00:00:00.000Z",
+      "end": "2026-04-07T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 15414,
+      "notionalUsd": 1417056151.7810843,
+      "openingFeesUsd": 1052929.1586290037,
+      "totalFeesUsd": 2599779.8751709065,
+      "actions": {
+        "Open": 7235,
+        "Close": 6229,
+        "StopLoss": 704,
+        "TakeProfit": 299,
+        "RemoveCollateral": 389,
+        "Liquidation": 558
+      },
+      "sides": {
+        "S": 3121,
+        "B": 12293
+      }
+    },
+    {
+      "date": "2026-04-07",
+      "segment": "event0_2",
+      "start": "2026-04-07T00:00:00.000Z",
+      "end": "2026-04-10T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 1216,
+      "notionalUsd": 186094068.26086205,
+      "openingFeesUsd": 133536.851185,
+      "totalFeesUsd": 228431.86789191596,
+      "actions": {
+        "Close": 500,
+        "Open": 545,
+        "Liquidation": 50,
+        "StopLoss": 59,
+        "RemoveCollateral": 41,
+        "TakeProfit": 21
+      },
+      "sides": {
+        "B": 862,
+        "S": 354
+      }
+    },
+    {
+      "date": "2026-04-08",
+      "segment": "baseline30",
+      "start": "2026-03-09T00:00:00.000Z",
+      "end": "2026-04-08T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 15252,
+      "notionalUsd": 1509682087.8259134,
+      "openingFeesUsd": 1125016.2723380057,
+      "totalFeesUsd": 2690546.647676844,
+      "actions": {
+        "Close": 6197,
+        "Open": 7121,
+        "StopLoss": 730,
+        "RemoveCollateral": 377,
+        "Liquidation": 578,
+        "TakeProfit": 249
+      },
+      "sides": {
+        "S": 3163,
+        "B": 12089
+      }
+    },
+    {
+      "date": "2026-04-08",
+      "segment": "event0_2",
+      "start": "2026-04-08T00:00:00.000Z",
+      "end": "2026-04-11T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 777,
+      "notionalUsd": 53921266.26409047,
+      "openingFeesUsd": 20127.562256000005,
+      "totalFeesUsd": 51545.337135496586,
+      "actions": {
+        "RemoveCollateral": 13,
+        "Open": 338,
+        "Close": 374,
+        "StopLoss": 37,
+        "Liquidation": 9,
+        "TakeProfit": 6
+      },
+      "sides": {
+        "S": 234,
+        "B": 543
+      }
+    },
+    {
+      "date": "2026-04-09",
+      "segment": "baseline30",
+      "start": "2026-03-10T00:00:00.000Z",
+      "end": "2026-04-09T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 12976,
+      "notionalUsd": 1351912628.8337739,
+      "openingFeesUsd": 1027768.2131890047,
+      "totalFeesUsd": 2141837.8965195776,
+      "actions": {
+        "Open": 6112,
+        "Close": 5456,
+        "StopLoss": 560,
+        "RemoveCollateral": 323,
+        "Liquidation": 335,
+        "TakeProfit": 190
+      },
+      "sides": {
+        "B": 10106,
+        "S": 2870
+      }
+    },
+    {
+      "date": "2026-04-09",
+      "segment": "event0_2",
+      "start": "2026-04-09T00:00:00.000Z",
+      "end": "2026-04-12T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 385,
+      "notionalUsd": 15595633.836590216,
+      "openingFeesUsd": 9697.969456000003,
+      "totalFeesUsd": 13230.10770944872,
+      "actions": {
+        "RemoveCollateral": 7,
+        "Open": 164,
+        "Close": 180,
+        "StopLoss": 22,
+        "Liquidation": 6,
+        "TakeProfit": 6
+      },
+      "sides": {
+        "S": 105,
+        "B": 280
+      }
+    },
+    {
+      "date": "2026-04-10",
+      "segment": "baseline30",
+      "start": "2026-03-11T00:00:00.000Z",
+      "end": "2026-04-10T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 12123,
+      "notionalUsd": 1169226558.9818816,
+      "openingFeesUsd": 853954.8013440035,
+      "totalFeesUsd": 1536495.6925905254,
+      "actions": {
+        "Close": 5241,
+        "Open": 5666,
+        "Liquidation": 247,
+        "StopLoss": 465,
+        "RemoveCollateral": 319,
+        "TakeProfit": 185
+      },
+      "sides": {
+        "B": 9302,
+        "S": 2821
+      }
+    },
+    {
+      "date": "2026-04-10",
+      "segment": "event0_2",
+      "start": "2026-04-10T00:00:00.000Z",
+      "end": "2026-04-13T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 154,
+      "notionalUsd": 6420875.006388963,
+      "openingFeesUsd": 4565.515847999998,
+      "totalFeesUsd": 5653.879828505222,
+      "actions": {
+        "Open": 68,
+        "StopLoss": 11,
+        "Close": 62,
+        "Liquidation": 4,
+        "TakeProfit": 6,
+        "RemoveCollateral": 3
+      },
+      "sides": {
+        "B": 123,
+        "S": 31
+      }
+    },
+    {
+      "date": "2026-04-12",
+      "segment": "baseline30",
+      "start": "2026-03-13T00:00:00.000Z",
+      "end": "2026-04-12T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 10960,
+      "notionalUsd": 1100516901.0561206,
+      "openingFeesUsd": 797275.6271550021,
+      "totalFeesUsd": 1363293.780515154,
+      "actions": {
+        "RemoveCollateral": 318,
+        "Open": 5142,
+        "Close": 4722,
+        "StopLoss": 398,
+        "Liquidation": 223,
+        "TakeProfit": 157
+      },
+      "sides": {
+        "S": 2653,
+        "B": 8307
+      }
+    },
+    {
+      "date": "2026-04-12",
+      "segment": "event0_2",
+      "start": "2026-04-12T00:00:00.000Z",
+      "end": "2026-04-15T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 660,
+      "notionalUsd": 12448628.666762372,
+      "openingFeesUsd": 8964.751006000008,
+      "totalFeesUsd": -11183.833663695506,
+      "actions": {
+        "Open": 291,
+        "Liquidation": 36,
+        "StopLoss": 45,
+        "TakeProfit": 15,
+        "Close": 241,
+        "RemoveCollateral": 32
+      },
+      "sides": {
+        "B": 535,
+        "S": 125
+      }
+    },
+    {
+      "date": "2026-04-13",
+      "segment": "baseline30",
+      "start": "2026-03-14T00:00:00.000Z",
+      "end": "2026-04-13T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 10560,
+      "notionalUsd": 1089524284.4721878,
+      "openingFeesUsd": 783128.9324750021,
+      "totalFeesUsd": 1343968.0390861,
+      "actions": {
+        "Open": 4999,
+        "StopLoss": 379,
+        "Close": 4500,
+        "Liquidation": 221,
+        "TakeProfit": 157,
+        "RemoveCollateral": 304
+      },
+      "sides": {
+        "B": 8001,
+        "S": 2559
+      }
+    },
+    {
+      "date": "2026-04-13",
+      "segment": "event0_2",
+      "start": "2026-04-13T00:00:00.000Z",
+      "end": "2026-04-16T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 755,
+      "notionalUsd": 16708701.110884123,
+      "openingFeesUsd": 11837.214951000005,
+      "totalFeesUsd": -9074.455197250369,
+      "actions": {
+        "Close": 308,
+        "Open": 319,
+        "StopLoss": 49,
+        "RemoveCollateral": 37,
+        "TakeProfit": 10,
+        "Liquidation": 32
+      },
+      "sides": {
+        "B": 586,
+        "S": 169
+      }
+    },
+    {
+      "date": "2026-04-14",
+      "segment": "baseline30",
+      "start": "2026-03-15T00:00:00.000Z",
+      "end": "2026-04-14T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 10925,
+      "notionalUsd": 1096079758.6043043,
+      "openingFeesUsd": 788305.4132730016,
+      "totalFeesUsd": 1343248.4089964905,
+      "actions": {
+        "Open": 5188,
+        "StopLoss": 398,
+        "Close": 4617,
+        "RemoveCollateral": 331,
+        "Liquidation": 229,
+        "TakeProfit": 162
+      },
+      "sides": {
+        "B": 8281,
+        "S": 2644
+      }
+    },
+    {
+      "date": "2026-04-14",
+      "segment": "event0_2",
+      "start": "2026-04-14T00:00:00.000Z",
+      "end": "2026-04-17T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 509,
+      "notionalUsd": 12522434.146267328,
+      "openingFeesUsd": 8023.185663000001,
+      "totalFeesUsd": -10196.266994425225,
+      "actions": {
+        "TakeProfit": 13,
+        "Open": 183,
+        "Close": 245,
+        "StopLoss": 33,
+        "Liquidation": 25,
+        "RemoveCollateral": 10
+      },
+      "sides": {
+        "B": 403,
+        "S": 106
+      }
+    },
+    {
+      "date": "2026-04-15",
+      "segment": "baseline30",
+      "start": "2026-03-16T00:00:00.000Z",
+      "end": "2026-04-15T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 11081,
+      "notionalUsd": 1085963838.9378257,
+      "openingFeesUsd": 782411.7936220018,
+      "totalFeesUsd": 1315078.27092289,
+      "actions": {
+        "Open": 5236,
+        "Liquidation": 249,
+        "StopLoss": 419,
+        "TakeProfit": 163,
+        "Close": 4678,
+        "RemoveCollateral": 336
+      },
+      "sides": {
+        "B": 8428,
+        "S": 2653
+      }
+    },
+    {
+      "date": "2026-04-15",
+      "segment": "event0_2",
+      "start": "2026-04-15T00:00:00.000Z",
+      "end": "2026-04-18T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 563,
+      "notionalUsd": 10022738.005304297,
+      "openingFeesUsd": 7404.146636999999,
+      "totalFeesUsd": 7425.291311150312,
+      "actions": {
+        "Open": 239,
+        "Close": 186,
+        "RemoveCollateral": 19,
+        "StopLoss": 49,
+        "Liquidation": 57,
+        "TakeProfit": 13
+      },
+      "sides": {
+        "B": 440,
+        "S": 123
+      }
+    },
+    {
+      "date": "2026-04-16",
+      "segment": "baseline30",
+      "start": "2026-03-17T00:00:00.000Z",
+      "end": "2026-04-16T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 10874,
+      "notionalUsd": 1085201350.9572713,
+      "openingFeesUsd": 782690.4941090005,
+      "totalFeesUsd": 1310664.9570947145,
+      "actions": {
+        "Close": 4605,
+        "Open": 5134,
+        "StopLoss": 390,
+        "RemoveCollateral": 340,
+        "TakeProfit": 164,
+        "Liquidation": 241
+      },
+      "sides": {
+        "B": 8236,
+        "S": 2638
+      }
+    },
+    {
+      "date": "2026-04-16",
+      "segment": "event0_2",
+      "start": "2026-04-16T00:00:00.000Z",
+      "end": "2026-04-19T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 422,
+      "notionalUsd": 4985248.623639533,
+      "openingFeesUsd": 3694.7510109999994,
+      "totalFeesUsd": 4296.052946970491,
+      "actions": {
+        "Open": 187,
+        "Close": 109,
+        "RemoveCollateral": 14,
+        "StopLoss": 43,
+        "Liquidation": 57,
+        "TakeProfit": 12
+      },
+      "sides": {
+        "B": 347,
+        "S": 75
+      }
+    },
+    {
+      "date": "2026-04-17",
+      "segment": "baseline30",
+      "start": "2026-03-18T00:00:00.000Z",
+      "end": "2026-04-17T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 10739,
+      "notionalUsd": 940920841.1140703,
+      "openingFeesUsd": 656740.147638001,
+      "totalFeesUsd": 1106496.2335270222,
+      "actions": {
+        "TakeProfit": 171,
+        "Open": 5068,
+        "Close": 4541,
+        "StopLoss": 379,
+        "Liquidation": 241,
+        "RemoveCollateral": 339
+      },
+      "sides": {
+        "B": 8134,
+        "S": 2605
+      }
+    },
+    {
+      "date": "2026-04-17",
+      "segment": "event0_2",
+      "start": "2026-04-17T00:00:00.000Z",
+      "end": "2026-04-20T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 326,
+      "notionalUsd": 2755819.171890412,
+      "openingFeesUsd": 2541.270181000001,
+      "totalFeesUsd": 6418.603856236389,
+      "actions": {
+        "Open": 144,
+        "RemoveCollateral": 20,
+        "Close": 61,
+        "StopLoss": 41,
+        "Liquidation": 56,
+        "TakeProfit": 4
+      },
+      "sides": {
+        "B": 265,
+        "S": 61
+      }
+    },
+    {
+      "date": "2026-04-19",
+      "segment": "baseline30",
+      "start": "2026-03-20T00:00:00.000Z",
+      "end": "2026-04-19T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 10222,
+      "notionalUsd": 632169931.651575,
+      "openingFeesUsd": 451169.47754500166,
+      "totalFeesUsd": 759039.3410889894,
+      "actions": {
+        "Open": 4819,
+        "Close": 4271,
+        "RemoveCollateral": 342,
+        "StopLoss": 372,
+        "Liquidation": 274,
+        "TakeProfit": 144
+      },
+      "sides": {
+        "B": 7784,
+        "S": 2438
+      }
+    },
+    {
+      "date": "2026-04-19",
+      "segment": "event0_2",
+      "start": "2026-04-19T00:00:00.000Z",
+      "end": "2026-04-22T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 177,
+      "notionalUsd": 5009785.670062144,
+      "openingFeesUsd": 1846.1128589999996,
+      "totalFeesUsd": 2717.015245368414,
+      "actions": {
+        "Close": 70,
+        "Open": 90,
+        "TakeProfit": 1,
+        "StopLoss": 10,
+        "RemoveCollateral": 6
+      },
+      "sides": {
+        "B": 141,
+        "S": 36
+      }
+    },
+    {
+      "date": "2026-04-20",
+      "segment": "baseline30",
+      "start": "2026-03-21T00:00:00.000Z",
+      "end": "2026-04-20T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 10054,
+      "notionalUsd": 618319778.5804003,
+      "openingFeesUsd": 430329.2670100018,
+      "totalFeesUsd": 731954.9932590552,
+      "actions": {
+        "Open": 4744,
+        "RemoveCollateral": 342,
+        "Close": 4187,
+        "StopLoss": 369,
+        "Liquidation": 274,
+        "TakeProfit": 138
+      },
+      "sides": {
+        "B": 7651,
+        "S": 2403
+      }
+    },
+    {
+      "date": "2026-04-20",
+      "segment": "event0_2",
+      "start": "2026-04-20T00:00:00.000Z",
+      "end": "2026-04-23T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 230,
+      "notionalUsd": 5023017.162016798,
+      "openingFeesUsd": 1662.4542690000005,
+      "totalFeesUsd": 2332.540854707815,
+      "actions": {
+        "Close": 95,
+        "Open": 109,
+        "StopLoss": 20,
+        "Liquidation": 2,
+        "RemoveCollateral": 2,
+        "TakeProfit": 2
+      },
+      "sides": {
+        "B": 167,
+        "S": 63
+      }
+    },
+    {
+      "date": "2026-04-21",
+      "segment": "baseline30",
+      "start": "2026-03-22T00:00:00.000Z",
+      "end": "2026-04-21T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 10126,
+      "notionalUsd": 619218319.6885563,
+      "openingFeesUsd": 430879.5241130018,
+      "totalFeesUsd": 732513.1856359928,
+      "actions": {
+        "Open": 4781,
+        "Close": 4216,
+        "StopLoss": 375,
+        "RemoveCollateral": 342,
+        "Liquidation": 274,
+        "TakeProfit": 138
+      },
+      "sides": {
+        "B": 7711,
+        "S": 2415
+      }
+    },
+    {
+      "date": "2026-04-21",
+      "segment": "event0_2",
+      "start": "2026-04-21T00:00:00.000Z",
+      "end": "2026-04-24T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 298,
+      "notionalUsd": 8877621.106416343,
+      "openingFeesUsd": 2212.3945229999995,
+      "totalFeesUsd": 29391.669136546956,
+      "actions": {
+        "Open": 132,
+        "Close": 107,
+        "TakeProfit": 15,
+        "RemoveCollateral": 9,
+        "StopLoss": 28,
+        "Liquidation": 7
+      },
+      "sides": {
+        "S": 101,
+        "B": 197
+      }
+    },
+    {
+      "date": "2026-04-22",
+      "segment": "baseline30",
+      "start": "2026-03-23T00:00:00.000Z",
+      "end": "2026-04-22T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 10126,
+      "notionalUsd": 620892437.4038378,
+      "openingFeesUsd": 428510.2083960016,
+      "totalFeesUsd": 729901.4181849869,
+      "actions": {
+        "Close": 4233,
+        "Open": 4764,
+        "TakeProfit": 138,
+        "StopLoss": 376,
+        "RemoveCollateral": 341,
+        "Liquidation": 274
+      },
+      "sides": {
+        "B": 7707,
+        "S": 2419
+      }
+    },
+    {
+      "date": "2026-04-22",
+      "segment": "event0_2",
+      "start": "2026-04-22T00:00:00.000Z",
+      "end": "2026-04-25T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 328,
+      "notionalUsd": 13275155.115007939,
+      "openingFeesUsd": 3337.507329,
+      "totalFeesUsd": 88961.71397021989,
+      "actions": {
+        "Open": 144,
+        "Close": 108,
+        "StopLoss": 35,
+        "Liquidation": 11,
+        "RemoveCollateral": 14,
+        "TakeProfit": 16
+      },
+      "sides": {
+        "B": 214,
+        "S": 114
+      }
+    },
+    {
+      "date": "2026-04-23",
+      "segment": "baseline30",
+      "start": "2026-03-24T00:00:00.000Z",
+      "end": "2026-04-23T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 9457,
+      "notionalUsd": 524826242.0845932,
+      "openingFeesUsd": 394448.8796150008,
+      "totalFeesUsd": 610802.5879165506,
+      "actions": {
+        "Close": 4032,
+        "Open": 4487,
+        "StopLoss": 293,
+        "Liquidation": 189,
+        "RemoveCollateral": 341,
+        "TakeProfit": 115
+      },
+      "sides": {
+        "B": 7149,
+        "S": 2308
+      }
+    },
+    {
+      "date": "2026-04-23",
+      "segment": "event0_2",
+      "start": "2026-04-23T00:00:00.000Z",
+      "end": "2026-04-26T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 252,
+      "notionalUsd": 13122145.907304112,
+      "openingFeesUsd": 3312.195239,
+      "totalFeesUsd": 89065.0793383988,
+      "actions": {
+        "Open": 115,
+        "Close": 77,
+        "StopLoss": 24,
+        "Liquidation": 9,
+        "RemoveCollateral": 12,
+        "TakeProfit": 15
+      },
+      "sides": {
+        "B": 173,
+        "S": 79
+      }
+    },
+    {
+      "date": "2026-04-24",
+      "segment": "baseline30",
+      "start": "2026-03-25T00:00:00.000Z",
+      "end": "2026-04-24T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 9311,
+      "notionalUsd": 503510574.8094418,
+      "openingFeesUsd": 376590.8213630007,
+      "totalFeesUsd": 608018.2096750439,
+      "actions": {
+        "Open": 4415,
+        "Close": 3946,
+        "TakeProfit": 115,
+        "RemoveCollateral": 346,
+        "StopLoss": 295,
+        "Liquidation": 194
+      },
+      "sides": {
+        "S": 2284,
+        "B": 7027
+      }
+    },
+    {
+      "date": "2026-04-24",
+      "segment": "event0_2",
+      "start": "2026-04-24T00:00:00.000Z",
+      "end": "2026-04-27T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 124,
+      "notionalUsd": 8421161.527577555,
+      "openingFeesUsd": 2212.8078819999996,
+      "totalFeesUsd": 61389.19494670491,
+      "actions": {
+        "Open": 58,
+        "Close": 45,
+        "StopLoss": 10,
+        "Liquidation": 4,
+        "RemoveCollateral": 5,
+        "TakeProfit": 2
+      },
+      "sides": {
+        "S": 32,
+        "B": 92
+      }
+    },
+    {
+      "date": "2026-04-26",
+      "segment": "baseline30",
+      "start": "2026-03-27T00:00:00.000Z",
+      "end": "2026-04-26T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 8951,
+      "notionalUsd": 485079812.52468693,
+      "openingFeesUsd": 358590.6727260002,
+      "totalFeesUsd": 637005.0198131637,
+      "actions": {
+        "Open": 4247,
+        "Close": 3784,
+        "StopLoss": 285,
+        "Liquidation": 191,
+        "RemoveCollateral": 343,
+        "TakeProfit": 101
+      },
+      "sides": {
+        "B": 6796,
+        "S": 2155
+      }
+    },
+    {
+      "date": "2026-04-26",
+      "segment": "event0_2",
+      "start": "2026-04-26T00:00:00.000Z",
+      "end": "2026-04-29T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 244,
+      "notionalUsd": 9901617.32966056,
+      "openingFeesUsd": 1007.4894839999993,
+      "totalFeesUsd": 14273.957835386913,
+      "actions": {
+        "Close": 118,
+        "Open": 111,
+        "TakeProfit": 8,
+        "StopLoss": 6,
+        "Liquidation": 1
+      },
+      "sides": {
+        "B": 160,
+        "S": 84
+      }
+    },
+    {
+      "date": "2026-04-27",
+      "segment": "baseline30",
+      "start": "2026-03-28T00:00:00.000Z",
+      "end": "2026-04-27T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 8734,
+      "notionalUsd": 465146766.1414232,
+      "openingFeesUsd": 336962.33404299995,
+      "totalFeesUsd": 606312.3568280365,
+      "actions": {
+        "Open": 4143,
+        "Close": 3694,
+        "StopLoss": 281,
+        "Liquidation": 187,
+        "RemoveCollateral": 336,
+        "TakeProfit": 93
+      },
+      "sides": {
+        "S": 2103,
+        "B": 6631
+      }
+    },
+    {
+      "date": "2026-04-27",
+      "segment": "event0_2",
+      "start": "2026-04-27T00:00:00.000Z",
+      "end": "2026-04-30T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 416,
+      "notionalUsd": 12274056.772172388,
+      "openingFeesUsd": 1721.7005589999994,
+      "totalFeesUsd": 15241.772880192448,
+      "actions": {
+        "Close": 173,
+        "Open": 200,
+        "StopLoss": 12,
+        "Liquidation": 12,
+        "RemoveCollateral": 1,
+        "TakeProfit": 18
+      },
+      "sides": {
+        "S": 178,
+        "B": 238
+      }
+    },
+    {
+      "date": "2026-04-28",
+      "segment": "baseline30",
+      "start": "2026-03-29T00:00:00.000Z",
+      "end": "2026-04-28T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 8823,
+      "notionalUsd": 467133932.9939291,
+      "openingFeesUsd": 337253.33486299997,
+      "totalFeesUsd": 591098.7505020727,
+      "actions": {
+        "Open": 4187,
+        "Close": 3739,
+        "StopLoss": 281,
+        "Liquidation": 187,
+        "RemoveCollateral": 336,
+        "TakeProfit": 93
+      },
+      "sides": {
+        "B": 6692,
+        "S": 2131
+      }
+    },
+    {
+      "date": "2026-04-28",
+      "segment": "event0_2",
+      "start": "2026-04-28T00:00:00.000Z",
+      "end": "2026-05-01T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 492,
+      "notionalUsd": 19595077.035244167,
+      "openingFeesUsd": 3784.3339980000023,
+      "totalFeesUsd": 36208.279967913426,
+      "actions": {
+        "Close": 184,
+        "StopLoss": 24,
+        "Open": 241,
+        "TakeProfit": 20,
+        "Liquidation": 22,
+        "RemoveCollateral": 1
+      },
+      "sides": {
+        "B": 279,
+        "S": 213
+      }
+    },
+    {
+      "date": "2026-04-29",
+      "segment": "baseline30",
+      "start": "2026-03-30T00:00:00.000Z",
+      "end": "2026-04-29T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 8823,
+      "notionalUsd": 474042775.96786183,
+      "openingFeesUsd": 336959.8190509999,
+      "totalFeesUsd": 619233.4130589411,
+      "actions": {
+        "Close": 3749,
+        "Open": 4174,
+        "TakeProfit": 95,
+        "StopLoss": 284,
+        "Liquidation": 186,
+        "RemoveCollateral": 335
+      },
+      "sides": {
+        "B": 6650,
+        "S": 2173
+      }
+    },
+    {
+      "date": "2026-04-29",
+      "segment": "event0_2",
+      "start": "2026-04-29T00:00:00.000Z",
+      "end": "2026-05-02T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 505,
+      "notionalUsd": 13977949.590514356,
+      "openingFeesUsd": 3949.904258000001,
+      "totalFeesUsd": 7566.033343776525,
+      "actions": {
+        "Close": 177,
+        "Open": 248,
+        "TakeProfit": 16,
+        "StopLoss": 40,
+        "Liquidation": 22,
+        "RemoveCollateral": 2
+      },
+      "sides": {
+        "B": 304,
+        "S": 201
+      }
+    },
+    {
+      "date": "2026-04-30",
+      "segment": "baseline30",
+      "start": "2026-03-31T00:00:00.000Z",
+      "end": "2026-04-30T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 8731,
+      "notionalUsd": 427453823.07293797,
+      "openingFeesUsd": 291837.855707,
+      "totalFeesUsd": 552174.1766439725,
+      "actions": {
+        "Close": 3722,
+        "Open": 4100,
+        "StopLoss": 283,
+        "Liquidation": 194,
+        "RemoveCollateral": 332,
+        "TakeProfit": 100
+      },
+      "sides": {
+        "S": 2197,
+        "B": 6534
+      }
+    },
+    {
+      "date": "2026-04-30",
+      "segment": "event0_2",
+      "start": "2026-04-30T00:00:00.000Z",
+      "end": "2026-05-03T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 321,
+      "notionalUsd": 11553349.475173036,
+      "openingFeesUsd": 3234.8831829999995,
+      "totalFeesUsd": 6656.782031888169,
+      "actions": {
+        "Close": 113,
+        "Open": 156,
+        "TakeProfit": 6,
+        "StopLoss": 34,
+        "Liquidation": 11,
+        "RemoveCollateral": 1
+      },
+      "sides": {
+        "B": 217,
+        "S": 104
+      }
+    },
+    {
+      "date": "2026-05-01",
+      "segment": "baseline30",
+      "start": "2026-04-01T00:00:00.000Z",
+      "end": "2026-05-01T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 8067,
+      "notionalUsd": 344105556.8970831,
+      "openingFeesUsd": 233312.47629200012,
+      "totalFeesUsd": 454495.1457311198,
+      "actions": {
+        "Close": 3390,
+        "StopLoss": 283,
+        "Open": 3773,
+        "TakeProfit": 99,
+        "Liquidation": 194,
+        "RemoveCollateral": 328
+      },
+      "sides": {
+        "B": 5977,
+        "S": 2090
+      }
+    },
+    {
+      "date": "2026-05-01",
+      "segment": "event0_2",
+      "start": "2026-05-01T00:00:00.000Z",
+      "end": "2026-05-04T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 170,
+      "notionalUsd": 2282066.0056813136,
+      "openingFeesUsd": 897.214033,
+      "totalFeesUsd": 937.2556258411727,
+      "actions": {
+        "Close": 59,
+        "Open": 82,
+        "TakeProfit": 5,
+        "StopLoss": 22,
+        "Liquidation": 1,
+        "RemoveCollateral": 1
+      },
+      "sides": {
+        "B": 126,
+        "S": 44
+      }
+    },
+    {
+      "date": "2026-05-03",
+      "segment": "baseline30",
+      "start": "2026-04-03T00:00:00.000Z",
+      "end": "2026-05-03T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 4038,
+      "notionalUsd": 267232440.79058355,
+      "openingFeesUsd": 174668.9458060002,
+      "totalFeesUsd": 358655.7383210356,
+      "actions": {
+        "Close": 1535,
+        "Open": 1825,
+        "TakeProfit": 94,
+        "StopLoss": 267,
+        "Liquidation": 178,
+        "RemoveCollateral": 139
+      },
+      "sides": {
+        "B": 2872,
+        "S": 1166
+      }
+    },
+    {
+      "date": "2026-05-03",
+      "segment": "event0_2",
+      "start": "2026-05-03T00:00:00.000Z",
+      "end": "2026-05-06T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 251,
+      "notionalUsd": 2561888.192059493,
+      "openingFeesUsd": 658.2280069999996,
+      "totalFeesUsd": -235.9223977459092,
+      "actions": {
+        "Open": 129,
+        "StopLoss": 20,
+        "Close": 91,
+        "TakeProfit": 6,
+        "RemoveCollateral": 3,
+        "Liquidation": 2
+      },
+      "sides": {
+        "B": 185,
+        "S": 66
+      }
+    },
+    {
+      "date": "2026-05-04",
+      "segment": "baseline30",
+      "start": "2026-04-04T00:00:00.000Z",
+      "end": "2026-05-04T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 4052,
+      "notionalUsd": 267269344.43666908,
+      "openingFeesUsd": 174684.9109150002,
+      "totalFeesUsd": 358689.1126767465,
+      "actions": {
+        "Close": 1537,
+        "Open": 1836,
+        "TakeProfit": 95,
+        "StopLoss": 267,
+        "Liquidation": 178,
+        "RemoveCollateral": 139
+      },
+      "sides": {
+        "B": 2883,
+        "S": 1169
+      }
+    },
+    {
+      "date": "2026-05-04",
+      "segment": "event0_2",
+      "start": "2026-05-04T00:00:00.000Z",
+      "end": "2026-05-07T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 985,
+      "notionalUsd": 10439639.112411506,
+      "openingFeesUsd": 2114.7556440000017,
+      "totalFeesUsd": -103927.25682733847,
+      "actions": {
+        "Close": 538,
+        "Open": 342,
+        "TakeProfit": 13,
+        "RemoveCollateral": 7,
+        "StopLoss": 61,
+        "Liquidation": 24
+      },
+      "sides": {
+        "S": 246,
+        "B": 739
+      }
+    },
+    {
+      "date": "2026-05-05",
+      "segment": "baseline30",
+      "start": "2026-04-05T00:00:00.000Z",
+      "end": "2026-05-05T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 4176,
+      "notionalUsd": 268092819.2071435,
+      "openingFeesUsd": 174954.64260400023,
+      "totalFeesUsd": 358656.03564448835,
+      "actions": {
+        "Close": 1589,
+        "Open": 1896,
+        "RemoveCollateral": 141,
+        "Liquidation": 180,
+        "StopLoss": 273,
+        "TakeProfit": 97
+      },
+      "sides": {
+        "B": 2967,
+        "S": 1209
+      }
+    },
+    {
+      "date": "2026-05-05",
+      "segment": "event0_2",
+      "start": "2026-05-05T00:00:00.000Z",
+      "end": "2026-05-08T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 1127,
+      "notionalUsd": 12562436.202329794,
+      "openingFeesUsd": 2531.0333320000022,
+      "totalFeesUsd": -104683.38677448215,
+      "actions": {
+        "Close": 613,
+        "Open": 402,
+        "RemoveCollateral": 10,
+        "TakeProfit": 15,
+        "Liquidation": 24,
+        "StopLoss": 63
+      },
+      "sides": {
+        "B": 812,
+        "S": 315
+      }
+    },
+    {
+      "date": "2026-05-06",
+      "segment": "baseline30",
+      "start": "2026-04-06T00:00:00.000Z",
+      "end": "2026-05-06T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 4238,
+      "notionalUsd": 269680652.3043971,
+      "openingFeesUsd": 175270.2998330001,
+      "totalFeesUsd": 358308.87800087815,
+      "actions": {
+        "Open": 1926,
+        "StopLoss": 284,
+        "Close": 1618,
+        "TakeProfit": 99,
+        "RemoveCollateral": 131,
+        "Liquidation": 180
+      },
+      "sides": {
+        "B": 3023,
+        "S": 1215
+      }
+    },
+    {
+      "date": "2026-05-06",
+      "segment": "event0_2",
+      "start": "2026-05-06T00:00:00.000Z",
+      "end": "2026-05-09T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 1189,
+      "notionalUsd": 12275925.55782027,
+      "openingFeesUsd": 2545.6104,
+      "totalFeesUsd": -104131.99493198098,
+      "actions": {
+        "Open": 429,
+        "Close": 663,
+        "StopLoss": 52,
+        "RemoveCollateral": 9,
+        "TakeProfit": 12,
+        "Liquidation": 24
+      },
+      "sides": {
+        "B": 872,
+        "S": 317
+      }
+    },
+    {
+      "date": "2026-05-07",
+      "segment": "baseline30",
+      "start": "2026-04-07T00:00:00.000Z",
+      "end": "2026-05-07T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 4800,
+      "notionalUsd": 266849943.46551648,
+      "openingFeesUsd": 165906.06767800022,
+      "totalFeesUsd": 238932.1833932654,
+      "actions": {
+        "Close": 1992,
+        "Open": 2065,
+        "TakeProfit": 104,
+        "RemoveCollateral": 124,
+        "StopLoss": 314,
+        "Liquidation": 201
+      },
+      "sides": {
+        "S": 1313,
+        "B": 3487
+      }
+    },
+    {
+      "date": "2026-05-07",
+      "segment": "event0_2",
+      "start": "2026-05-07T00:00:00.000Z",
+      "end": "2026-05-10T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 441,
+      "notionalUsd": 4361270.991382698,
+      "openingFeesUsd": 1073.1176539999992,
+      "totalFeesUsd": -474.0348580993011,
+      "actions": {
+        "Open": 205,
+        "Close": 214,
+        "StopLoss": 11,
+        "RemoveCollateral": 5,
+        "TakeProfit": 4,
+        "Liquidation": 2
+      },
+      "sides": {
+        "B": 307,
+        "S": 134
+      }
+    },
+    {
+      "date": "2026-05-08",
+      "segment": "baseline30",
+      "start": "2026-04-08T00:00:00.000Z",
+      "end": "2026-05-08T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 4519,
+      "notionalUsd": 131979955.26029192,
+      "openingFeesUsd": 49454.20395899999,
+      "totalFeesUsd": 56622.42572667375,
+      "actions": {
+        "Close": 1941,
+        "Open": 1934,
+        "RemoveCollateral": 98,
+        "TakeProfit": 93,
+        "Liquidation": 162,
+        "StopLoss": 291
+      },
+      "sides": {
+        "B": 3244,
+        "S": 1275
+      }
+    },
+    {
+      "date": "2026-05-08",
+      "segment": "event0_2",
+      "start": "2026-05-08T00:00:00.000Z",
+      "end": "2026-05-11T00:00:00.000Z",
+      "days": 3,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 192,
+      "notionalUsd": 1601522.3113514986,
+      "openingFeesUsd": 394.0166579999998,
+      "totalFeesUsd": 789.978889391269,
+      "actions": {
+        "Liquidation": 1,
+        "Open": 89,
+        "Close": 98,
+        "StopLoss": 4
+      },
+      "sides": {
+        "S": 31,
+        "B": 161
+      }
+    },
+    {
+      "date": "2026-05-10",
+      "segment": "baseline30",
+      "start": "2026-04-10T00:00:00.000Z",
+      "end": "2026-05-10T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 4025,
+      "notionalUsd": 85117146.19603753,
+      "openingFeesUsd": 33442.33414699998,
+      "totalFeesUsd": 10026.280643250273,
+      "actions": {
+        "Open": 1725,
+        "Close": 1706,
+        "StopLoss": 266,
+        "RemoveCollateral": 88,
+        "TakeProfit": 87,
+        "Liquidation": 153
+      },
+      "sides": {
+        "B": 2932,
+        "S": 1093
+      }
+    },
+    {
+      "date": "2026-05-10",
+      "segment": "event0_2",
+      "start": "2026-05-10T00:00:00.000Z",
+      "end": "2026-05-13T00:00:00.000Z",
+      "days": 3,
+      "isPartial": true,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 118,
+      "notionalUsd": 1452215.303147338,
+      "openingFeesUsd": 162.64799699999998,
+      "totalFeesUsd": -4976.510696327188,
+      "actions": {
+        "Open": 51,
+        "Close": 56,
+        "TakeProfit": 3,
+        "StopLoss": 3,
+        "RemoveCollateral": 4,
+        "Liquidation": 1
+      },
+      "sides": {
+        "B": 81,
+        "S": 37
+      }
+    },
+    {
+      "date": "2026-05-11",
+      "segment": "baseline30",
+      "start": "2026-04-11T00:00:00.000Z",
+      "end": "2026-05-11T00:00:00.000Z",
+      "days": 30,
+      "isPartial": false,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 3934,
+      "notionalUsd": 79660211.3075531,
+      "openingFeesUsd": 29720.658360999983,
+      "totalFeesUsd": 5867.067480568499,
+      "actions": {
+        "Liquidation": 154,
+        "Open": 1685,
+        "Close": 1665,
+        "StopLoss": 258,
+        "RemoveCollateral": 85,
+        "TakeProfit": 87
+      },
+      "sides": {
+        "S": 1072,
+        "B": 2862
+      }
+    },
+    {
+      "date": "2026-05-11",
+      "segment": "event0_2",
+      "start": "2026-05-11T00:00:00.000Z",
+      "end": "2026-05-14T00:00:00.000Z",
+      "days": 3,
+      "isPartial": true,
+      "label": "WTI",
+      "pairId": 7,
+      "symbol": "WTI-USD",
+      "fillCount": 101,
+      "notionalUsd": 1265692.1227858395,
+      "openingFeesUsd": 155.73961599999998,
+      "totalFeesUsd": -5451.317464415964,
+      "actions": {
+        "Open": 47,
+        "Close": 45,
+        "TakeProfit": 3,
+        "StopLoss": 2,
+        "RemoveCollateral": 4
+      },
+      "sides": {
+        "B": 70,
+        "S": 31
+      }
+    }
+  ],
+  "errors": []
+}
