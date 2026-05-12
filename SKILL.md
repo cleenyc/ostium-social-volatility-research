@@ -1,6 +1,6 @@
 ---
 name: ostium-social-volatility-research-kit
-description: Use when running, modifying, or interpreting the Ostium Social Volatility Research Kit: a configurable event-study and volatility-control workflow that compares market-specific social posts, oil-market volatility, and Ostium trading activity.
+description: Use when running, modifying, or interpreting the Ostium Social Volatility Research Kit, a configurable event-study and volatility-control workflow that compares market-specific social posts, oil-market volatility, and Ostium trading activity.
 version: 0.1.0
 author: Chris Lee
 metadata:
