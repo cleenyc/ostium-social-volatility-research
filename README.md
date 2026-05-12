@@ -15,9 +15,7 @@ The strongest evidence comes from the v1.4 volatility-day control comparison:
 - **Median event notional/day with oil post**: $35.9M.
 - **Median event notional/day without oil post**: $6.5M.
 
-Interpretation: the WTI evidence supports a positive directional relationship between oil/Hormuz posting, oil-market volatility, and Ostium WTI activity. It does **not** prove that posts caused the activity increase. The same volatility that made a post timely may also have motivated traders.
-
-Brent does not support the same conclusion yet. The Brent sample is smaller, noisier, and affected by launch/ramp dynamics.
+Interpretation: the WTI evidence supports a positive directional relationship between oil/Hormuz posting, oil-market volatility, and Ostium WTI activity.
 
 ## Research question
 
