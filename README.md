@@ -75,25 +75,6 @@ The study was intentionally iterative. Each version addressed a limitation disco
 - **v1.3**: added exact post-time `+48h` and `+72h` robustness checks. This showed strong WTI cases, but also mixed medians and duplicate-window concerns.
 - **v1.4**: added the key control comparison: high-volatility market days with oil posts versus high-volatility market days without oil posts. This produced the strongest WTI inference.
 
-## Conclusion hierarchy
-
-The current evidence supports these claims, in order of strength:
-
-1. **Main conclusion — WTI**  
-   WTI shows positive directional/correlational evidence: high-volatility WTI days with oil-related Ostium posts had materially higher median activity and notional than high-volatility WTI days without oil-related posts.
-
-2. **Secondary conclusion — Brent**  
-   Brent is underpowered and noisy. The study should not claim a robust Brent posting/activity relationship yet.
-
-3. **Social reach caveat**  
-   Social reach does not cleanly predict trading activity. The highest-impression post in the corpus did not coincide with a positive WTI activity lift.
-
-4. **Causality caveat**  
-   The study is observational. It supports alignment and directional correlation, not causal proof.
-
-5. **Reusable research kit**  
-   The repository packages the research as a reproducible, configurable research kit that can be rerun from cached fixtures and adapted to other markets/topics.
-
 ## What is included
 
 - **Research report package**: canonical synthesis report, figure/table spec, event-study report, control-comparison report, and historical iteration artifacts in `reports/`.
