@@ -88,7 +88,7 @@ def _plain_inline_markdown(text: str) -> str:
 
 
 def _report_sections(report_path: Path, max_sections: int = 8) -> list[dict[str, Any]]:
-    """Parse the public Phase 1 report draft into dashboard-friendly sections.
+    """Parse the public report draft into dashboard-friendly sections.
 
     This intentionally keeps the dashboard static and dependency-free; richer markdown
     rendering can be added in public packaging later without changing the data contract.
@@ -241,16 +241,16 @@ def build_dashboard_bundle(study_path: Path, out_dir: Path) -> dict[str, Any]:
     href_by_name = {Path(item["source"]).name: item["href"] for item in staged_downloads}
 
     payload: dict[str, Any] = {
-        "phase": "Phase 3 — Dashboard",
-        "canonical_phases": [
-            "Phase 1 — Research report package",
-            "Phase 2 — Reproducible pipeline cleanup",
-            "Phase 3 — Dashboard",
-            "Phase 4 — Hermes skill / agent runbook",
-            "Phase 5 — Public GitHub packaging",
-            "Phase 6 — Optional live v2",
+        "component": "Static dashboard",
+        "included_components": [
+            "Research report package",
+            "Reproducible pipeline",
+            "Static dashboard",
+            "Agent runbook and prompt templates",
+            "Public GitHub packaging",
+            "Optional live monitoring/recommendations",
         ],
-        "source_phase_dependency": "Phase 2 cached pipeline outputs",
+        "source_dependency": "cached pipeline outputs",
         "study": {
             "id": get_nested(config, ["study", "id"]),
             "title": get_nested(config, ["study", "title"]),
@@ -258,7 +258,7 @@ def build_dashboard_bundle(study_path: Path, out_dir: Path) -> dict[str, Any]:
         },
         "report": {
             "title": "Ostium Social Volatility Study: Oil/Hormuz Posting, Market Volatility, and Trading Activity",
-            "status": "Phase 1 public-facing draft embedded for Phase 3 dashboard readability; not public-published.",
+            "status": "Public-facing report draft embedded for dashboard readability.",
             "sections": _report_sections(report_md),
         },
         "event_study": {

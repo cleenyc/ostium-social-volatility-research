@@ -7,7 +7,7 @@ def read(path: str) -> str:
     return (ROOT / path).read_text(encoding='utf-8')
 
 
-def test_phase5_public_packaging_files_exist():
+def test_public_public_packaging_files_exist():
     required = [
         'README.md',
         '.env.example',
@@ -26,7 +26,7 @@ def test_readme_is_public_research_kit_not_private_repo():
     assert 'no credentials are committed' in text
 
 
-def test_public_packaging_docs_keep_phase6_out_of_scope():
+def test_public_packaging_docs_keep_live_monitoring_out_of_scope():
     text = read('docs/publication-checklist.md').lower()
     assert 'no live monitor' in text
     assert 'recommendation engine' in text

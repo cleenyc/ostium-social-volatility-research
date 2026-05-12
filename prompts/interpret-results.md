@@ -2,10 +2,10 @@
 
 You are interpreting outputs from the Ostium Social Volatility Research Kit.
 
-Phase scope:
+Scope guard:
 
-- Phase 3: use the local/static dashboard outputs only.
-- Phase 4: use repo-local skill/runbook guidance.
+- Use the local/static dashboard outputs only.
+- Use repo-local skill/agent runbook guidance.
 - Do not deploy or publish any outputs from this interpretation task.
 
 Read first:
@@ -39,7 +39,7 @@ Avoid:
 - “caused”
 - “proved”
 - “guaranteed”
-- “recommendation engine” unless Phase 6 has been explicitly approved
+- “recommendation engine” unless live monitoring/recommendations have been explicitly approved
 
 For the oil/Hormuz fixture, preserve the headline caveats:
 

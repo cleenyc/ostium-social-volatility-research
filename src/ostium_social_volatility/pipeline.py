@@ -68,6 +68,6 @@ def run_main(argv: list[str] | None = None) -> int:
     parser.add_argument("--no-validate", action="store_true", help="Skip validation after cached report generation")
     args = parser.parse_args(argv)
     if args.mode == "live":
-        parser.error("live mode is intentionally not implemented in Phase 2; run collectors explicitly after source-access review")
+        parser.error("live mode is intentionally not implemented in pipeline cleanup; run collectors explicitly after source-access review")
     print(json.dumps(run_cached(args.study, validate=not args.no_validate), indent=2))
     return 0

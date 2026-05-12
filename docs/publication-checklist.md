@@ -4,7 +4,7 @@ Use this checklist before pushing, publishing, or deploying a fork of the resear
 
 ## Scope guard
 
-- [ ] Phase 5 public packaging only: no live monitor, recommendation engine, recurring job, or external posting.
+- [ ] Public packaging only: no live monitor, recommendation engine, recurring job, or external posting.
 - [ ] Dashboard hosting is static-only unless a separate live/backend review has been approved.
 - [ ] `run --mode live` remains disabled or clearly guarded until credential/source behavior is explicit.
 

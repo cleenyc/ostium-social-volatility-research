@@ -1,4 +1,4 @@
-# Phase 2 Data Contracts and Validation Checks
+# Data Contracts and Validation Checks
 
 Date: 2026-05-12  
 Status: Draft data contract for reproducible pipeline cleanup

@@ -1,14 +1,14 @@
 {
-  "phase": "Phase 3 \u2014 Dashboard",
-  "canonical_phases": [
-    "Phase 1 \u2014 Research report package",
-    "Phase 2 \u2014 Reproducible pipeline cleanup",
-    "Phase 3 \u2014 Dashboard",
-    "Phase 4 \u2014 Hermes skill / agent runbook",
-    "Phase 5 \u2014 Public GitHub packaging",
-    "Phase 6 \u2014 Optional live v2"
+  "component": "Static dashboard",
+  "included_components": [
+    "Research report package",
+    "Reproducible pipeline",
+    "Static dashboard",
+    "Agent runbook and prompt templates",
+    "Public GitHub packaging",
+    "Optional live monitoring/recommendations"
   ],
-  "source_phase_dependency": "Phase 2 cached pipeline outputs",
+  "source_dependency": "cached pipeline outputs",
   "study": {
     "id": "oil_hormuz",
     "title": "Ostium Oil/Hormuz Social Volatility Study",
@@ -16,7 +16,7 @@
   },
   "report": {
     "title": "Ostium Social Volatility Study: Oil/Hormuz Posting, Market Volatility, and Trading Activity",
-    "status": "Phase 1 public-facing draft embedded for Phase 3 dashboard readability; not public-published.",
+    "status": "Public-facing report draft embedded for dashboard readability.",
     "sections": [
       {
         "heading": "Executive Summary",

@@ -1,12 +1,12 @@
-# Phase 2 Pipeline Cleanup Audit — Ostium Social Volatility Research Kit
+# Pipeline Cleanup Audit — Ostium Social Volatility Research Kit
 
 Date: 2026-05-12  
-Status: Phase 2 reproducibility audit draft  
+Status: pipeline cleanup reproducibility audit draft  
 Scope: Reproducible pipeline cleanup, not dashboard/skill/public packaging
 
-## Phase 2 Objective
+## pipeline cleanup Objective
 
-Agreed Phase 2 objective:
+Agreed pipeline cleanup objective:
 
 > Make inputs, config, data, and source pipeline clean enough for others.
 
@@ -114,7 +114,7 @@ Current role:
 - Useful for provenance and smoke tests.
 - Not the preferred rerun surface for the public research kit.
 
-Phase 2 recommendation:
+pipeline cleanup recommendation:
 
 - Preserve for history, but do not make them the default user-facing commands.
 - Fold reusable pieces into a canonical collect/process/report/validate command path.
@@ -184,7 +184,7 @@ Issue:
 - Contracts for each CSV are not documented centrally.
 - Required columns are not validated by a single command.
 
-## Phase 2 Target State
+## pipeline cleanup Target State
 
 ### Config-first execution
 
@@ -234,7 +234,7 @@ The repo should document and validate:
 - event-study output CSV;
 - volatility-control output CSV.
 
-See: `docs/phase2-data-contracts.md`.
+See: `docs/data-contracts.md`.
 
 ### Validation checks
 
@@ -259,15 +259,15 @@ Source docs should state:
 - Ostium Builder API symbols must be discovered from Ostium source, not guessed;
 - Ostium SDK pair IDs must be confirmed before activity collection.
 
-## Recommended Phase 2 Implementation Slices
+## Recommended pipeline cleanup Implementation Slices
 
 ### Slice 2.1 — Config schema and example config
 
 Deliverables:
 
 - `configs/study.oil-hormuz.example.yaml`
-- `docs/phase2-pipeline-cleanup-audit.md`
-- `docs/phase2-data-contracts.md`
+- `docs/pipeline-cleanup-audit.md`
+- `docs/data-contracts.md`
 
 No risky external calls.
 
@@ -301,11 +301,11 @@ Deliverables:
 - run from saved raw/cache data;
 - regenerate v1.3/v1.4 outputs;
 - compare headline metrics to expected values;
-- document proof in Phase 2 status.
+- document proof in pipeline cleanup status.
 
-## What Phase 2 Is Not
+## What pipeline cleanup Is Not
 
-Phase 2 is not:
+pipeline cleanup is not:
 
 - building the visual dashboard;
 - creating the public GitHub repo;

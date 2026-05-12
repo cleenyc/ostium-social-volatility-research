@@ -1,7 +1,7 @@
 # Ostium Social Volatility Study — Figure and Table Specification
 
 Date: 2026-05-12  
-Status: Phase 1 draft spec for report/dashboard reuse
+Status: Draft spec for report/dashboard reuse
 
 ## Purpose
 

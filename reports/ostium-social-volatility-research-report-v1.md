@@ -1,4 +1,4 @@
-# Ostium Social Volatility Research Report — Phase 1 Package
+# Ostium Social Volatility Research Report — Research Package
 
 Date: 2026-05-12  
 Status: Draft v1 research-report package, generated from the completed oil/Hormuz analysis through v1.4.  
@@ -469,9 +469,9 @@ The current data does not support these stronger claims:
 6. **Public packaging**
    - The planned public version should use tweet links and reproducible instructions rather than committing local auth artifacts or secrets.
 
-## Phase 1 Research Report Package Conclusion
+## Research Report Package Conclusion
 
-The first analytical phase is complete enough to become a full research-report package.
+The analytical work is complete enough to become a full research-report package.
 
 The headline public-facing conclusion should be:
 
@@ -479,7 +479,7 @@ The headline public-facing conclusion should be:
 
 ## Recommended Next Report Work
 
-Before this becomes a polished public report, the next Phase 1 refinements should be:
+Before this becomes a polished public report, the next report refinements should be:
 
 1. Convert this draft into a narrative public report with cleaner prose and charts.
 2. Add figure/table placeholders for dashboard reuse:
@@ -492,7 +492,7 @@ Before this becomes a polished public report, the next Phase 1 refinements shoul
 4. Add a public-safe data disclosure note: tweet links are featured; secrets/auth files excluded.
 5. Decide whether to include full v1.3/v1.4 CSVs publicly or provide reproducible generation instructions plus sample fixtures.
 
-## Source Inventory for Phase 1
+## Source Inventory
 
 Primary reports:
 

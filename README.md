@@ -12,16 +12,9 @@ The included reference study analyzes Ostium oil/Hormuz posts against WTI and Br
 - **Agent runbook / Hermes skill**: `SKILL.md`, `docs/agent-runbook.md`, `docs/adapt-study.md`, and prompt templates in `prompts/`.
 - **Public-safe fixture snapshot**: cached X/OHLC/Ostium activity artifacts needed for the reference rerun. No credentials are committed.
 
-## Canonical phases
+## Project status
 
-1. Phase 1 — Research report package.
-2. Phase 2 — Reproducible pipeline cleanup.
-3. Phase 3 — Dashboard.
-4. Phase 4 — Hermes skill / agent runbook.
-5. Phase 5 — Public GitHub packaging.
-6. Phase 6 — Optional live v2.
-
-Current status: phases 1–4 are implemented as a local/static research kit; Phase 5 packaging files are present; Phase 6 live monitoring/recommendations are intentionally out of scope.
+This repository is a public-facing, static research kit: the report package, cached reproduction pipeline, local dashboard, and agent runbook are included. Live monitoring, recommendation engines, recurring jobs, and credentialed collectors are intentionally out of scope unless reviewed separately.
 
 ## Quick start: reproduce the cached oil/Hormuz study
 

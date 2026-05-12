@@ -1,17 +1,17 @@
-# Phase 2 Repeatable Command Surface
+# Repeatable Command Surface
 
 Date: 2026-05-12  
 Status: Draft command design for reproducible pipeline cleanup
 
 ## Purpose
 
-The current repo can reproduce v1.3 and v1.4, but users must know the exact internal script order. Phase 2 should expose a simpler command surface that another user or agent can follow.
+The current repo can reproduce v1.3 and v1.4 through a simpler command surface that another user or agent can follow.
 
 This document defines the target command interface and maps it to current scripts.
 
 ## Current Commands
 
-Implemented Phase 2 cached run command:
+Implemented cached run command:
 
 ```bash
 PYTHONPATH=src python3 -m ostium_social_volatility run --study configs/study.oil-hormuz.example.yaml --mode cached
@@ -21,7 +21,7 @@ npm run run:cached
 
 This command regenerates the v1.3 event-study report and v1.4 volatility-control report from cached/raw inputs, then runs validation. Current verified output: v1.3 posts `29`, unique dates `21`, market windows `84`, activity windows `342`; v1.4 rows `101`, high-volatility rows `30`, WTI eligible days `75`, Brent eligible days `26`; validation `23 ok, 0 warn, 0 fail`.
 
-Implemented Phase 2 report-only command:
+Implemented report-only command:
 
 ```bash
 PYTHONPATH=src python3 -m ostium_social_volatility report --study configs/study.oil-hormuz.example.yaml
@@ -29,7 +29,7 @@ PYTHONPATH=src python3 -m ostium_social_volatility report --study configs/study.
 npm run report
 ```
 
-Implemented Phase 2 validator command:
+Implemented validator command:
 
 ```bash
 PYTHONPATH=src python3 -m ostium_social_volatility validate --study configs/study.oil-hormuz.example.yaml
@@ -222,7 +222,7 @@ Current cleanup status:
 Remaining cleanup:
 
 - Split processing from report rendering if that becomes necessary for dashboard data bundles.
-- Emit richer machine-readable summary JSON if Phase 3 dashboard needs it.
+- Emit richer machine-readable summary JSON if the dashboard needs it.
 
 ### validate stage
 
@@ -240,16 +240,16 @@ Checks:
 - headline row counts;
 - public safety scan.
 
-## Minimal Phase 2 Implementation Sequence
+## Minimal Pipeline Implementation Sequence
 
 ### Step 1 — Add config and docs
 
 Already drafted:
 
 - `configs/study.oil-hormuz.example.yaml`
-- `docs/phase2-pipeline-cleanup-audit.md`
-- `docs/phase2-data-contracts.md`
-- `docs/phase2-command-surface.md`
+- `docs/pipeline-cleanup-audit.md`
+- `docs/data-contracts.md`
+- `docs/command-surface.md`
 
 ### Step 2 — Build cached validator first
 
@@ -317,13 +317,13 @@ When another agent is asked to rerun or adapt the project:
 7. Validate headline counts and caveats.
 8. Avoid causal language unless a stronger design is added.
 
-## Out of Scope for This Phase
+## Out of Scope for This Public Kit
 
-Do not use Phase 2 to:
+Do not use this public kit to:
 
 - create the public GitHub repo;
 - deploy a Vercel dashboard;
 - write the final Hermes skill;
 - implement live recommendation monitoring.
 
-Those are later phases.
+Those remain separate approval-gated extensions.

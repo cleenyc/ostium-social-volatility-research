@@ -2,10 +2,10 @@
 
 You are running the Ostium Social Volatility Research Kit.
 
-Phase scope:
+Scope guard:
 
-- Phase 3: local dashboard only; do not deploy.
-- Phase 4: use repo-local skill/runbook; do not publish or create live jobs.
+- Local dashboard only; do not deploy.
+- Use the repo-local skill/agent runbook; do not publish or create live jobs.
 
 Tasks:
 

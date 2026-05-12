@@ -1,9 +1,9 @@
 # Agent Runbook — Ostium Social Volatility Research Kit
 
-Phase guard for this runbook:
+Scope guard for this runbook:
 
-- **Phase 3 — Dashboard:** local/static dashboard completion only. Do not deploy or host.
-- **Phase 4 — Hermes skill / agent runbook:** make the workflow agent-runnable. Do not publish, create live jobs, or modify credentials.
+- **Static dashboard:** local dashboard use only. Do not deploy or host unless separately approved.
+- **Agent runbook and prompt templates:** make the workflow agent-runnable. Do not publish, create live jobs, or modify credentials.
 
 ## 1. Reproduce the cached oil/Hormuz study
 
@@ -39,7 +39,7 @@ http://127.0.0.1:8765/
 
 Verify the dashboard includes:
 
-- Phase 3 guard / phase chips;
+- dashboard guard / scope chips;
 - KPI cards;
 - WTI/Brent high-volatility day control summaries;
 - post-level event-study summaries;
@@ -124,11 +124,11 @@ Avoid unsupported language:
 - “caused”
 - “proved impact”
 - “guaranteed repeatability”
-- “recommendation engine” unless Phase 6 is explicitly approved
+- “recommendation engine” unless live monitoring/recommendations are explicitly approved
 
-## 7. Phase boundaries
+## 7. Scope boundaries
 
-Allowed in Phase 3–4:
+Allowed in this static research kit:
 
 - local dashboard improvements;
 - repo-local SKILL.md;
@@ -143,4 +143,4 @@ Not allowed without explicit approval:
 - recurring cron/live monitor;
 - external posting/messaging;
 - credential changes;
-- Phase 6 recommendation engine.
+- live recommendation engine.

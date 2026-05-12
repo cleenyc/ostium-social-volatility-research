@@ -21,18 +21,18 @@ def _frontmatter(path: Path) -> tuple[dict[str, str], str]:
     return fields, body
 
 
-def test_phase4_skill_has_valid_frontmatter_and_phase_guard():
+def test_agent_skill_has_valid_frontmatter_and_scope_guard():
     fields, body = _frontmatter(ROOT / "SKILL.md")
 
     assert fields["name"] == "ostium-social-volatility-research-kit"
     assert fields["description"].startswith("Use when")
     assert len(fields["description"]) <= 1024
-    assert "Phase 3 — Dashboard" in body
-    assert "Phase 4 — Hermes skill / agent runbook" in body
+    assert "Static dashboard" in body
+    assert "Agent runbook and prompt templates" in body
     assert "Do **not** use this skill to deploy" in body
 
 
-def test_phase4_runbook_and_prompts_exist_and_keep_approval_boundaries():
+def test_agent_runbook_and_prompts_exist_and_keep_approval_boundaries():
     required = [
         "docs/agent-runbook.md",
         "docs/adapt-study.md",
@@ -41,13 +41,13 @@ def test_phase4_runbook_and_prompts_exist_and_keep_approval_boundaries():
         "prompts/interpret-results.md",
     ]
     for rel in required:
-        text = (ROOT / rel).read_text(encoding="utf-8")
-        assert "Phase 3" in text
-        assert "Phase 4" in text
-        assert "deploy" in text.lower() or "publish" in text.lower()
+        text = (ROOT / rel).read_text(encoding="utf-8").lower()
+        assert "dashboard" in text
+        assert "agent runbook" in text
+        assert "deploy" in text or "publish" in text
 
 
-def test_phase4_adaptation_docs_cover_required_inputs():
+def test_agent_adaptation_docs_cover_required_inputs():
     text = (ROOT / "docs/adapt-study.md").read_text(encoding="utf-8")
 
     for phrase in [

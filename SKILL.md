@@ -15,10 +15,10 @@ metadata:
 
 This skill makes the repo agent-runnable. It guides a Hermes Agent or similar coding agent through reproducing the cached oil/Hormuz study, regenerating the dashboard, adapting the study config to another market/topic, and interpreting the results without drifting into unsupported causal or live-monitoring claims.
 
-The canonical build-scope guard for this repo is:
+The canonical scope guard for this repo is:
 
-3. **Phase 3 — Dashboard:** local/static dashboard, report sections, charts/tables, post/market drilldowns, configurable cached controls, downloadable outputs. No deployment unless explicitly approved later.
-4. **Phase 4 — Hermes skill / agent runbook:** this skill, runbook, prompt templates, install/use instructions, and adaptation guide. No public repo publication, deployment, recurring jobs, or live recommendation engine.
+- **Static dashboard:** local/static dashboard, report sections, charts/tables, post/market drilldowns, configurable cached controls, downloadable outputs. No deployment unless explicitly approved later.
+- **Agent runbook and prompt templates:** this skill, runbook, prompt templates, install/use instructions, and adaptation guide. No deployment, recurring jobs, or live recommendation engine without separate approval.
 
 ## When to Use
 
@@ -30,9 +30,9 @@ Use this skill when the user asks to:
 - adapt the study from oil/Hormuz to another market/topic;
 - explain required data/API access for a new run;
 - interpret dashboard/report outputs and caveats;
-- prepare the repo for later public packaging without publishing it.
+- review or update public packaging without deploying or enabling live jobs.
 
-Do **not** use this skill to deploy a dashboard, publish a GitHub repo, create live monitoring jobs, modify credentials, send external messages, or build a recommendation engine. Those are later-scope or approval-gated.
+Do **not** use this skill to deploy a dashboard, push/publish remote changes, create live monitoring jobs, modify credentials, send external messages, or build a recommendation engine without explicit approval. Those are separate approval-gated actions.
 
 ## Quick Start
 
@@ -128,7 +128,7 @@ Keep the primary decision window as `0-2d` unless the user explicitly changes me
 ## Common Pitfalls
 
 1. **Using live mode prematurely.** `run --mode live` is intentionally disabled until source warnings and credential behavior are explicit.
-2. **Publishing local artifacts by accident.** Phase 4 can create repo-local skill/runbook artifacts, but Phase 5 publication/deployment still needs explicit approval.
+2. **Publishing local artifacts by accident.** Repo-local skill/runbook artifacts are safe to update, but publication/deployment still needs explicit approval.
 3. **Overclaiming causality.** The study is observational and correlational.
 4. **Overwriting the oil fixture.** Adapted studies should write to new config/output paths.
 5. **Ignoring public-data review.** Tweet text and raw X artifacts should be reviewed before public packaging.

@@ -9,14 +9,14 @@ ROOT = Path(__file__).resolve().parents[1]
 STUDY = ROOT / "configs" / "study.oil-hormuz.example.yaml"
 
 
-def test_dashboard_bundle_contains_phase3_summary_and_core_counts(tmp_path: Path):
+def test_dashboard_bundle_contains_static_dashboard_summary_and_core_counts(tmp_path: Path):
     out_dir = tmp_path / "dashboard" / "data"
 
     payload = build_dashboard_bundle(STUDY, out_dir)
 
-    assert payload["phase"] == "Phase 3 — Dashboard"
-    assert payload["canonical_phases"][0] == "Phase 1 — Research report package"
-    assert payload["canonical_phases"][-1] == "Phase 6 — Optional live v2"
+    assert payload["component"] == "Static dashboard"
+    assert payload["included_components"][0] == "Research report package"
+    assert payload["included_components"][-1] == "Optional live monitoring/recommendations"
     assert payload["study"]["id"] == "oil_hormuz"
     assert payload["event_study"]["post_count"] == 29
     assert payload["event_study"]["unique_dates"] == 21

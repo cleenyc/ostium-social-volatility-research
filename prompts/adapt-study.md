@@ -2,10 +2,10 @@
 
 You are adapting the Ostium Social Volatility Research Kit to a new target market/topic.
 
-Phase scope:
+Scope guard:
 
-- Phase 3: keep dashboard work local/static.
-- Phase 4: create config/runbook updates only.
+- Keep dashboard work local/static.
+- Create config/agent runbook updates only.
 - Do not deploy, publish, modify credentials, create recurring jobs, or start live monitoring.
 
 Inputs from user:

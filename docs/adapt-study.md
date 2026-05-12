@@ -2,8 +2,8 @@
 
 Phase guard:
 
-- **Phase 3:** dashboard should support local/static exploration of cached/generated outputs.
-- **Phase 4:** this guide makes the study configurable and agent-runnable.
+- **dashboard:** dashboard should support local/static exploration of cached/generated outputs.
+- **agent runbook:** this guide makes the study configurable and agent-runnable.
 - Do not deploy, publish, create live jobs, or modify credentials while using this guide.
 
 This guide explains how to adapt the oil/Hormuz fixture to another market/topic without rewriting the code.
@@ -132,7 +132,7 @@ The agent should:
 
 ## Public-output review
 
-Before Phase 5 public packaging, review:
+Before public packaging, review:
 
 - raw X fixture contents;
 - full tweet text exposure;

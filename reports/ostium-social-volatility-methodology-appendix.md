@@ -1,7 +1,7 @@
 # Ostium Social Volatility Study — Methodology and Reproducibility Appendix
 
 Date: 2026-05-12  
-Status: Phase 1 draft appendix for public research package
+Status: Draft appendix for public research package
 
 ## Purpose
 

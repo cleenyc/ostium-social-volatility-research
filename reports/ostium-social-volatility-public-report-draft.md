@@ -1,6 +1,6 @@
 # Ostium Social Volatility Study: Oil/Hormuz Posting, Market Volatility, and Trading Activity
 
-**Draft:** Public-facing research report, Phase 1  
+**Draft:** Public-facing research report  
 **Date:** 2026-05-12  
 **Scope:** Oil/Hormuz analysis through v1.4  
 **Status:** Draft for review; not yet final/public-published
