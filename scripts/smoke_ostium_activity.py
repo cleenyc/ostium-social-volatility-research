@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Run the Node-based Ostium SDK Phase 0 smoke test."""
+"""Run the Node-based Ostium SDK source smoke test."""
 import subprocess
 from pathlib import Path
 
