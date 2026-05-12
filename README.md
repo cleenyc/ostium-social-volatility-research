@@ -35,6 +35,18 @@ The final answer relies most heavily on the fifth question because it adds the m
 
 ## Read this first
 
+This case study is oraganized around five public artifact layers:
+
+1. **Social Volatility Event Study**: The canonical event study conducted through v1.3, synthesizing data across Ostium social posts, market volatility, and trading volume.
+
+2. **Research Kit Packaging**: A reproducible package for external review and reuse including cached fixtures, configurable study variables, command-line reruns, tests, and source assumptions.
+
+3. **Agentic Skill**: A skill packaged for AI agents including documentation and prompt templates to conduct new inferences on other Ostium markets (e.g. copper, gold).
+
+4. **Dashboard**: An online dashboard which synthesizes key findings in visual format.
+
+5. **v2.0 Live Recommendation Engine**: Future application applying the same methodology towards a live recommendation engine which uses the Ostium sdk to suggest ai-generative responsive content strategy during macro volatility. 
+
 The most important research artifacts are:
 
 - **Research report v1**: `reports/ostium-social-volatility-research-report-v1.md`  
