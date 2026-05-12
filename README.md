@@ -83,12 +83,6 @@ The study was intentionally iterative. Each version addressed a limitation disco
 - **Runbooks and prompt templates**: `SKILL.md`, `docs/agent-runbook.md`, `docs/adapt-study.md`, and prompt templates in `prompts/` for reproducing or adapting the study with Hermes or another capable coding assistant.
 - **Public-safe fixture snapshot**: cached X/OHLC/Ostium activity artifacts needed for the reference rerun. No credentials are committed.
 
-## Project status
-
-This repository is a public-facing, static research package. It includes the report package, cached reproduction pipeline, local dashboard, and adaptation runbooks.
-
-Live monitoring, recommendation engines, recurring jobs, and credentialed high-level collectors are intentionally out of scope unless reviewed separately.
-
 ## Quick start: reproduce the cached oil/Hormuz study
 
 Prerequisites:
