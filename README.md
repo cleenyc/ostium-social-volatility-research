@@ -43,7 +43,7 @@ This case study is organized around five public artifact layers:
 
 3. **Agentic Skill**: A skill packaged for AI agents including documentation and prompt templates to conduct new inferences on other Ostium markets (e.g. copper, gold).
 
-4. **Dashboard**: An online dashboard which synthesizes key findings in visual format.
+4. **Dashboard**: An online dashboard which synthesizes key findings in visual format located at: https://ostium-social-volatility-dashboard.vercel.app
 
 5. **v2.0 Live Recommendation Engine**: Future application applying the same methodology towards a live recommendation engine which uses the Ostium sdk to suggest ai-generative responsive content strategy during macro volatility. 
 
