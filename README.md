@@ -1,6 +1,6 @@
 # Ostium Social Volatility Research
 
-Live Dashboard: https://ostium-social-volatility-dashboard.vercel.app
+Dashboard: https://ostium-social-volatility-dashboard.vercel.app
 
 This repository documents a reproducible event study testing whether Ostium oil/Hormuz-related social content drove higher Ostium platform activity during periods of elevated market volatility.
 
