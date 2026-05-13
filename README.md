@@ -47,7 +47,7 @@ This case study is organized around five public artifact layers:
 
 4. **Dashboard**: An online dashboard which synthesizes key findings in visual format located at: https://ostium-social-volatility-dashboard.vercel.app with optionality to also create a local static dashboard.
 
-5. **v2.0 Live Recommendation Engine**: A key application of v1.4 results into the spec for a live recommendation engine which uses the Ostium sdk + trained model to generate responsive content strategy during macro volatility (If the event study proves a positive directional relationship, then this artifact extrapolates that relationship into a generator for future platform activity).
+5. **v2.0 Live Recommendation Engine**: A key application of v1.4 results into the spec for a live recommendation engine which uses the Ostium sdk + agentic skill to generate future responsive content strategy during macro volatility (If the event study proves a positive directional relationship, then this artifact extrapolates that relationship into a generator for future platform activity).
 
 The most important research artifacts are:
 
